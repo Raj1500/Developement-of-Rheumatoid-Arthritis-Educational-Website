@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomarkers: Detailed context</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin: 20px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: fit-content;
+        }
+        
+        .middle{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            max-width: 100%;
+            height: auto;
+        }
+        .left{
+            float: left;
+            margin-right: 1rem;
+            max-width: 100%;
+        }
+        .left1{
+            float: left;
+            margin-right: 1rem;
+            border: 1px solid black;
+            max-width: 100%;
+        }
+        p {
+            color: black;    
+        }
+        h1{
+            font-size: fit-content;
+            color: #FFFFFF;
+            text-shadow:2px 2px 5px rgb(219, 48, 48);
+            text-align:center;
+            background-color: #0C1821;
+            border-radius: 10px;
+            border-bottom:5px solid #ffffff;
+        }
+        li ul li{
+            list-style: disc;
+        }
+        .Menu{
+            justify-content: space-between;
+            background-color: #052241;
+            border-radius: 20px;
+            padding-left: 30px;
+            position: relative;
+            top:-25px;
+        }
+        h2 {
+            border-bottom: 3px solid whitesmoke;
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            border-radius: 20px;
+            background-color: #0C1821;
+            width: auto;
+        }
+
+        
+        a {
+            text-decoration: none;
+            color: #FFFFFF ;
+        }
+        a:visited {
+            color: whitesmoke;
+        }
+        a:hover {
+            color: coral;
+
+        }
+
+        a:active {
+            color: antiquewhite;
+
+        }
+        footer {
+            background-color: #0C1821;
+            color: white;
+            text-align: left;
+            padding: 10px 0;
+        }
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color:  #061727;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #topBtn:hover {
+            background-color: #555;
+        }
+        .Side2{
+            display:none;
+        }
+        .btn1:hover .Side2{
+            display:block;
+        }
+        .ref li{
+            list-style-type: decimal;
+            font-style: italic;
+        }
+        figcaption{
+            text-align: center;
+        }
+  
+      
+
+       /* Mobile styles */
+@media (max-width: 600px) {
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin: 10px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+        .container{
+            padding: 5px;
+        }
+
+        h2 {
+    font-size: 1.75rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+.Menu{
+    top:-20px;
+    }
+
+}
+
+/* Tablet styles */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .container {
+        padding: 10px;
+    }
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            margin: 10px;
+            border: 3px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+
+        h2 {
+    font-size: 1.75rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+.Menu{
+    top:-22px;
+    }
+
+        
+        
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+
+    .container {
+        padding: 20px;
+    }
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            margin: 20px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+
+        h2 {
+    font-size: 1.75rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+
+
+    
+}
+
+    </style>
+</head>
+<body>
+    <section id="Bio">
+        <h1>Biomarkers in Rheumatoid Arthritis</h1>
+        <ul class="Menu">
+            <li class="btn1"><a href="#Back">Background</a></li>
+            <li class="btn1">
+                <a href="#Imag">Imaging Biomarkers</a>
+                <ul class="Side2">
+                    <li class="btn1"><a href="#US">UltraSound</a></li>
+                    <li class="btn1"><a href="#SH">Synovial Hypertrophy</a></li>
+                    <li class="btn1"><a href="#BE">Bone Erosion</a></li>
+                    <li class="btn1"><a href="#DUS">Doppler UltraSound</a></li>
+                </ul>
+            </li>
+            <li class="btn1"><a href="#Lab">Laboratory Biomarkers</a>
+                <ul class="Side2">
+                    <li class="btn1"><a href="#RF">Rheumatoid Factor</a></li>
+                    <li class="btn1"><a href="#AAB">Auto Antibodies</a></li>
+                </ul>
+            </li>
+            <li class="btn1"><a href="#Nov">Novel Serological Biomarkers</a>
+                <ul class="Side2">
+                    <li class="btn1"><a href="#ACPA">Anti-Carbamylated Protein Antibodies</a></li>
+                </ul>
+            </li>
+            <li class="btn1"><a href="#Mon">Monitoring Biomarkers</a>
+                <ul class="Side2">
+                    <li class="btn1"><a href="#ESR">ESR and CRP</a></li>
+                    <li class="btn1"><a href="#TTT">Treat to Target Approach</a></li>
+                </ul>
+            </li>
+            <li class="btn1"><a href="#PTR">Biomarkers Predicting Treatment Response</a>
+                <ul class="Side2">
+                    <li class="btn1"><a href="#TNF">Anti-TNF Drugs</a></li>
+                    <li class="btn1"><a href="#Rit">Rituximab</a></li>
+                    <li class="btn1"><a href="#Aba">Abatacept</a></li>
+                    <li class="btn1"><a href="#Toc">Tocilizumab</a></li>
+                </ul>
+            </li>
+            <li class="btn1"><a href="#FB">Future Biomarkers</a>
+                <ul class="Side2">
+                    <li class="btn1"><a href="#miRNA">miRNAs</a></li>
+                </ul>
+            </li>
+            <li class="btn1"><a href="#Con">Conclusion</a></li>
+        </ul>
+    </section>
+    <hr>
+    <section id="Back">
+        <h2>Background</h2>
+        <figure class="left">
+            <img class="left1" src="https://www.researchgate.net/publication/368572057/figure/fig1/AS:11431281157923336@1683943736872/Multipurpose-applications-of-biomarkers-Biomarkers-by-reflecting-the-progression-of-the.png" alt="Biomarkers" loading="lazy" height="400" width="570">
+            <figcaption>Image Source: <a href="https://www.researchgate.net/figure/Multipurpose-applications-of-biomarkers-Biomarkers-by-reflecting-the-progression-of-the_fig1_368572057">Research Gate</a></figcaption>
+        </figure>
+        <p>Rheumatoid arthritis (RA), which has an estimated world-wide prevalence in adults of 0.8% and more frequently affects females, is characterized by joint inflammation and destruction and gives rise to functional limitations, working disability, and a poor quality of life.(<a href="#ref">1</a>)</p>
+        <p>Its etiology is still unknown, and there is increasing interest in studying the biomarkers involved in different stages of this pathogenetically complex disease.(<a href="#ref">2</a>)</p>
+
+        <p><strong>A biomarker is an objectively measurable and assessable indicator of normal biological or pathogenic processes or pharmacological responses to a therapeutic intervention(<a href="#ref">3</a>), which can be derived from genetic polymorphisms, autoantibody profiles, cytokine levels, or clinical parameter.</strong></p>
+        <p>They are divided into <strong> three categories</strong> distinguished on the <strong>basis of their parameters, clinical usefulness, and relation with the pathological process</strong>(<a href="#ref">4</a>). This last category is further subdivided into descriptive biomarkers (which reflect disease status but are not directly involved in its pathogenesis and provide only limited diagnostic and prognostic information), and mechanistic biomarkers (which are predictively and pharmacodynamically useful as they indicate a dysregulation of the molecular pathways directly involved in disease pathogenesis).(<a href="#ref">5</a>)</p>
+        <p>Biomarkers are important for guiding the clinical and therapeutic management of all phases of RA because they can help to predict disease development in subjects at risk, improve diagnosis by closing the serological gap, provide prognostic information that is useful for making therapeutic choices and assessing treatment responses and outcomes, and allow disease activity and progression to be monitored.</p>
+    </section>
+    <hr>
+    <section id="Imag">
+        <h2>Imaging biomarkers in arthritis</h2>
+        <section id="US">
+            <h3>The role of ultrasound:</h3>
+            <p>
+                Ultrasound (US) is able to provide high resolution multiplanar images of soft tissue, cartilage and bone profiles(<a href="#ref">6</a>), this allows for a detailed assessment of the finest anatomical changes, which is valuable for the early diagnosis and monitoring of chronic arthritis.(<a href="#ref">7</a>)
+            </p>
+            <p>
+                <strong>Useful diagnostic and prognostic biomarkers in patients with arthritis(<a href="#ref">8</a>). These include: fluid collections, synovial hypertrophy, cartilage abnormalities, bone erosions, crystal aggregates, tendon damage, entesophytes, increased soft tissue perfusion.</strong>
+            </p>
+        <section id="SH">
+            <p>
+                <h3>Synovial Hypertrophy:</h3>
+            </p>
+            <ul>
+                <li>It is one of the most characteristic features of chronic synovitis and should be regarded as one of the most reliable morphological biomarkers of aggressive arthritis.</li>
+                <li>US images of synovial hypertrophy show a significant degree of variability, from circumscribed polypoid (Figure 1B) or bushy appearance to diffuse aspects.</li>
+            </ul>
+            <figure>
+                <img class="middle" src="https://journals.sagepub.com/cms/10.1177/1759720X12460116/asset/images/large/10.1177_1759720x12460116-fig1.jpeg" alt="Synovial Hypertrophy" loading="lazy" height="318" width="570">
+                <figcaption>Image Source: <a href="https://www.researchgate.net/figure/Greyscale-ultrasound-can-be-used-to-demonstrate-synovitis-In-this-image-of-a_fig1_233889743">Research Gate</a></figcaption>
+            </figure>
+            <p>
+                US allows detailed analysis of the extent and distribution of the various features of cartilage damage. In patients with advanced arthritis, cartilage damage worsens as the disease progresses, leading to progressive thinning of the joint cartilage that appears as homogeneous joint space narrowing on X-rays.
+            </p>
+        </section>
+        <section id="BE">
+            <p>
+                <h3>Bone Erosions:</h3>
+            </p>
+            <ul>
+                <li>These are the most dramatic evidence of the destructive potential of chronic arthritis.</li>
+                <li>The sensitivity of US is such that bone erosions as small as one-tenth of a millimeter can be detected.</li>
+                <li>Loss of sharpness and fine irregularities of the bone profile at the points of contact with the synovial pannus are probably the most sensitive morphological biomarkers to predict the subsequent appearance of erosions.</li>
+            </ul>
+            <p>
+                The presence of synovial pannus and Doppler signal within the erosion is clinically relevant, and provides indications on the course of inflammation and the potential evolution of the anatomical damage.
+            </p>
+            <p>Ultrasound is the method of choice for the examination of tendons because can be used to examine in detail the internal structure of tendons and their perfusion.The most frequent sonographic abnormalities of tendons with synovial sheath in rheumatic diseases include: tendon sheath widening, inhomogeneity of tendon structure, localized reduction of tendon diameter, contour defect, synovial cysts, interruption, fragmentation and disappearance of echotexture, tendon tear.Increased blood flow at the tendon insertion is generally related to the intensity of inflammation.</p>
+            <figure>
+                <img class="middle" src="https://journals.sagepub.com/cms/10.1177/1759720X12460116/asset/images/large/10.1177_1759720x12460116-fig2.jpeg" alt="Synovial Hypertrophy" loading="lazy" height="300" width="400">
+                <figcaption>Image Source: <a href="https://www.researchgate.net/figure/Greyscale-ultrasound-can-be-used-to-demonstrate-synovitis-In-this-image-of-a_fig1_233889743">Research Gate</a></figcaption>
+            </figure>
+        </section>
+        <section id="DUS">
+            <p>
+                <h3>Doppler Ultrasound:</h3>
+            </p>
+            <p>It is a useful tool for evaluating soft tissue hyperemia(<a href="#ref">9</a>).It indicates ongoing inflammation and helps monitor disease progression and response to treatment.Intra-articular Doppler signal in patients with chronic arthritis is mainly due to ongoing angiogenesis in areas of synovial hypertrophy.The presence of synovial pannus is not limited to the joint in patients with chronic arthritis. Tendons lined by synovial sheaths may develop synovitis.Areas of synovial hypertrophy surrounding tendons may be associated with synovial fluid collection or be the unique and dominant expression of the inflammatory process.The Doppler signal in ultrasound imaging can vary significantly within and around a joint, which makes it challenging to establish consistent and reliable parameters. A detailed assessment of the joint cavity, bone, and cartilage profile is crucial for identifying critical areas. By closely monitoring these factors, can track disease progression and anatomical damage over the short term.(<a href="#ref">10</a>)
+            </p>
+            <figure>
+                <img class="middle" src="https://www.openaccessjournals.com/articles-images/imaging-in-medicine-rheumatoid-arthritis-5-4-347-g001.png" alt="Synovial Hypertrophy" loading="lazy" height="400" width="600">
+                <figcaption>Image Source: <a href="https://eprints.soton.ac.uk/399627/1/Using%2520ultrasound%2520to%2520image%2520the%2520foot%2520in%2520rheumatoid%2520arthritis.pdf">Research Article</a></figcaption>
+            </figure>
+        </section>
+    </section>
+    <hr>
+    <section id="Lab">
+        <h2>Laboratory biomarkers in arthritis: predictive and prognostic values</h2>
+        <p>Various biomarkers can be used to identify individuals susceptible to the disease and those with pre-clinical RA before the onset of symptoms.</p>
+        <section id="RF">
+            <h3>Rheumatoid Factor (RF)</h3>
+            <ul>
+                <li>High RF titers correlate with the risk of developing RA, which may increase by as much as 26 times if they are &gt;100 IU/ml, and the presence of the immunoglobulin A (IgA) isotype is associated with extra-articular manifestations.(<a href="#ref">11,12</a>)
+                </li>
+                <li>Patients with RF usually develop a more aggressive disease and experience more severe functional impairment.
+                </li>
+                <li>RF positivity alone is not sufficient for diagnosis as 15% of the healthy population may have low titers, and this proportion increases with age and it is also found in patients with other autoimmune rheumatological or infectious diseases.(<a href="#ref">13,14,15</a>)
+                </li>
+            </ul>
+        </section>
+        <section id="AAB">
+            <h3>Autoantibodies</h3>
+            <ul>
+                <li><h4>Anti-RA33:</h4>
+                    <ul>
+                        <li>It is an IgG antibody directed against a nuclear protein antigen.It seems to be identical to the A2 protein of the heterogeneous nuclear ribonucleoprotein (hnRNP).It was detected in approximately 30% of RA and in 27 to 45% of seronegative RA patients.Autoantibodies against the hnRNP A2 protein occurs in about 35% of RA patients and can be found also in other systemic autoimmune diseases, and in less than 5% of healthy individuals.(<a href="#ref">16</a>)
+                        </li>
+                    </ul>
+                </li>
+                <li><h4>Anti-Savoie (Anti-Sa):</h4>
+                    <ul>
+                        <li>It is a RA-specific autoantibody, presents in the sera of about 43% of RA patients but not in many other autoimmune diseases or in healthy individuals.In addition, 27% of RF negative RA patients were also positive for anti-Sa(<a href="#ref">17</a>). The overall specificity of anti-Sa is 92 to 98%, whereas the sensitivity is about 40%.Anti-Sa positivity has been associated with more active and destructive disease, i.e., patients with anti-Sa antibodies may experience a more aggressive course of RA, leading to joint damage and functional impairment. Therefore, identifying anti-Sa antibodies can help predict disease severity and guide treatment decisions.Anti-Sa antibodies are in fact antibodies against citrullinated vimentin
+                        </li>
+                    </ul>
+                </li>
+                <li><h4>Anti-Citrullinated Protein Antibodies (ACPAs):<h4>
+                    <ul>
+                        <li>ACPAs have recently emerged as highly sensitive and specific serological markers of RA, providing a superior alternative to the RF test in the laboratory diagnostics of RA.The association of RA with shared epitope positive HLA-DRB1 alleles is stronger in ACPAs positive than in ACPAs negative RA(<a href="#ref">18</a>).Target citrullinated proteins such as myelin-basic protein(<a href="#ref">19</a>), histone proteins, filaggrin, fibrin, fibrinogen, or vimentin.ACPAs are important for diagnosis but about one-third of RA patients remain seronegative.ACPA-positive individuals with undifferentiated arthritis have higher risk of developing RA.(<a href="#ref">20</a>)
+                        </li>
+                    </ul>
+                </li>
+                <li><h4>Anti-mutated citrullinated vimentin (anti-MCV):</h4>
+                    <ul>
+                        <li>The mutated isoform of vimentin gives rise to this antibody, detection of anti-MCV antibodies is often done using an ELISA(<a href="#ref">21</a>).The occurrence of anti-MCV is between 21 to 43% in RA, while in other systemic autoimmune diseases only 1%, which makes the autoantibody having low sensitivity, but very high specificity.These autoantibodies are found in significant percentages of RA patients(<a href="#ref">22,23</a>) and are associated with more severe disease and radiographic progression.
+                        </li>
+                    </ul>
+                </li>
+                <li><h4>Anti-CPP (cyclic citrullinated peptide) and Anti-MCV:</h4>
+                    <ul>
+                        <li>Among ACPAs, anti-CCP has a superior diagnostic and prognostic value(<a href="#ref">24-27</a>).Anti-CCP and IgA-RF predict the development of RA, with anti-CCP antibody having the highest predictive value(<a href="#ref">28</a>).RF (IgM, IgA isotypes) and anti-CCP associated with more severe disease indicated by more erosions and severe functional impairment.The presence of anti-MCV also predicted joint damage, and the strength of this prediction was at least as strong as for anti-CCP.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <hr>
+    <section id="Nov">
+        <h2>Novel serological markers</h2>
+        <section id="ACPA">
+            <h3>Anti-Carbamylated Protein Antibodies</h3>
+            <ul>
+                <li>Anticarbamylated protein (anti-CarP) antibodies recognizing homocitrulline were detected in about 45% of RA patients and up to 30% of ACPA-negative patients.(<a href="#ref">29</a>) </li>
+                <li>It is biomarker for seronegative RA.</li>
+                <li>Homocitrulline is generated from a lysine residue following a reaction of cyanate. Importantly, in ACPA-negative patients, anti-CarP antibodies were associated with more severe radiographic progression.(<a href="#ref">29</a>)</li>
+                <li>Anti-CarP antibodies appear many years before the diagnosis of RA (<a href="#ref">30</a>) and can predict the development of RA in arthralgia patients independent of anti-CCP antibodies.(<a href="#ref">31</a>)</li>
+                <li>Carbamylated fibrinogen or vimentin serve as a target for anti-CarP antibodies.</li>
+                <li>The sensitivity of anti-CarP is lower than ACPA; however, the simultaneous assessment of anti-CarP and ACPA can be very beneficial in identifying RA patients.(<a href="#ref">29-31</a>)</li>
+            </ul>
+            <p> <strong> Using the cDNA phage display library</strong>, some <strong>novel autoantibodies</strong> were recently identified in early and seronegative RA patients with <strong>sensitivity ranging between 2 to 29% and specificity between 95 to 100%.</strong> These autoantibodies can be <strong>found in 44 to 67% ACPA negative RA patients.</strong>(<a href="#ref">32</a>)</p>
+            <p>The <strong>other group of novel serological markers</strong> identified by proteomic approach represents antibodies to <strong>PAD4 (peptidyl arginine deiminase 4)</strong> and <strong>BRAF (v raf murine sarcoma viral oncogene homolog B1)</strong> catalytic domain open new avenues to further pinpoint ACPA-negative RA patients.(<a href="#ref">33</a>)</p>
+        </section>
+    </section>
+    <hr>
+    <section id="Mon">
+        <h2>Monitoring Biomarkers</h2>
+        <section id="ESR">
+            <h3>Erythrocyte Sedimentation Rate (ESR) and C-reactive Protein (CRP)</h3>
+            <ul>
+                <li>These biomarkers provide information about disease activity but are not sufficiently predictive for treatment decision-making on their own.(<a href="#ref">34,35</a>)</li>
+            </ul>
+        </section>
+        <section id="TTT">
+            <h3>Treat to Target Approach in RA</h3>
+            <section id="CS">
+                <h4>Composite Scores for Monitoring Disease evolution(<a href="#ref">36</a>):</h4>
+                <ul>
+                    <li>28-joint disease activity score (DAS28)</li>
+                    <li>Simple disease activity index (SDAI)</li>
+                    <li>Clinical disease activity index (CDAI)</li>
+                </ul>
+            </section>
+            But these scores have some degree of subjectivity. (limitation)
+            <p>A multi-biomarker disease activity test has been developed to improve monitoring with specific scores indicating mild, moderate, and severe disease activity being indicated by scores of 1–28, 29–43, and ≥ 44, respectively.(<a href="#ref">37</a>)</p>
+            <figure>
+                <img class="middle" src="https://www.researchgate.net/profile/Michael-Centola/publication/228071313/figure/fig2/AS:278842389352449@1443492614146/Biomarkers-used-to-estimate-each-component-of-the-Disease-Activity-Score-in-28-joints.png" alt="monitoring biomarkers" loading="lazy" height="400" width="600">
+                <figcaption>Image Source: <a href="https://www.researchgate.net/figure/Biomarkers-used-to-estimate-each-component-of-the-Disease-Activity-Score-in-28-joints_fig2_228071313">Research Gate</a></figcaption>
+            </figure>
+        </section>
+    </section>
+    <hr>
+    <section id="PTR">
+        <h2>Biomarkers Predicting Treatment Response</h2>
+        <p>Predictive biomarkers allow clinicians to assess the probability of a treatment response before starting a particular therapy.(<a href="#ref">38</a>)</p>
+        <p>Major therapeutic advances have been made since the introduction of biological agents targeting pivotal mediators in the inflammatory process by inhibiting tumor necrosis factor alpha (TNF-α inhibitors [TNFIs]), IL-1 (anakinra), IL-6 (tocilizumab), T-cell co-stimulation (CD80/CD86, abatacept), or B-lymphocyte antigen (CD20, rituximab).(<a href="#ref">39</a>)</p>
+        <section id="TNF">
+            <h3>Anti-TNF Drugs</h3>
+            <ul>
+                <li>Many pharmacogenetic studies have so far failed to identify any gene polymorphisms associated with a response to TNFIs.(<a href="#ref">38</a>)</li>
+                <li>One meta-analysis investigating the role of the TNF-α promoter-308 G/A polymorphism in the response to anti-TNF therapy showed that patients with the G allele responded better, odds ratio (OR) = 1.87, and a sub-analysis of RA patients confirmed this result.(<a href="#ref">40</a>)</li>
+                <li>A recent systematic bioinformatics analysis evaluating the effect of infliximab on refractory RA found that five genes (FKBP1A, FGF12, ANO1, LRRC31, and AKR1D1) in peripheral blood were associated with efficacy.(<a href="#ref">41</a>)</li>
+                <li>A poor response to anti-TNF drugs is associated with a high level of baseline disability, lack of non-steroidal anti-inflammatory drugs or concomitant methotrexate reduces the likelihood of a response (particularly to etanercept), that smokers are less likely to respond to infliximab, and that women are less likely to achieve remission.(<a href="#ref">42</a>)</li>
+                <li>An older age, prednisolone co-therapy, and poor functional status each predict a poorer response to the first anti-TNF treatment.(<a href="#ref">43</a>)</li>
+            </ul>
+            <figure>
+                <img class="middle" src="https://www.researchgate.net/profile/Sharon-Hutchison-2/publication/7673639/figure/fig1/AS:721169237950465@1548951553224/Possible-modes-of-action-of-anti-TNF-therapies-a-In-the-traditional-view-of.png" alt="Synovial Hypertrophy" loading="lazy" height="400" width="600">
+                <figcaption>Mechanism of action in Rheumatoid Arthritis</figcaption>
+                <figcaption>Image Source: <a href="https://www.researchgate.net/figure/Possible-modes-of-action-of-anti-TNF-therapies-a-In-the-traditional-view-of_fig1_7673639">Research Gate</a></figcaption>
+            </figure>
+        </section>
+        <section id="Rit">
+            <h3>Rituximab</h3>
+            <ul>
+                <li>Studies have found that RF-positive patients respond better to rituximab than RF-negative patients.(<a href="#ref">44</a>)</li>
+                <li>Baseline positivity for circulating ACPA, particularly immunoglobulin M (IgM), and high levels of infiltrating CD20+ and CD79a+CD20− B-cells in a rheumatoid synovium predicted an incomplete response after B-cell depletion with rituximab.(<a href="#ref">45</a>)</li>
+                <li>The predictors of a better response to rituximab include lower levels of type I interferon (IFN-γ), lower serum levels of B-cell activating factor (BAFF) or B lymphocyte stimulator (BLyS), and a favorable Fc γ receptor III (Fc γ RIII) genotype.(<a href="#ref">46</a>)</li>
+                <li>By investigating the polymorphisms in the promoter region of the BLyS gene, found that the TTTT BLyS promoter haplotype seemed to be significantly associated with a response to rituximab only in the subset of patients who were seropositive for RF and/or ACPAs and had previously failed on another anti-TNF drug.(<a href="#ref">46</a>)</li>
+                <li>158VV Fc gamma receptor 3A genotype is associated with a response to rituximab.(<a href="#ref">47</a>)</li>
+            </ul>
+        </section>
+        <section id="Aba">
+            <h3>Abatacept</h3>
+            <ul>
+                <li>A higher retention rate is associated with anti-CCPA positivity.</li>
+                <li>Anti-CCPA positivity was associated with a better response to abatacept regardless of disease activity.(<a href="#ref">48</a>)</li>
+                <li>Prognostic factors for abatacept retention include anti-CCPA positivity and fewer prior anti-TNF failures, but not RF positivity.</li>
+            </ul>
+            <figure>
+                <img class="middle" src="https://www.researchgate.net/profile/Jill-Augustine/publication/266053599/figure/fig1/AS:669498659049501@1536632327975/mmunopathology-of-rheumatoid-arthritis-and-mechanism-of-abatacept-in-the-treatment-of.jpg" alt="Abatacept" loading="lazy" height="250" width="400">
+                <figcaption>Image Source: <a href="https://www.researchgate.net/figure/mmunopathology-of-rheumatoid-arthritis-and-mechanism-of-abatacept-in-the-treatment-of_fig1_266053599">Research Gate</a></figcaption>
+            </figure>
+        </section>
+        <section id="Toc">
+            <h3>Tocilizumab</h3>
+            <ul>
+                <li>Patients treated with tocilizumab as first- or second-line biological treatment found that the predictors increasing the likelihood of clinical remission after 3 months included a baseline ESR of > 30 mm/h, baseline CRP levels of > 10 mg/L, presence of extra-articular manifestations, and lower hemoglobin concentrations.</li>
+                <li>The factors decreasing the likelihood consisted of higher hemoglobin concentrations, a higher baseline DAS28-ESR score, and a higher number of previous DMARDs (disease-modifying anti-rheumatic drugs) and biological therapies.(<a href="#ref">49</a>)</li>
+                <li>There was no relationship with neutrophil counts or RF or anti-CCPA positivity.</li>
+            </ul>
+        </section>
+    </section>
+    <hr>
+    <section id="FB">
+        <h2>Future Biomarkers</h2>
+        <p>Advances in "omic" technologies (genomic, transcriptomic, proteomic) are generating large datasets that require robust analysis for identifying new biomarkers.</p>
+        <p>Tissue-based biomarkers, although less convenient, provide valuable information about the disease but require non-invasive collection methods.(<a href="#ref">4</a>)</p>
+        <p>RA and other rheumatic diseases are not driven by single gene mutations, single or multiple gene biomarkers are not predictively useful.</p>
+        <p>Microbiome plays an important role in rheumatic diseases such as RA, and the microbial signatures identified by means of next-generation sequencing may lead to a new promising class of biomarkers.</p>
+        <section id="miRNA">
+            <h3>miRNAs</h3>
+            <ul>
+                <li>Among miRNAs, miR-146a is expressed by activated T cells (in which it suppresses apoptosis and IL-2 production), and its expression in the synovium is associated with increased RA disease activity</li>
+                <li>Another miRNA biomarker is miR-155, which induces the development of Th1 and Th17 cells, and whose expression is increased in the peripheral blood mononuclear cells of RA patients.(<a href="#ref">4</a>)</li>
+            </ul>
+            <figure>
+                <img  class="middle"src="https://www.researchgate.net/publication/372370965/figure/fig1/AS:11431281186215654@1693834553746/Schematic-overview-of-miRNAs-in-RA-FLS-cells-miRNAs-are-involved-in-targeting-signaling.png" alt="newer miRna" loading="lazy" width="600" height="400">
+                <figcaption>Image Source: <a href="https://www.researchgate.net/figure/Schematic-overview-of-miRNAs-in-RA-FLS-cells-miRNAs-are-involved-in-targeting-signaling_fig1_372370965">Research Gate</a></figcaption>
+            </figure>
+        </section>
+    </section>
+    <hr>
+    <section id="Con">
+        <h2>Conclusions</h2>
+        <p>Biomarkers play a critical role in guiding the clinical and therapeutic management of RA, helping to predict disease development, improve diagnosis, provide prognostic information, and assess treatment responses and outcomes. This comprehensive approach aims to enhance patient care and reduce medical costs.</p>
+        <p>Simultaneous assessment of RFs along with various ACPA tests, and presumably with novel serological biomarkers, may be used in screening at the primary care level and may help to identify patients with early disease in subjects with symptoms without clinical arthritis and in those with undifferentiated arthritis or where the clinical judgment is doubtful.
+            Combining positive US Doppler signal with clinical joint assessment can significantly improve certainty of diagnosis of RA in seronegative patients.</p>
+            <p>
+                By revealing subclinical synovitis and radiographically undetected bone erosions, RA can be carefully explored with US especially in patients with early undifferentiated arthritis
+                Novel serological biomarkers along with joint ultrasound may provide additional benefit in diagnosis of RA, particularly in those with early and ACPA negative disease(<a href="#ref">50</a>)
+            </p>
+    </section>
+    <section>
+        <h2 id="ref">References</h2>
+            <nav class="ref">
+                <li>Smolen JS, Aletaha D, McInnes IB. Rheumatoid arthritis. Lancet 2016; S0140
+                    6736 (16): 30173-8. </li>
+                <li>Gavrilă BI, Ciofu C, Stoica V. Biomarkers in rheumatoid arthritis, what is new? 
+                    J Med Life 2016; 9: 144-8.</li>
+                <li>Biomarkers Definitions Working Group. Biomarkers and surrogate endpoints: 
+                    preferred definitions and conceptual framework. Clin Pharmacol Ther 2001; 
+                    69 (3): 89-95.</li>
+                <li>Robinson WH, Mao R. Biomarkers to guide clinical therapeutics in rheu- 
+                    matology? Curr Opin Rheumatol 2016; 28: 168-75. </li>
+                <li>Robinson WH1, Lindstrom TM, Cheung RK, Sokolove J. Mechanistic bio- 
+                    markers for clinical decision making in rheumatic diseases. Nat Rev Rheumatol 
+                    2013; 9: 267-76. </li>
+                <li>Colebatch AN, Edwards CJ, Østergaard M, van der Heijde D, Balint PV,
+                    D'Agostino MA, Forslind K, Grassi W, Haavardsholm EA, Haugeberg G, Jurik
+                    AG, Landewé RB, Naredo E, O'Connor PJ, Ostendorf B, Potocki K, Schmidt
+                    WA, Smolen JS, Sokolovic S, Watt I, Conaghan PG: EULAR
+                    recommendations for the use of imaging of the joints in the clinical
+                    management of rheumatoid arthritis. Ann Rheum Dis 2013, 72:804–814.</li>
+                <li>Filippucci E, Iagnocco A, Salaffi F, Cerioni A, Valesini G, Grassi W: Power
+                    Doppler sonography monitoring of synovial perfusion at wrist joints in
+                    rheumatoid patients treated with adalimumab. Ann Rheum Dis 2006,
+                    65:1433–1437.</li>
+                <li>Wakefield RJ, D'Agostino MA, Naredo E, Buch MH, Iagnocco A, Terslev L,
+                    Ostergaard M, Backhaus M, Grassi W, Dougados M, Burmester GR, Saleem B,
+                    de Miguel E, Estrach C, Ikeda K, Gutierrez M, Thompson R, Balint P, Emery P:
+                    After treat-to-target: can a targeted ultrasound initiative improve RA
+                    outcomes? Postgrad Med J 2012, 88:482–486.</li>
+                <li>Freeston JE, Wakefield RJ, Conaghan PG, Hensor EM, Stewart SP, Emery P: A
+                    diagnostic algorithm for persistence of very early inflammatory arthritis:
+                    the utility of power Doppler ultrasound when added to conventional
+                    assessment tools. Ann Rheum Dis 2010, 69:417–419.</li>
+                <li>Scirè CA, Montecucco C, Codullo V, Epis O, Todoerti M, Caporali R:
+                    Ultrasonographic evaluation of joint involvement in early rheumatoid
+                    arthritis in clinical remission: power Doppler signal predicts short-term
+                    relapse. Rheumatology 2009, 48:1092–1097.</li>
+                <li>Nielsen SF, Bojesen SE, Schnohr P, Nordestgaard BG. Elevated rheumatoid 
+                    factor and long term risk of rheumatoid arthritis: a prospective cohort study. 
+                    BMJ 2012; 345: e5244. </li>
+                <li>Jónsson T, Arinbjarnarson S, Thorsteinsson J, et al. Raised IgA rheumatoid 
+                    factor (RF) but not IgM RF or IgG RF is associated with extra-articular 
+                    manifestations in rheumatoid arthritis. Scand J Rheumatol 1995; 24 (6): 372-5.</li>
+                <li>Castro C, Gourley M. Diagnostic testing and interpretation of tests for 
+                    autoimmunity. J Allergy Clin Immunol 2010; 125: 238-S47.</li>
+                <li>Wolfe F, Cathey MA, Roberts FK. The latex test revisited. Rheumatoid factor 
+                    testing in 8,287 rheumatic disease patients. Arthritis Rheum 1991; 34: 951-60.</li>
+                <li>Nielen MM, van Schaardenburg D, Reesink HW, et al. Specific autoantibodies 
+                    precede the symptoms of rheumatoid arthritis: a study of serial measurements 
+                    in blood donors. Arthritis Rheum 2004; 50: 380-6.</li>
+                <li>Hassfeld W, Steiner G, Hartmuth K, Kolarz G, Scherak O, Graninger W, Thumb N,
+                    Smolen J: Demonstration of a new antinuclear antibody (anti-RA 33) that is
+                    highly specific for rheumatoid arthritis. Arthritis Rheum 1989, 32:1515–1520.</li>
+                <li>Després N, Boire G, Lopez-Longo FJ, Ménard HA: The Sa system: a novel
+                    antigen-antibody system specific for rheumatoid arthritis. J Rheumatol
+                    1994, 21:1027–1033.</li>
+                <li>De Rooy DP, Willemze A, Mertens B, Huizinga TW, Van der Helm-van Mil AH:
+                    Can anti-cyclic citrullinated peptide antibody-negative RA be subdivided
+                    into clinical subphenotypes? Arthritis Res Ther 2011, 13:R180.</li>
+                <li>Szodoray P, Szabó Z, Kapitány A, Gyetvai A, Lakos G, Szántó S, Szücs G,
+                    Szekanecz Z: Anti-citrullinated protein/peptide autoantibodies in
+                    association with genetic and environmental factors as indicators of
+                    disease outcome in rheumatoid arthritis. Autoimmun Rev 2010, 9:140–143.</li>
+                <li>van Venrooij WJ, van Beers JJ, Pruijn GJ: Anti-CCP antibody, a marker for the
+                    early detection of rheumatoid arthritis. Ann N Y Acad Sci 2008, 1143:268–285.</li>
+                <li> Soós L, Szekanecz Z, Szabó Z, Fekete A, Zeher M, Horváth IF, Dankó K,
+                    Kapitány A, Végvári A, Sipka S, Szegedi G, Lakos G: Clinical evaluation of
+                    anti-mutated citrullinated vimentin by ELISA in rheumatoid arthritis.
+                    J Rheumatol 2007, 34:1658–1663.</li>
+                <li>van Jaarsveld CH, ter Borg EJ, Jacobs JW, Schellekens GA, Gmelig-Meyling
+                    FH, van Booma-Frankfort C, de Jong BA, van Venrooij WJ, Bijlsma JW: The
+                    prognostic value of the antiperinuclear factor, anti-citrullinated peptide
+                    antibodies and rheumatoid factor in early rheumatoid arthritis. Clin Exp
+                    Rheumatol 1999, 1:689–697.</li>
+                <li>Vincent C, Nogueira L, Clavel C, Sebbag M, Serre G: Autoantibodies to
+                    citrullinated proteins: ACPA. Autoimmunity 2005, 38:17–24.</li>
+                <li>Debaugnies F, Servais G, Badot V, Noubouossie D, Willems D, Corazza F:
+                    Anti-cyclic citrullinated peptide antibodies: a comparison of different
+                    assays for the diagnosis of rheumatoid arthritis. Scand J Rheumatol 2013,
+                    42:108–114.</li>
+                <li>Caro-Oleas JL, Fernández-Suárez A, Reneses Cesteros S, Porrino C, Núñez-Roldán
+                    A, Wichmann SI: Evaluation of third generation anti-CCP antibodies in the
+                    diagnosis of rheumatoid arthritis from undifferentiated polyarthritis after
+                    4 years of follow-up. Clin Exp Rheumatol 2008, 26:461–463.</li>
+                <li>Szekanecz Z, Szabó Z, Zeher M, Soós L, Dankó K, Horváth I, Lakos G:
+                    Superior performance of the CCP3.1 test compared to CCP2 and MCV in
+                    the rheumatoid factor-negative RA population. Immunol Res 2013,
+                    56:439–443.</li>
+                <li>van Venrooij WJ, van Beers JJ, Pruijn GJ: Anti-CCP antibodies: the past, the
+                    present and the future. Nat Rev Rheumatol 2011, 7:391–398.</li>
+                <li>Rantapää-Dahlqvist S, de Jong BA, Berglin E, Hallmans G, Wadell G, Stenlund
+                    H, Sundin U, van Venrooij WJ: Antibodies against cyclic citrullinated
+                    peptide and IgA rheumatoid factor predict the development of
+                    rheumatoid arthritis. Arthritis Rheum 2003, 48:2741–2749.</li>
+                <li>Shi J, Knevel R, Suwannalai P, van der Linden MP, Janssen GM, van Veelen
+                    PA, Levarht NE, van der Helm-van Mil AH, Cerami A, Huizinga TW, Toes RE,
+                    Trouw LA: Autoantibodies recognizing carbamylated proteins are present
+                    in sera of patients with rheumatoid arthritis and predict joint damage.
+                    Proc Natl Acad Sci U S A 2011, 108:17372–17377.</li>
+                <li>Shi J, van de Stadt LA, Levarht EW, Huizinga TW, Hamann D, van
+                    Schaardenburg D, Toes RE, Trouw LA: Anti-carbamylated protein
+                    (anti-CarP) antibodies precede the onset of rheumatoid arthritis.
+                    Ann Rheum Dis 2014, 73:780–783.</li>
+                <li>Shi J, van de Stadt LA, Levarht EW, Huizinga TW, Toes RE, Trouw LA, van
+                    Schaardenburg D: Anti-carbamylated protein antibodies are present in
+                    arthralgia patients and predict the development of rheumatoid arthritis.
+                    Arthritis Rheum 2013, 65:911–915.</li>
+                <li>Somers K, Geusens P, Elewaut D, De Keyser F, Rummens JL, Coenen M,
+                    Blom M, Stinissen P, Somers V: Antigens identified by phage display,
+                    Novel autoantibody markers for early and seronegative rheumatoid
+                    arthritis. J Autoimmun 2011, 36:33–46.</li>
+                <li>Trouw LA, Mahler M: Closing the serological gap: promising novel biomarkers
+                    for the early diagnosis of rheumatoid arthritis. Autoimmun Rev 2012, 12:318–322.</li>
+                <li>Aletaha D, Neogi T, Silman, et al. 2010 rheumatoid arthritis classification 
+                    criteria: an American College of Rheumatology/European League Against 
+                    Rheumatism collaborative initiative. Ann Rheum Dis 2010; 69: 1580-8.</li>
+                <li>Sokka T, Pincus T. Erythrocyte sedimentation rate, C-reactive protein, or 
+                    rheumatoid factor are normal at presentation in 35%–45% of patients with 
+                    rheumatoid arthritis seen between 1980 and 2004: analyses from Finland and 
+                    the United States. J Rheumatol 2009; 36: 1387-90.</li>
+                <li>Smolen JS, Breedveld FC, Burmester GR, et al. Treating rheumatoid arthritis to 
+                    target: 2014 update of the recommendations of an international task force. Ann 
+                    Rheum Dis 2016; 75 (1): 3-15.</li>
+                <li>Centola M, Cavet G, Shen Y, Ramanujan S, et al. Development of a multi-biomarker 
+                    disease activity test for rheumatoid arthritis. PLoS One 2013; 8 (4): e60635.</li>
+                <li>Isaacs JD, Ferraccioli G. The need for personalised medicine for rheumatoid 
+                    arthritis. Ann Rheum Dis 2011; 70: 4-7.</li>
+                <li>Smolen JS, Aletaha D, McInnes IB. Rheumatoid arthritis. Lancet. 2016; 388 
+                    (10055): 2023-8.</li>
+                <li>Zeng Z, Duan Z, Zhang T, et al. Association between tumor necrosis factor-α 
+                    (TNF-α) promoter -308 G/A and response to TNF-α blockers in rheumatoid 
+                    arthritis: a meta-analysis. Mod Rheumatol 2013; 23 (3): 489-95.</li>
+                <li>Huang QL, Zhou FJ, Wu CB, et al. circulating biomarkers for predicting 
+                    infliximab response in rheumatoid arthritis: a systematic bioinformatics 
+                    analysis. Med Sci Monit 2017; 23: 1849-55.</li>
+                <li>Hyrich KL, Watson KD, Silman AJ, Symmons DP. British Society for Rheumatology 
+                    Biologics Register. Predictors of response to anti-TNF-alpha therapy among patients 
+                    with rheumatoid arthritis: results from the British Society for Rheumatology 
+                    Biologics Register. Rheumatology (Oxford) 2006; 45 (12): 1558-65.</li>
+                <li>Hetland ML, Christensen IJ, Tarp U, et al. Direct comparison of treatment 
+                    responses, remission rates, and drug adherence in patients with rheumatoid 
+                    arthritis treated with adalimumab, etanercept, or infliximab: results from eight 
+                    years of surveillance of clinical practice in the nationwide Danish DANBIO 
+                    registry. Arthritis Rheum 2010; 62 (1): 22-32.</li>
+                <li>Benucci M, Manfredi M, Puttini PS, Atzeni F. Predictive factors of response 
+                    to rituximab therapy in rheumatoid arthritis: what do we know today? 
+                    Autoimmun Rev 2010; 9 (12): 801-3. </li>
+                <li>Dass S, Rawstron AC, Vital EM, Henshaw K, McGonagle D, Emery P. Highly 
+                    sensitive B cell analysis predicts response to rituximab therapy in rheumatoid 
+                    arthritis. Arthritis Rheum 2008; 58 (10): 2993-9. </li>
+                <li>Fabris M, Quartuccio L, Vital E, et al. The TTTT B lymphocyte stimulator 
+                    promoter haplotype is associated with good response to rituximab therapy in 
+                    seropositive rheumatoid arthritis resistant to tumor necrosis factor blockers. 
+                    Arthritis Rheum 2013; 65 (1): 88-97. </li>
+                <li>Quartuccio L, Fabris M, Pontarini E, et al. The 158VV Fcgamma receptor 3A 
+                    genotype is associated with response to rituximab in rheumatoid arthritis: 
+                    results of an Italian multicentre study. Ann Rheum Dis 2014; 73 (4): 716-21. </li>
+                <li>Gottenberg JE1, Ravaud P, Cantagrel A, et al. Positivity for anti-cyclic citrullinated 
+                    peptide is associated with a better response to abatacept: data from the ‘Orencia 
+                    and Rheumatoid Arthritis’ registry. Ann Rheum Dis 2012; 71 (11): 1815-19.</li>
+                <li>Narváez J, Magallares B, Díaz Torné C, et al. Predictive factors for induction of 
+                    remission in patients with active rheumatoid arthritis treated with tocilizumab 
+                    in clinical practice. Semin Arthritis Rheum 2016; 45 (4): 386-90.</li>
+                <li>Grassi W, Filippucci E: Rheumatoid arthritis: diagnosis of RA–we have a
+                    dream. Nat Rev Rheumatol 2013, 9:202–204.</li>
+            </nav>
+    </section>
+    <footer>
+    <hr>
+    &lt;&lt;&lt; <a class="btn1" href="index.html">Back to previous page</a> &gt;&gt;&gt;
+    <hr>
+    </footer>
+    <a href="#Bio"><button onclick="topFunction()" id="topBtn" title="Go to top">Top</button></a>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // Back to top button
+        var topButton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
+</body>
+</html>

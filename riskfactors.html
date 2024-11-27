@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Risk Factors For RA</title>
+    </head>
+    <style>
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin: 20px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: fit-content;
+        }
+
+        div{
+            transition: all 1s;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #162b3b;
+            color: #FFFFFF;
+        }
+        li{
+            list-style: none;
+            margin: 0 10px 0 0;
+            color:white;
+        }
+        .header-logo{
+            
+            background-color: #0C1821;
+            border-radius: 10px;
+            border-bottom:5px solid #ffffff;
+            
+        }
+        .header-list {
+            display: flex;
+            justify-content: space-between;
+            background-color: #052241;
+            border-radius: 20px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .header-list1 {
+            list-style-type: disc;
+            padding: 0;
+            margin: 0;
+            display: flex;  
+        }
+
+        .header-list1 > li {
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-list2,
+        .header-list3 {
+            list-style-type: disc;
+            padding-left: 20px; 
+            margin: 0;
+            display:none;
+        }
+
+        li.btn:hover > ul.header-list2,
+        li.btn:hover > ul.header-list3 {
+            display: block;
+        }
+
+
+        .header-list1 li,
+        .header-list2 li{
+            list-style-type: disc;
+        }
+
+        .footer{
+            border: 2px solid #0C1821;
+            background-color: #052241;
+            border-radius: 20px;
+            width: auto;
+            padding: 0.5em;
+            height: 75px;
+            text-align:end;
+        }
+        .footer-logo{
+            float:left;
+        }
+        .footer-list{
+            float:right;
+            position: relative;
+            top:-5px;
+            right:10px;
+        }
+
+        h1{
+            font-size: fit-content;
+            color: #FFFFFF;
+            text-shadow:2px 2px 5px rgb(219, 48, 48);
+            text-align:center;
+            position:relative;
+            top:5px;
+        }
+        h2{
+            border-bottom: 3px solid whitesmoke;
+            text-align: center;
+            font-size: 1.5rem;
+            color: white;
+            border-radius: 20px;
+            background-color: #0C1821;
+            width: auto;
+        }
+        h3{
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        .btn1{
+            box-shadow: 10px rgb(133, 165, 175);
+        }
+        .btn1:active{
+            box-shadow: none;
+            position: relative;
+            top:7px;
+            left:10px;
+        }
+        a{
+            text-decoration:underline;
+            color:white;
+        }
+        a:hover{
+            color:rgb(232, 89, 89);
+        }
+     
+        h2{
+            position: relative;
+            top:10px;
+        }
+        h3{
+            position: relative;
+        }
+        .img1,.img2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .cap2{
+            text-align: center;
+        }
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color:  #061727;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #topBtn:hover {
+            background-color: #555;
+        }
+        .footer ol {
+            padding-left: 20px;
+            color: #ffffff;
+        }
+
+        .footer a {
+            color: #90caf9;
+            text-decoration: underline;
+        }
+
+        .black li{
+            list-style-type: decimal;
+            color:black;
+            font-style: italic;
+        }
+
+
+        
+        @media(max-width: 670px){
+            body, html {
+                overflow-x: hidden;
+            }
+
+            .header-list{
+                height:fit-content;
+                text-align: left;
+                position: relative;
+            }
+            .header-list1{
+                margin-right: 10px;
+                position: relative;
+                display: block;
+
+            }
+            .Epig{
+                display:block;
+            }
+            .Epig1{
+                width: 100%;
+            }
+            .footer-list{
+                text-align:center;
+                position: relative;
+                left:-50px;
+            }
+            .footer{
+                height:100px;
+                }
+        }
+        @media (min-width: 670px) and (max-width: 1024px) {
+            body, html {
+                overflow-x: hidden;
+            }
+
+            .header-list{
+                height:fit-content;
+                text-align: left;
+                position: relative;
+            }
+            .header-list1{
+                margin-right: 10px;
+                position: relative;
+                display: block;
+
+            }
+            .Epig{
+                display:block;
+            }
+            .Epig1{
+                width: 100%;
+            }
+            .footer-list{
+                position: relative;
+                top:-10px;
+            }
+        }
+        @media (min-width: 1025px) and (max-width: 1380px) {
+            body, html {
+                overflow-x: hidden;
+            }
+
+   
+            .header-list {
+                display: flex;
+                justify-content: space-between;
+                background-color: #052241;
+                border-radius: 20px;
+                padding: 10px;
+                position: relative;
+                height: fit-content;
+            }
+
+            .header-list1 {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;  
+            }
+
+            .header-list1 > li {
+                margin-right: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .header-list2,
+            .header-list3 {
+                list-style-type: disc;
+                padding-left: 20px; 
+                margin: 0;
+            }
+
+            .header-list1 li,
+            .header-list2 li{
+                list-style-type: disc;
+            }
+            .Epig{
+                display:block;
+            }
+            .Epig1{
+                width: 100%;
+            }
+            .footer-list{
+                position: relative;
+                top:-10px;
+            }
+            
+        }
+    </style>
+    <body>
+        <div class="header" id="RF">
+            <div class="header-logo">
+                <h1>Risk Factors For Rheumatoid Arthritis
+                </h1>
+            </div>
+        </div>
+        <div class="header-list">
+            <div class="header-list1">
+                <ul class="header-list1">
+                    <li class="btn">
+                        <a class="btn1" href="#Host">Host Factors</a>
+                        <ul class="header-list2">
+                            <li class="btn1"><a href="#Gene">Genetic Factors</a></li>
+                            <li class="btn1"><a href="#Epig">Epigenetic Factors</a></li>
+                            <li class="btn1"><a href="#Horm">Homonal,Reproductive and Neuroendocrine Factors</a></li>
+                            <li class="btn1"><a href="#Como">Comorbid Factors</a></li>
+                        </ul>
+                    </li>
+                    <li class="btn">
+                        <a class="btn1" href="#Envi">Environmental Factors</a>
+                        <ul class="header-list3">
+                            <li class="btn1"><a href="#Smoke">Smoking and Other Airborne Exposures</a></li>
+                            <li class="btn1"><a href="#Micro">Microbiota and Infectious Agents</a></li>
+                            <li class="btn1"><a href="#Diet">Dietary Factors</a></li>
+                            <li class="btn1"><a href="#Socio">Socioeconomic Factors</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="main-head">
+            <section id="Background">
+                <h2>Background</h2>
+            </section>
+        </div>
+                <p>Rheumatoid arthritis (RA) is the most common systemic inflammatory rheumatic disease. It is associated with significant burden at the patient and societal level. RA is a multifactorial disease, wherein complex interactions between host and environmental factors determine the overall risk of disease susceptibility, persistence and severity. Rheumatoid arthritis (RA) is a chronic immune-mediated multisystemic disease that mainly localizes to the joints. It is a systemic inflammatory rheumatic disease (<a href="#ref">2,3</a>), associated with considerable morbidity and disability, as well as increased mortality RA is a multifactorial disease, with a complex interplay between the host and the environment determining the overall risk of disease susceptibility, persistence and severity (<a href="#ref">4,5</a>). Risk factors for developing RA can be generically divided into host- and environment-related (<a href="#fig">figure</a>) . Host factors that have been associated with RA development may be further grouped into genetic; epigenetic; hormonal, reproductive and neuroendocrine; and comorbid host factors. In turn, environmental risk factors include smoking and other airborne exposures; microbiota and infectious agents; diet; and socioeconomic factors.
+                </p>
+                <figure id="fig">
+                    <img class="img1" src="https://www.frontiersin.org/files/Articles/689698/fmed-08-689698-HTML/image_m/fmed-08-689698-g001.jpg">
+                    <figcaption class="cap2">Image Source: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8661097/">PMC</a></figcaption>
+                </figure>
+        <hr>
+        <div class="main-head">
+            <section id="Host">
+                <h2>1. HOST FACTORS</h2>
+            </section>
+        </div>
+            <section id="Gene">
+                <h3>a) Genetic Factors</h3>
+                <div class="Gen">
+                    <table>
+                        <tr>
+                            <th>Genetic Factor</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Over 100 loci</td>
+                            <td>Associated with increased RA risk in trans-ethnic populations. (<a href="#ref">6,7</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>Major histocompatibility complex (MHC) locus</td>
+                            <td>First to be identified and remains the most studied region, accounting for around a third of the disease genetic susceptibility.(<a href="#ref">8</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>Human leukocyte antigen (HLA) loci</td>
+                            <td>HLA-DRB1 strongly associated with RA in most populations. Risk varies according to specific alleles and ancestry.(<a href="#ref">9</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>Shared epitope (SE)</td>
+                            <td>Sequence of five amino acids in residues 70–74 in the DRß1-chain, associated with ACPA-positive RA.(<a href="#ref">9-13</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>Non-HLA genes</td>
+                            <td>More than 100 risk loci validated across multiple populations, most related to immune cell function.(<a href="#ref">6,7,14,15</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>SNP in the PTPN22 gene</td>
+                            <td>Encodes a protein tyrosine phosphatase involved in antigen receptor signaling of B and T cells, associated with seropositive RA.(<a href="#ref">16</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>Non-HLA Genetic Variants</td>
+                            <td>Variants in genes like CTLA4, STAT4, TNFAIP3, TRAF1-C5, IL2/21, CD40, IL2RA/IL2RB, IL6R, and RNASET2 associated with RA.(<a href="#ref">17-26</a>)</td>
+                        </tr>
+                    </table>
+                    <figure>
+                        <img class="img2" src="https://www.researchgate.net/publication/332472712/figure/fig2/AS:748846254682114@1555550268159/HLA-DRB1-amino-acid-positions-mediating-risk-and-protection-in-PD-Position-11-pink-is.jpg" alt="genes" loading="lazy" height="316" width="479">
+                        <figcaption class="cap2"><p><strong>These positions within the HLA-DRB1 molecule are known to play a role in the susceptibility to RA</strong></p><p>Image Source: <a href="https://www.pnas.org/doi/10.1073/pnas.1821778116">PNAS</a></p></figcaption>
+                    </figure>
+                </div>
+                <hr>
+                <section id="Epig">
+                    <h3>b) Epigenetic Factors</h3>
+                <div class="Epig">
+                    <div class="Epig1">
+                        <table>
+                            <tr>
+                                <th>Epigenetic Factor</th>
+                                <th>Details</th>
+                            </tr>
+                            <tr>
+                                <td>DNA Methylation</td>
+                                <td>Differential DNA methylation signatures in Peripheral Blood Mononuclear Cells and Fibro-blast Like Synoviocytes of RA patients, including hypo- or hypermethylation of specific promoter regions, which lead to an increase or decrease, respectively, in the transcription of pro-(9e.g. IL-6,IL-6R,CXCL12,CD40L) or anti-inflammatory[e.g.,CTLA4 in Treg cell] genes.(<a href="#ref">27-30</a>)</td>
+                            </tr>
+                            <tr>
+                                <td>Histone Modification</td>
+                                <td>Increased expression of histone deacetylases (HDAC) in RA synovial tissue, HDAC inhibitors suppress inflammation[IL-6 and type-I interferon(IFN) responses].(<a href="#ref">31-36</a>)</td>
+                            </tr>
+                            <tr>
+                                <td>Non-coding RNA</td>
+                                <td>Includes microRNAs (miRNAs like miRNA-155, miRNA-146a, miRNA-223 and miRNA124a) and long non-coding RNAs (lncRNAs like HOTAIR) that regulate gene transcription and are differentially expressed in RA.(<a href="#ref">32,37-44</a>)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <section id="Horm">
+                    <h3>c) Hormonal, Reproductive and Neuroendocrine Factors</h3>
+                    <div class="Horm">
+                        <table>
+                            <tr>
+                                <th>Factor</th>
+                                <th>Details</th>
+                            </tr>
+                            <tr>
+                                <td>Hormonal Effects</td>
+                                <td>Anti-inflammatory effects of progesterone, estrogens and androgens decreased in RA patients.(<a href="#ref">45,46</a>)</td>
+                            </tr>
+                            <tr>
+                                <td>Reproductive Factors</td>
+                                <td>Factors like breastfeeding, pregnancy loss, early menarche, age at first pregnancy, OCs, and hormone replacement therapy influence development of RA.(<a href="#ref">47,48</a>)</td>
+                            </tr>
+                            <tr>
+                                <td>Situations associated with decline in estrogen load</td>
+                                <td>Such as early menopause, post-menopausal stage, puerperium and anti-estrogen agents and aromatase inhibitors have been identified as risk factors of RA(<a href="#ref">49-53</a>)</td>
+                            </tr>
+                            <tr>
+                                <td>Pre-eclampsia</td>
+                                <td>Fetal Microchimerism [exchange and persistence of fetal cells in maternal circulation] increased in women with RA and pre-eclampsia, it is thought to mediate maternal acquisition of the SE (<a href="#ref">54-56</a>)</td>
+                            </tr>
+                            <tr>
+                                <td>Birth Weight</td>
+                                <td>Contribute to RA through downregulation of the hypothalamic-pituitary-adrenal(HPA) axis leading to decreased cortisol levels and responsiveness.(<a href="#ref">57-59</a>)</td>
+                            </tr>
+                            <tr>
+                                <td>Neuroendocrine System</td>
+                                <td>Disturbances in the neuroendocrine system and its relation with the immune system have been implicated in RA(<a href="#ref">60,61</a>)</td>
+                            </tr>
+                            <tr>
+                                <td>Stress</td>
+                                <td>Effect of psychological  stress, including childhood traumatic stress and post-traumatic stress disorder leads to RA(<a href="#ref">62-67</a>)</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamin D</td>
+                                <td>Endocrine mediator with immunomodulatory properties, reduced vitamin D levels common in RA patients.(<a href="#ref">68,69</a>)</td>
+                            </tr>
+                            <tr>
+                                <td>Obesity</td>
+                                <td>Positive association with RA, stronger in women and potentially seronegative disease.(<a href="#ref">70,71</a>)</td>
+                            </tr>
+                        </table>
+                    </div>
+                <hr>
+                <section id="Como">
+                    <h3>d) Comorbid Host Factors</h3>
+                    <table>
+                        <tr>
+                            <th>Comorbid Factor</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Psychiatric Conditions</td>
+                            <td>Conditions like PTSD, depression, and schizophrenia increase RA risk.(<a href="#ref">64,65,67,72-79</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>Atopy and Allergic Diseases</td>
+                            <td>Includes asthma, allergic rhinitis, atopic dermatitis, related to Th2-dependent pathways.(<a href="#ref">80-84</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>Respiratory Diseases</td>
+                            <td>Both acute and chronic respiratory diseases associated with increased RA risk.(<a href="#ref">83,85-88</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>Non-rheumatological Immune-mediated Diseases</td>
+                            <td>Includes autoimmune thyroid disease, type 1 diabetes mellitus, alopecia areata, vitiligo, inflammatory bowel disease, and multiple sclerosis.(<a href="#ref">89-95</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>Sleep Disorders</td>
+                            <td>Disorders like obstructive sleep apnea and non-apnea sleep disorders linked to increased RA risk.(<a href="#ref">96-99</a>)</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <hr>
+        <div class="main-head">
+            <section id="Envi">
+                <h2>2. ENVIRONMENTAL FACTORS</h2>
+            </section>
+        </div>
+            <section id="Smoke">
+                <h3>a) Smoking and Other Airborne Exposures</h3>
+                <table>
+                    <tr>
+                        <th>Exposure</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Smoking</td>
+                        <td>Established as a major risk factor, contributes to 20-25% of overall RA risk, especially ACPA-positive RA(35%). Responsible for insitu protein citrullination (conversion of arginine to citrulline) in the lungs(<a href="#ref">100-105</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Passive Smoking</td>
+                        <td>Possible link with parental, childhood and adult passive exposure to cigarette smoke can increase risk of RA (<a href="#ref">106-110</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Silica</td>
+                        <td>Common occupational exposure associated with RA, especially ACPA-positive RA, with additive effect when combined with smoking.(<a href="#ref">111-114</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Textile Dust</td>
+                        <td>Associated with RA, interaction with HLA-SE presence increases risk.(<a href="#ref">115</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Inorganic Dust</td>
+                        <td>Asbestos, Cement were also linked to RA(<a href="#ref">116</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Ambient Air Pollution</td>
+                        <td>Not consistently linked to RA risk.(<a href="#ref">117</a>)</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <section id="Micro">
+                <h3>b) Microbiota and Infectious Agents</h3>
+                <table>
+                    <tr>
+                        <th>Agent</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Periodontitis</td>
+                        <td>Results from dysbiosis of the oral microbiota and has been associated with increased RA risk, bidirectional relationship, shared genetic and environmental risk factors.(<a href="#ref">118,119</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Periodontitis Agents</td>
+                        <td>Porphyromonas gingivalis is the major cause of periodontitis, associated with RA through chronic citrullination of proteins.(<a href="#ref">120</a>). Aggregatibacter actinomycetemcomitans directly implicated in RA through different mechanisms involving neutrophil-mediated citullination.(<a href="#ref">121</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Gut Microbiota</td>
+                        <td>Intestinal dysbiosis linked to RA, with decreased microbial diversity (Bacteroides spp. and Haemophilus spp.) and specific bacterial enrichment (Prevotella copri(can generate RA-specific Th1 and Th17 responses), Lactobacillus spp. and Clostridium spp.).(<a href="#ref">122-129</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>External Infectious Agents</td>
+                        <td>Common agents include Epstein-Barr virus(EBV), cytomegalovirus(CMV), parvovirus B19, rubella virus, mycoplasma,Proteus mirabilis, Escherichia coli, hepatitis B/C virus, Borrelia burdoferi(Lyme's disease), Chiikungunya virus, and others linked through molecular mimicry and other mechanisms.(<a href="#ref">130-132</a>)</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <section id="Diet">
+                <h3>c) Diet</h3>
+                <table>
+                    <tr>
+                        <th>Dietary Factor</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Dietary Patterns</td>
+                        <td>Adherence to healthy dietary patterns like the Mediterranean diet inversely associated with RA risk.(<a href="#ref">133</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Individual Dietary Components</td>
+                        <td>Omega-3 fatty acids such as olive oil and fish associated with reduced risk; excess sodium and sugar with increased risk.(<a href="#ref">134-139</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee,Tea And Caffeine</td>
+                        <td>Inconsistently associated with RA. One study shows, an increased rish with total coffee consumption and no association with tea consumption(<a href="#ref">140</a>). Other study shows, no increased rish with coffee (caffeinated or decaffeinated) consumption, but caffeinated tea intake has increased in RA risk. (<a href="#ref">141</a>)</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <section id="Socio">
+                <h3>d) Socioeconomic Factors</h3>
+                <table>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Socioeconomic Status (SES)</td>
+                        <td>Low status increaes RA risk and worsend outcomes; linked to poor education and early-life factors.(<a href="#ref">142-144</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Deprivation</td>
+                        <td>Associated with unmeasured exposures (e.g., infections, poor diet) and blue-collar jobs.</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Collor Jobs</td>
+                        <td>Exposure to dust, mineral oil, pesticides, physical workload increases RA risk (ACPA+/ACPA-).(<a href="#ref">144-148</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Cold Work Environment</td>
+                        <td>Raises RA risk by 50%; additive risk with repetitive hand movements.(<a href="#ref">149</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>Work-Related Stress</td>
+                        <td>Stress, work conflict, and shift work contribute to increased RA risk.</td>
+                    </tr>
+                    <tr>
+                        <td>Physical Activity and BMI</td>
+                        <td>Physical activity reduces inflammation and BMI, offering protection against RA.(<a href="#ref">150,151</a>)</td>
+                    </tr>
+                    
+                </table>
+            </section>
+            <section>
+                <h2 id="ref" >References</h2>
+                    <nav class="black">
+                        <li>Romão VC, Fonseca JE. "Etiology and Risk Factors for Rheumatoid Arthritis: A State-of-the-Art Review." Frontiers in Medicine. 2021;8:689698. doi: 10.3389/fmed.2021.689698. <a href="https://doi.org/10.3389/fmed.2021.689698" target="_blank">View full article</a></li>
+                        <li>Silman AJ, Hochberg MC. Epidemiology of the Rheumatic Diseases. 2nd ed. Oxford: Oxford University Press (2001).</li>
+                        <li>Gabriel SE, Michaud K. Epidemiological studies in incidence, prevalence, mortality, and comorbidity of the rheumatic diseases. Arthritis Res Ther. (2009) 11:229. doi: 10.1186/ar2669</li>
+                        <li>Tobón GJ, Youinou P, Saraux A. The environment, geo-epidemiology, and autoimmune disease: rheumatoid arthritis. Autoimmun Rev. (2010) 9:A288–92. doi: 10.1016/j.autrev.2009.11.019</li>
+                        <li>Symmons DPM. Epidemiology of rheumatoid arthritis: determinants of onset, persistence and outcome. Best Pract Res Clin Rheumatol. (2002) 16:707–22. doi: 10.1053/berh.2002.0257</li>
+                        <li>Okada Y, Wu D, Trynka G, Raj T, Terao C, Ikari K, et al. Genetics of rheumatoid arthritis contributes to biology and drug discovery. Nature. (2014) 506:376–81. doi: 10.1038/nature12873</li>
+                        <li>Okada Y, Eyre S, Suzuki A, Kochi Y, Yamamoto K. Genetics of rheumatoid arthritis: 2018 status. Ann Rheum Dis. (2019) 78:446–53. doi: 10.1136/annrheumdis-2018-213678</li>
+                        <li>Deighton CM, Walker DJ, Griffiths ID, Roberts DF. The contribution of HLA to rheumatoid arthritis. Clin Genet. (1989) 36:178–82. doi: 10.1111/j.1399-0004.1989.tb03185.x</li>
+                        <li>Zanelli E, Breedveld F, de Vries RR. Hla class II association with rheumatoid arthritis. Hum Immunol. (2000) 61:1254–61. doi: 10.1016/S0198-8859(00)00185-3</li>
+                        <li>Gregersen PK, Silver J, Winchester RJ. The shared epitope hypothesis. Arthritis Rheum. (1987) 30:1205–12. doi: 10.1002/art.1780301102</li>
+                        <li>Meyer JM, Evans TI, Small RE, Redford TW, Han J, Singh R, et al. HLA-DRB1 genotype influences risk for and severity of rheumatoid arthritis. J Rheumatol. (1999) 26:1024–34.</li>
+                        <li>Huizinga TWJ, Amos CI, Van Der Helm-Van Mil AHM, Chen W, Van Gaalen FA, Jawaheer D, et al. Refining the complex rheumatoid arthritis phenotype based on specificity of the HLA-DRB1 shared epitope for antibodies to citrullinated proteins. Arthritis Rheum. (2005) 52:3433–8. doi: 10.1002/art.21385</li>
+                        <li>Van Der Woude D, Houwing-Duistermaat JJ, Toes REM, Huizinga TWJ, Thomson W, Worthington J, et al. Quantitative heritability of anti-citrullinated protein antibody-positive and anti-citrullinated protein antibody-negative rheumatoid arthritis. Arthritis Rheum. (2009) 60:916–23. doi: 10.1002/art.24385</li>
+                        <li>Stahl EA, Wegmann D, Trynka G, Gutierrez-Achury J, Do R, Voight BF, et al. Bayesian inference analyses of the polygenic architecture of rheumatoid arthritis. Nat Genet. (2012) 44:483–9. doi: 10.1038/ng.2232</li>
+                        <li>Eyre S, Bowes J, Diogo D, Lee A, Barton A, Martin P, et al. High-density genetic mapping identifies new susceptibility loci for rheumatoid arthritis. Nat Genet. (2012) 44:1336–40. doi: 10.1038/ng.2462</li>
+                        <li>Stanford SM, Bottini N. PTPN22: the archetypal non-HLA autoimmunity gene. Nat Rev Rheumatol. (2014) 10:602–11. doi: 10.1038/nrrheum.2014.109</li>
+                        <li>Plenge RM, Padyukov L, Remmers EF, Purcell S, Lee AT, Karlson EW, et al. Replication of putative candidate-gene associations with rheumatoid arthritis in >4,000 samples from north america and sweden: association of susceptibility with PTPN22, CTLA4, and PADI4. Am J Hum Genet. (2005) 77:1044–60. doi: 10.1086/498651</li>
+                        <li>Remmers EF, Plenge RM, Lee AT, Graham RR, Hom G, Behrens TW, et al. STAT4 and the risk of rheumatoid arthritis and systemic lupus erythematosus. N Engl J Med. (2007) 357:977–86. doi: 10.1056/NEJMoa073003</li>
+                        <li>Plenge RM, Cotsapas C, Davies L, Price AL, De Bakker PIW, Maller J, et al. Two independent alleles at 6q23 associated with risk of rheumatoid arthritis. Nat Genet. (2007) 39:1477–82. doi: 10.1038/ng.2007.27</li>
+                        <li>Plenge RM, Seielstad M, Padyukov L, Lee AT, Remmers EF, Ding B, et al. TRAF1–C5 as a risk locus for rheumatoid arthritis — a genomewide study. N Engl J Med. (2007) 357:1199–209. doi: 10.1056/NEJMoa073491</li>
+                        <li>Zhernakova A, Alizadeh BZ, Bevova M, van Leeuwen MA, Coenen MJH, Franke B, et al. Novel association in chromosome 4q27 region with rheumatoid arthritis and confirmation of type 1 diabetes point to a general risk locus for autoimmune diseases. Am J Hum Genet. (2007) 81:1284–8. doi: 10.1086/522037</li>
+                        <li>Raychaudhuri S, Remmers EF, Lee AT, Hackett R, Guiducci C, Burtt NP, et al. Common variants at CD40 and other loci confer risk of rheumatoid arthritis. Nat Genet. (2008) 40:1216–23. doi: 10.1038/ng.233</li>
+                        <li>Barton A, Thomson W, Ke X, Eyre S, Hinks A, Bowes J, et al. Rheumatoid arthritis susceptibility loci at chromosomes 10p15, 12q13 and 22q13. Nat Genet. (2008) 40:1156–9. doi: 10.1038/ng.218</li>
+                        <li>Thomson W, Barton A, Ke X, Eyre S, Hinks AM, Bowes J, et al. Rheumatoid arthritis association at 6q23. Nat Genet. (2007) 39:1431–3. doi: 10.1038/ng.2007.32</li>
+                        <li>Stahl EA, Raychaudhuri S, Remmers EF, Xie G, Eyre S, Thomson BP, et al. Genome-wide association study meta-analysis identifies seven new rheumatoid arthritis risk loci. Nat Genet. (2010) 42:508–14. doi: 10.1038/ng.582</li>
+                        <li>Zhu H, Xia W, Mo XB, Lin X, Qiu YH, Yi NJ, et al. Gene-based genome-wide association analysis in European and Asian populations identified novel genes for rheumatoid arthritis. PLoS ONE. (2016) 11:1–13. doi: 10.1371/journal.pone.0167212</li>
+                        <li>Karouzakis E, Gay RE, Michel BA, Gay S, Neidhart M. DNA hypomethylation in rheumatoid arthritis synovial fibroblasts. Arthritis Rheum. (2009) 60:3613–22. doi: 10.1002/art.25018</li>
+                        <li>Glossop JR, Emes RD, Nixon NB, Packham JC, Fryer AA, Mattey DL, et al. Genome-wide profiling in treatment-naive early rheumatoid arthritis reveals DNA methylome changes in T and B lymphocytes. Epigenomics. (2016) 8:209–24. doi: 10.2217/epi.15.103</li>
+                        <li>de Andres MC, Perez-Pampin E, Calaza M, Santaclara FJ, Ortea I, Gomez-Reino JJ, et al. Assessment of global DNA methylation in peripheral blood cell subpopulations of early rheumatoid arthritis before and after methotrexate. Arthritis Res Ther. (2015) 17:233. doi: 10.1186/s13075-015-0748-5</li>
+                        <li>Liu Y, Aryee MJ, Padyukov L, Fallin MD, Hesselberg E, Runarsson A, et al. Epigenome-wide association data implicate DNA methylation as an intermediary of genetic risk in rheumatoid arthritis. Nat Biotechnol. (2013) 31:142–7. doi: 10.1038/nbt.2487</li>
+                        <li>Niederer F, Ospelt C, Brentano F, Hottiger MO, Gay RE, Gay S, et al. SIRT1 overexpression in the rheumatoid arthritis synovium contributes to proinflammatory cytokine production and apoptosis resistance. Ann Rheum Dis. (2011) 70:1866–73. doi: 10.1136/ard.2010.148957</li>
+                        <li>Gillespie J, Savic S, Wong C, Hempshall A, Inman M, Emery P, et al. Histone deacetylases are dysregulated in rheumatoid arthritis and a novel histone deacetylase 3-selective inhibitor reduces interleukin-6 production by peripheral blood mononuclear cells from rheumatoid arthritis patients. Arthritis Rheum. (2012) 64:418–22. doi: 10.1002/art.33382</li>
+                        <li>Angiolilli C, Grabiec AM, Ferguson BS, Ospelt C, Fernandez BM, Van Es IE, et al. Inflammatory cytokines epigenetically regulate rheumatoid arthritis fibroblast-like synoviocyte activation by suppressing HDAC5 expression. Ann Rheum Dis. (2016) 75:430–8. doi: 10.1136/annrheumdis-2014-205635</li>
+                        <li>Angiolilli C, Kabala PA, Grabiec AM, Van Baarsen IM, Ferguson BS, García S, et al. Histone deacetylase 3 regulates the inflammatory gene expression programme of rheumatoid arthritis fibroblast-like synoviocytes. Ann Rheum Dis. (2017) 76:277–85. doi: 10.1136/annrheumdis-2015-209064</li>
+                        <li>Grabiec AM, Krausz S, de Jager W, Burakowski T, Groot D, Sanders ME, et al. Histone deacetylase inhibitors suppress inflammatory activation of rheumatoid arthritis patient synovial macrophages and tissue. J Immunol. (2010) 184:2718–28. doi: 10.4049/jimmunol.0901467</li>
+                        <li>Grabiec AM, Korchynskyi O, Tak PP, Reedquist KA. Histone deacetylase inhibitors suppress rheumatoid arthritis fibroblast-like synoviocyte and macrophage IL-6 production by accelerating mRNA decay. Ann Rheum Dis. (2012) 71:424–31. doi: 10.1136/ard.2011.154211</li>
+                        <li>Klein K, Karouzakis E, Gay S. Rheumatoid arthritis and epigenetics. In: The Epigenetics of Autoimmunity. London: Elsevier (2018). p. 149–66.</li>
+                        <li>Vicente R, Noël D, Pers YM, Apparailly F, Jorgensen C. Deregulation and therapeutic potential of microRNAs in arthritic diseases. Nat Rev Rheumatol. (2016) 12:211–20. doi: 10.1038/nrrheum.2015.162</li>
+                        <li>Li Z, Li X, Jiang C, Qian W, Tse G, Chan MTV, et al. Long non-coding RNAs in rheumatoid arthritis. Cell Prolif. (2018) 51:e12404. doi: 10.1111/cpr.12404</li>
+                        <li>Chan EKL, Ceribelli A, Satoh M. MicroRNA-146a in autoimmunity and innate immune responses. Ann Rheum Dis. (2013) 72(Suppl. 2):ii90–5. doi: 10.1136/annrheumdis-2012-202203</li>
+                        <li>Lu MC, Yu CL, Chen HC, Yu HC, Huang HB, Lai NS. Increased miR-223 expression in T cells from patients with rheumatoid arthritis leads to decreased insulin-like growth factor-1-mediated interleukin-10 production. Clin Exp Immunol. (2014) 177:641–51. doi: 10.1111/cei.12374</li>
+                        <li>Nakamachi Y, Kawano S, Takenokuchi M, Nishimura K, Sakai Y, Chin T, et al. MicroRNA-124a is a key regulator of proliferation and monocyte chemoattractant protein 1 secretion in fibroblast-like synoviocytes from patients with rheumatoid arthritis. Arthritis Rheum. (2009) 60:1294–304. doi: 10.1002/art.24475</li>
+                        <li>Elhai M, Frank-Bertoncelj M, Klein K, Distler O, Ospelt C. HOTAIR is involved in joint patterning by regulating FGFR2, BMP2 and WNT pathways. Ann Rheum Dis. (2019) 78(Suppl. 2):226–7. doi: 10.1136/annrheumdis-2019-eular.4370</li>
+                        <li>Song J, Kim D, Han J, Kim Y, Lee M, Jin EJ. PBMC and exosome-derived HOTAIR is a critical regulator and potent marker for rheumatoid arthritis. Clin Exp Med. (2014) 15:121–6. doi: 10.1007/s10238-013-0271-4</li>
+                        <li>Cutolo M, Seriolo B, Villagio B, Pizzorni C, Craviotto C, Sulli A. Androgens and estrogens modulate the immune and inflammatory responses in rheumatoid arthritis. Ann N Y Acad Sci. (2002) 966:131–42. doi: 10.1111/j.1749-6632.2002.tb04210.x</li>
+                        <li>Straub RH. The complex role of estrogens in inflammation. Endocr Rev. (2007) 28:521–74. doi: 10.1210/er.2007-0001</li>
+                        <li>Alpízar-Rodríguez D, Pluchino N, Canny G, Gabay C, Finckh A. The role of female hormonal factors in the development of rheumatoid arthritis. Rheumatology. (2017) 56:1254–63. doi: 10.1093/rheumatology/kew318</li>
+                        <li>Chen H, Wang J, Zhou W, Yin H, Wang M. Breastfeeding and risk of rheumatoid arthritis: a systematic review and metaanalysis. J Rheumatol. (2015) 42:1563–9. doi: 10.3899/jrheum.150195</li>
+                        <li>Pikwer M, Bergström U, Nilsson JÅ, Jacobsson L, Turesson C. Early menopause is an independent predictor of rheumatoid arthritis. Ann Rheum Dis. (2012) 71:378–81. doi: 10.1136/ard.2011.200059</li>
+                        <li>Bengtsson C, Malspeis S, Orellana C, Sparks JA, Costenbader KH, Karlson EW. Association between menopausal factors and the risk of seronegative and seropositive rheumatoid arthritis: results from the nurses' health studies. Arthritis Care Res. (2017) 69:1676–84. doi: 10.1002/acr.23194</li>
+                        <li>Silman A, Kay A, Brennan P. Timing of pregnancy in relation to the onset of rheumatoid arthritis. Arthritis Rheum. (1992) 35:152–5. doi: 10.1002/art.1780350205</li>
+                        <li>Chen JY, Ballou SP. The effect of antiestrogen agents on risk of autoimmune disorders in patients with breast cancer. J Rheumatol. (2015) 42:55–9. doi: 10.3899/jrheum.140367</li>
+                        <li>Caprioli M, Carrara G, Sakellariou G, Silvagni E, Scirè CA. Influence of aromatase inhibitors therapy on the occurrence of rheumatoid arthritis in women with breast cancer: results from a large population-based study of the Italian society for rheumatology. RMD Open. (2017) 3:e000523. doi: 10.1136/rmdopen-2017-000523</li>
+                        <li>Jorgensen KT, Pedersen BV, Jacobsen S, Biggar RJ, Frisch M. National cohort study of reproductive risk factors for rheumatoid arthritis in Denmark: a role for hyperemesis, gestational hypertension and pre-eclampsia? Ann Rheum Dis. (2010) 69:358–63. doi: 10.1136/ard.2008.099945</li>
+                        <li>Holzgreve W, Ghezzi F, Di Naro E, Gänshirt D, Maymon E, Hahn S. Disturbed feto-maternal cell traffic in preeclampsia. Obstet Gynecol. (1998) 91:669–72. doi: 10.1097/00006250-199805000-00005</li>
+                        <li>Rak JM, Maestroni L, Balandraud N, Guis S, Boudinet H, Guzian MC, et al. Transfer of the shared epitope through microchimerism in women with rheumatoid arthritis. Arthritis Rheum. (2009) 60:73–80. doi: 10.1002/art.24224</li>
+                        <li>Colebatch AN, Edwards CJ. The influence of early life factors on the risk of developing rheumatoid arthritis. Clin Exp Immunol. (2011) 163:11–6. doi: 10.1111/j.1365-2249.2010.04263.x</li>
+                        <li>Kajantie E, Feldt K, Räikkönen K, Phillips DIW, Osmond C, Heinonen K, et al. Body size at birth predicts hypothalamic-pituitary-adrenal axis response to psychosocial stress at age 60 to 70 years. J Clin Endocrinol Metab. (2007) 92:4094–100. doi: 10.1210/jc.2007-1539</li>
+                        <li>Chikanza IC, Petrou P, Kingsley G, Chrousos G, Panayi GS. Defective hypothalamic response to immune and inflammatory stimuli in patients with rheumatoid arthritis. Arthritis Rheum. (1992) 35:1281–8. doi: 10.1002/art.1780351107</li>
+                        <li>Straub RH, Cutolo M. Involvement of the hypothalamic–pituitary–adrenal/gonadal axis and the peripheral nervous system in rheumatoid arthritis. Arthritis Rheum. (2001) 44:493–507. doi: 10.1002/1529-0131(200103)44:3<493::AID-ANR95>3.0.CO;2-U</li>
+                        <li>Pongratz G, Straub RH. Role of peripheral nerve fibres in acute and chronic inflammation in arthritis. Nat Rev Rheumatol. (2013) 9:117–26. doi: 10.1038/nrrheum.2012.181</li>
+                        <li>Wesley A, Bengtsson C, Skillgate E, Saevarsdottir S, Theorell T, Holmqvist M, et al. Association between life events and rheumatoid arthritis: results from a population-based case-control study. Arthritis Care Res. (2014) 66:844–51. doi: 10.1002/acr.22230</li>
+                        <li>Dube SR, Fairweather D, Pearson WS, Felitti VJ, Anda RF, Croft JB. Cumulative childhood stress and autoimmune diseases in adults. Psychosom Med. (2009) 71:243–50. doi: 10.1097/PSY.0b013e3181907888</li>
+                        <li>Boscarino JA. Posttraumatic stress disorder and physical illness: results from clinical and epidemiologic studies. Ann N Y Acad Sci. (2004) 1032:141–53. doi: 10.1196/annals.1314.011</li>
+                        <li>Lee YC, Agnew-Blais J, Malspeis S, Keyes K, Costenbader K, Kubzansky LD, et al. Post-traumatic stress disorder and risk for incident rheumatoid arthritis. Arthritis Care Res. (2016) 68:292–8. doi: 10.1002/acr.22683</li>
+                        <li>Maloley PM, England BR, Sayles H, Thiele GM, Michaud K, Sokolove J, et al. Post-traumatic stress disorder and serum cytokine and chemokine concentrations in patients with rheumatoid arthritis?. Semin Arthritis Rheum. (2019) 49:229–35. doi: 10.1016/j.semarthrit.2019.02.002</li>
+                        <li>Straub RH, Dhabhar FS, Bijlsma JWJ, Cutolo M. How psychological stress via hormones and nerve fibers may exacerbate rheumatoid arthritis. Arth Rheum. (2005) 52:16–26. doi: 10.1002/art.20747</li>
+                        <li>Lee YH, Bae SC. Vitamin D level in rheumatoid arthritis and its correlation with the disease activity: a meta-analysis. Clin Exp Rheumatol. (2016) 34:827–33.</li>
+                        <li>Bragazzi NL, Watad A, Neumann SG, Simon M, Brown SB, Abu Much A, et al. Vitamin D and rheumatoid arthritis: an ongoing mystery. Curr Opin Rheumatol. (2017) 29:378–88. doi: 10.1097/BOR.0000000000000397</li>
+                        <li>Qin B, Yang M, Fu H, Ma N, Wei T, Tang Q, et al. Body mass index and the risk of rheumatoid arthritis: a systematic review and dose-response meta-analysis. Arthritis Res Ther. (2015) 17:86. doi: 10.1186/s13075-015-0601-x</li>
+                        <li>Feng J, Chen Q, Yu F, Wang Z, Chen S, Jin Z, et al. Body mass index and risk of rheumatoid arthritis. Medicine. (2016) 95:e2859. doi: 10.1097/MD.0000000000002859</li>
+                        <li>Dougados M, Soubrier M, Antunez A, Balint P, Balsa A, Buch MH, et al. Prevalence of comorbidities in rheumatoid arthritis and evaluation of their monitoring: results of an international, cross-sectional study (COMORA). Ann Rheum Dis. (2014) 73:62–8. doi: 10.1136/annrheumdis-2013-204223</li>
+                        <li>Vallerand IA, Patten SB, Barnabe C. Depression and the risk of rheumatoid arthritis. Curr Opin Rheumatol. (2019) 31:279–84. doi: 10.1097/BOR.0000000000000597</li>
+                        <li>Matcham F, Rayner L, Steer S, Hotopf M. The prevalence of depression in rheumatoid arthritis: a systematic review and meta-analysis. Rheumatology. (2013) 52:2136–48. doi: 10.1093/rheumatology/ket169</li>
+                        <li>Vinogradov S, Gottesman II, Moises HW, Nicol S. Negative association between schizophrenia and rheumatoid arthritis. Schizophr Bull. (1991) 17:669–78. doi: 10.1093/schbul/17.4.669</li>
+                        <li>Oken RJ, Schulzer M. At issue: schizophrenia and rheumatoid arthritis: the negative association revisited. Schizophr Bull. (1999) 25:625–38. doi: 10.1093/oxfordjournals.schbul.a033407</li>
+                        <li>Cullen AE, Holmes S, Pollak TA, Blackman G, Joyce DW, Kempton MJ, et al. Associations between non-neurological autoimmune disorders and psychosis: a meta-analysis. Biol Psychiatry. (2019) 85:35–48. doi: 10.1016/j.biopsych.2018.06.016</li>
+                        <li>Hong Lee S, Byrne EM, Hultman CM, Kähler A, Vinkhuyzen AAE, Ripke S, et al. New data and an old puzzle: the negative association between schizophrenia and rheumatoid arthritis. Int J Epidemiol. (2015) 44:1706–21. doi: 10.1093/ije/dyv136</li>
+                        <li>Malavia TA, Chaparala S, Wood J, Chowdari K, Prasad KM, McClain L, et al. Generating testable hypotheses for schizophrenia and rheumatoid arthritis pathogenesis by integrating epidemiological, genomic, and protein interaction data. NPJ Schizophr. (2017) 3:11. doi: 10.1038/s41537-017-0010-z</li>
+                        <li>Verhoef CM, Van Roon JAG, Vianen ME, Bruijnzeel-Koomen CAF, Lafeber FPJG, Bijlsma JWJ. Mutual antagonism of rheumatoid arthritis and hay fever; a role for type 1/type 2 T cell balance. Ann Rheum Dis. (1998) 57:275–80. doi: 10.1136/ard.57.5.275</li>
+                        <li>Rolfes MC, Juhn YJ, Wi C-I, Sheen YH. Asthma and the risk of rheumatoid arthritis: an insight into the heterogeneity and phenotypes of Asthma. Tuberc Respir Dis. (2017) 80:113. doi: 10.4046/trd.2017.80.2.113</li>
+                        <li>Hou Y-C, Hu H-Y, Liu I-L, Chang Y-T, Wu C-Y. The risk of autoimmune connective tissue diseases in patients with atopy: a nationwide population-based cohort study. Allergy Asthma Proc. (2017) 38:383–9. doi: 10.2500/aap.2017.38.4071</li>
+                        <li>Sheen YH, Rolfes MC, Wi C, Il Crowson CS, Pendegraft RS, King KS, et al. Association of asthma with rheumatoid arthritis: a population-based case-control study. J Allergy Clin Immunol Pract. (2018) 6:219–26. doi: 10.1016/j.jaip.2017.06.022</li>
+                        <li>Lai N-S, Tsai T-Y, Koo M, Lu M-C. Association of rheumatoid arthritis with allergic diseases: a nationwide population-based cohort study. Allergy Asthma Proc. (2015) 36:99–103. doi: 10.2500/aap.2015.36.3871</li>
+                        <li>Kronzer VL, Westerlind H, Alfredsson L, Crowson CS, Nyberg F, Tornling G, et al. Respiratory diseases as risk factors for seropositive and seronegative rheumatoid arthritis and in relation to smoking. Arthritis Rheumatol. (2021) 73:61–8. doi: 10.1002/art.41491</li>
+                        <li>Ford JA, Liu X, Chu SH, Lu B, Cho MH, Silverman EK, et al. Asthma, chronic obstructive pulmonary disease, and subsequent risk for incident rheumatoid arthritis among women: a prospective cohort study. Arthritis Rheumatol. (2020) 72:704–13. doi: 10.1002/art.41194</li>
+                        <li>Bergström U, Jacobsson LTH, Nilsson JÅ, Berglund G, Turesson C. Pulmonary dysfunction, smoking, socioeconomic status and the risk of developing rheumatoid arthritis. Rheumatology. (2011) 50:2005–13. doi: 10.1093/rheumatology/ker258</li>
+                        <li>Friedlander HM, Ford JA, Zaccardelli A, Terrio AV, Cho MH, Sparks JA. Obstructive lung diseases and risk of rheumatoid arthritis. Expert Rev Clin Immunol. (2020) 16:37–50. doi: 10.1080/1744666X.2019.1698293</li>
+                        <li>Somers EC, Thomas SL, Smeeth L, Hall AJ. Are individuals with an autoimmune disease at higher risk of a second autoimmune disorder? Am J Epidemiol. (2009) 169:749–55. doi: 10.1093/aje/kwn408</li>
+                        <li>Bengtsson C, Padyukov L, Källberg H, Saevarsdottir S. Thyroxin substitution and the risk of developing rheumatoid arthritis; results from the Swedish population-based EIRA study. Ann Rheum Dis. (2014) 73:1096–100. doi: 10.1136/annrheumdis-2013-203354</li>
+                        <li>Liao KP, Gunnarsson M, Källberg H, Ding B, Plenge RM, Padyukov L, et al. Specific association of type 1 diabetes mellitus with anti-cyclic citrullinated peptide-positive rheumatoid arthritis. Arthritis Rheum. (2009) 60:653–60. doi: 10.1002/art.24362</li>
+                        <li>Chen C-H, Wang K-H, Lin H-C, Chung S-D. Follow-up study on the relationship between alopecia areata and risk of autoimmune diseases. J Dermatol. (2016) 43:228–9. doi: 10.1111/1346-8138.13165</li>
+                        <li>Choi CW, Eun SH, Choi KH, Bae JM. Increased risk of comorbid rheumatic disorders in vitiligo patients: a nationwide population-based study. J Dermatol. (2017) 44:909–13. doi: 10.1111/1346-8138.13846</li>
+                        <li>Wilson JC, Furlano RI, Jick SS, Meier CR. Inflammatory bowel disease and the risk of autoimmune diseases. J Crohns Colitis. (2016) 10:186–93. doi: 10.1093/ecco-jcc/jjv193</li>
+                        <li>Tseng C-C, Chang S-J, Tsai W-C, Ou T-T, Wu C-C, Sung W-Y, et al. Increased incidence of rheumatoid arthritis in multiple sclerosis. Medicine. (2016) 95:e3999. doi: 10.1097/MD.0000000000003999</li>
+                        <li>Chung WS, Lin CL. Sleep disorders associated with risk of rheumatoid arthritis. Sleep Breath. (2018) 22:1083–91. doi: 10.1007/s11325-018-1639-1</li>
+                        <li>Kang JH, Lin HC. Obstructive sleep apnea and the risk of autoimmune diseases: a longitudinal population-based study. Sleep Med. (2012) 13:583–8. doi: 10.1016/j.sleep.2012.03.002</li>
+                        <li>Hsiao Y, Chen Y, Tseng C, Wu L, Lin W, Su VY, et al. Sleep disorders and increased risk of autoimmune diseases in individuals without sleep apnea. Sleep. (2015) 38:581–6. doi: 10.5665/sleep.4574</li>
+                        <li>Wang YC, Huang YP, Wang MT, Wang HI, Pan SL. Increased risk of rheumatoid arthritis in patients with migraine: a population-based, propensity score-matched cohort study. Rheumatol Int. (2017) 37:273–9. doi: 10.1007/s00296-016-3604-2</li>
+                        <li>Malmström V, Catrina AI, Klareskog L. The immunopathogenesis of seropositive rheumatoid arthritis: from triggering to targeting. Nat Rev Immunol. (2017) 17:60–75. doi: 10.1038/nri.2016.124</li>
+                        <li>Anderson R, Meyer PWA, Ally MMTM, Tikly M. Smoking and air pollution as pro-inflammatory triggers for the development of rheumatoid arthritis. Nicotine Tob Res. (2016) 18:1556–65. doi: 10.1093/ntr/ntw030</li>
+                        <li>Vessey MP, Villard-Mackintosh L, Yeates D. Oral contraceptives, cigarette smoking and other factors in relation to arthritis. Contraception. (1987) 35:457–64. doi: 10.1016/0010-7824(87)90082-5</li>
+                        <li>Källberg H, Ding B, Padyukov L, Bengtsson C, Rönnelid J, Klareskog L, et al. Smoking is a major preventable risk factor for rheumatoid arthritis: estimations of risks after various exposures to cigarette smoke. Ann Rheum Dis. (2011) 70:508–11. doi: 10.1136/ard.2009.120899</li>
+                        <li>Costenbader KH, Feskanich D, Mandl LA, Karlson EW. Smoking intensity, duration, and cessation, and the risk of rheumatoid arthritis in women. Am J Med. (2006) 119:503–11. doi: 10.1016/j.amjmed.2005.09.053</li>
+                        <li>Klareskog L, Stolt P, Lundberg K, Källberg H, Bengtsson C, Grunewald J, et al. A new model for an etiology of rheumatoid arthritis: smoking may trigger HLA-DR (shared epitope)-restricted immune reactions to autoantigens modified by citrullination. Arthritis Rheum. (2006) 54:38–46. doi: 10.1002/art.21575</li>
+                        <li>Parks CG, D'Aloisio AA, DeRoo LA, Huiber K, Rider LG, Miller FW, et al. Childhood socioeconomic factors and perinatal characteristics influence development of rheumatoid arthritis in adulthood. Ann Rheum Dis. (2013) 72:350–6. doi: 10.1136/annrheumdis-2011-201083</li>
+                        <li>Sugiyama D, Nishimura K, Tamaki K, Tsuji G, Nakazawa T, Morinobu A, et al. Impact of smoking as a risk factor for developing rheumatoid arthritis: a meta-analysis of observational studies. Ann Rheum Dis. (2010) 69:70–81. doi: 10.1136/ard.2008.096487</li>
+                        <li>Jaakkola JJ, Gissler M. Maternal smoking in pregnancy as a determinant of rheumatoid arthritis and other inflammatory polyarthropathies during the first 7 years of life. Int J Epidemiol. (2005) 34:664–71. doi: 10.1093/ije/dyi006</li>
+                        <li>Yoshida K, Wang J, Malspeis S, Marchand N, Lu B, Prisco LC, et al. Passive smoking throughout the life course and the risk of incident rheumatoid arthritis in adulthood among women. Arthritis Rheumatol. (2021). doi: 10.1002/art.41939 [Online ahead of print]</li>
+                        <li>Seror R, Henry J, Gusto G, Aubin H, Boutron-Ruault M-C, Mariette X. Passive smoking in childhood increases the risk of developing rheumatoid arthritis. Rheumatology. (2019) 58:1154–62. doi: 10.1093/rheumatology/key219</li>
+                        <li>Stolt P, Källberg H, Lundberg I, Sjögren B, Klareskog L, Alfredsson L. Silica exposure is associated with increased risk of developing rheumatoid arthritis: results from the Swedish EIRA study. Ann Rheum Dis. (2005) 64:582–6. doi: 10.1136/ard.2004.022053</li>
+                        <li>Sluis-Cremer GK, Hessel PA, Hnizdo E, Churchill AR. Relationship between silicosis and rheumatoid arthritis. Thorax. (1986) 41:596–601. doi: 10.1136/thx.41.8.596</li>
+                        <li>Stolt P, Yahya A, Bengtsson C, Källberg H, Rönnelid J, Lundberg I, et al. Silica exposure among male current smokers is associated with a high risk of developing ACPA-positive rheumatoid arthritis. Ann Rheum Dis. (2010) 69:1072–6. doi: 10.1136/ard.2009.114694</li>
+                        <li>Zeng P, Chen Z, Klareskog L, Alfredsson L, Bengtsson C, Jiang X. Amount of smoking, duration of smoking cessation and their interaction with silica exposure in the risk of rheumatoid arthritis among males: results from the Swedish epidemiological investigation of rheumatoid arthritis (EIRA) study. Ann Rheum Dis. (2018) 77:1238–41. doi: 10.1136/annrheumdis-2017-212145</li>
+                        <li>Too CL, Muhamad NA, Ilar A, Padyukov L, Alfredsson L, Klareskog L, et al. Occupational exposure to textile dust increases the risk of rheumatoid arthritis: results from a Malaysian population-based case–control study. Ann Rheum Dis. (2016) 75:997–1002. doi: 10.1136/annrheumdis-2015-208278</li>
+                        <li>Ilar A, Alfredsson L, Wiebert P, Klareskog L, Bengtsson C. Occupation and risk of developing rheumatoid arthritis: results from a population-based case-control study. Arthritis Care Res. (2018) 70:499–509. doi: 10.1002/acr.23321</li>
+                        <li>Sun G, Hazlewood G, Bernatsky S, Kaplan GG, Eksteen B, Barnabe C. Association between air pollution and the development of rheumatic disease: a systematic review. Int J Rheumatol. (2016) 2016:5356307. doi: 10.1155/2016/5356307</li>
+                        <li>Potempa J, Mydel P, Koziel J. The case for periodontitis in the pathogenesis of rheumatoid arthritis. Nat Rev Rheumatol. (2017) 13:606–20. doi: 10.1038/nrrheum.2017.132</li>
+                        <li>Fuggle NR, Smith TO, Kaul A, Sofat N. Hand to mouth: a systematic review and meta-analysis of the association between rheumatoid arthritis and periodontitis. Front Immunol. (2016) 7:80. doi: 10.3389/fimmu.2016.00080</li>
+                        <li>McGraw WT, Potempa J, Farley D, Travis J. Purification, characterization, and sequence analysis of a potential virulence factor from porphyromonas gingivalis, peptidylarginine deiminase. Infect Immun. (1999) 67:3248–56. doi: 10.1128/IAI.67.7.3248-3256.1999</li>
+                        <li>Konig MF, Abusleme L, Reinholdt J, Palmer RJ, Teles RP, Sampson K, et al. Aggregatibacter actinomycetemcomitans-induced hypercitrullination links periodontal infection to autoimmunity in rheumatoid arthritis. Sci Transl Med. (2016) 8:369ra176. doi: 10.1126/scitranslmed.aaj1921</li>
+                        <li>Zhang X, Zhang D, Jia H, Feng Q, Wang D, Liang D, et al. The oral and gut microbiomes are perturbed in rheumatoid arthritis and partly normalized after treatment. Nat Med. (2015) 21:895–905. doi: 10.1038/nm.3914</li>
+                        <li>Clemente JC, Manasson J, Scher JU. The role of the gut microbiome in systemic inflammatory disease. BMJ. (2018) 360:j5145. doi: 10.1136/bmj.j5145</li>
+                        <li>Maeda Y, Kurakawa T, Umemoto E, Motooka D, Ito Y, Gotoh K, et al. Dysbiosis contributes to arthritis development via activation of autoreactive T cells in the intestine. Arthritis Rheumatol. (2016) 68:2646–61. doi: 10.1002/art.39783</li>
+                        <li>Horta-Baas G, Romero-Figueroa M del S, Montiel-Jarquín AJ, Pizano-Zárate ML, García-Mena J, Ramírez-Durán N. Intestinal dysbiosis and rheumatoid arthritis: a link between gut microbiota and the pathogenesis of rheumatoid arthritis. J Immunol Res. (2017) 2017:4835189. doi: 10.1155/2017/4835189</li>
+                        <li>Liu X, Zou Q, Zeng B, Fang Y, Wei H. Analysis of fecal lactobacillus community structure in patients with early rheumatoid arthritis. Curr Microbiol. (2013) 67:170–6. doi: 10.1007/s00284-013-0338-1</li>
+                        <li>Scher JU, Sczesnak A, Longman RS, Segata N, Ubeda C, Bielski C, et al. Expansion of intestinal prevotella copri correlates with enhanced susceptibility to arthritis. Elife. (2013) 2:e01202. doi: 10.7554/eLife.01202</li>
+                        <li>Wells PM, Adebayo AS, Bowyer RCE, Freidin MB, Finckh A, Strowig T, et al. Associations between gut microbiota and genetic risk for rheumatoid arthritis in the absence of disease: a cross-sectional study. Lancet Rheumatol. (2020) 2:e418–27. doi: 10.1016/S2665-9913(20)30064-3</li>
+                        <li>Pianta A, Arvikar S, Strle K, Drouin EE, Wang Q, Costello CE, et al. Evidence of the immune relevance of prevotella copri, a gut microbe, in patients with rheumatoid arthritis. Arthritis Rheumatol. (2017) 69:964–75. doi: 10.1002/art.40003</li>
+                        <li>Bennett JC. The infectious etiology of rheumatoid arthritis. New considerations. Arthritis Rheum. (1978) 21:531–8. doi: 10.1002/art.1780210507</li>
+                        <li>Li S, Yu Y, Yinshi Y, Zhang Z, Su K. Microbial infection and rheumatoid arthritis. J Clin Cell Immunol. (2013) 4:174. doi: 10.4172/2155-9899.1000174</li>
+                        <li>Kudaeva FM, Speechley MR, Pope JE. A systematic review of viral exposures as a risk for rheumatoid arthritis. Semin Arthritis Rheum. (2019) 48:587–96. doi: 10.1016/j.semarthrit.2018.03.011</li>
+                        <li>Guerreiro CS, Calado Â, Sousa J, Fonseca JE. Diet, microbiota, and gut permeability—the unknown triad in rheumatoid arthritis. Front Med. (2018) 5:349. doi: 10.3389/fmed.2018.00349</li>
+                        <li>Hu Y, Costenbader KH, Gao X, Al-Daabil M, Sparks JA, Solomon DH, et al. Sugar-sweetened soda consumption and risk of developing rheumatoid arthritis in women. Am J Clin Nutr. (2014) 100:959–67. doi: 10.1002/art.38216</li>
+                        <li>Sundstrom B, Johansson I, Rantapaa-Dahlqvist S. Interaction between dietary sodium and smoking increases the risk for rheumatoid arthritis: results from a nested case-control study. Rheumatology. (2015) 54:487–93. doi: 10.1093/rheumatology/keu330</li>
+                        <li>Di Giuseppe D, Crippa A, Orsini N, Wolk A. Fish consumption and risk of rheumatoid arthritis: a dose-response meta-analysis. Arthritis Res Ther. (2014) 16:446. doi: 10.1186/s13075-014-0446-8</li>
+                        <li>Di Giuseppe D, Wallin A, Bottai M, Askling J, Wolk A. Long-term intake of dietary long-chain n-3 polyunsaturated fatty acids and risk of rheumatoid arthritis: a prospective cohort study of women. Ann Rheum Dis. (2014) 73:1949–53. doi: 10.1136/annrheumdis-2013-203338</li>
+                        <li>De Pablo P, Romaguera D, Fisk HL, Calder PC, Quirke AM, Cartwright AJ, et al. High erythrocyte levels of the n-6 polyunsaturated fatty acid linoleic acid are associated with lower risk of subsequent rheumatoid arthritis in a Southern European nested case–control study. Ann Rheum Dis. (2018) 77:981–7. doi: 10.1136/annrheumdis-2017-212274</li>
+                        <li>Linos A, Kaklamani VG, Kaklamani E, Koumantaki Y, Giziaki E, Papazoglou S, et al. Dietary factors in relation to rheumatoid arthritis: a role for olive oil and cooked vegetables? Am J Clin Nutr. (1999) 70:1077–82. doi: 10.1093/ajcn/70.6.1077</li>
+                        <li>Lee YH, Bae SC, Song GG. Coffee or tea consumption and the risk of rheumatoid arthritis: a meta-analysis. Clin Rheumatol. (2014) 33:1575–83. doi: 10.1007/s10067-014-2631-1</li>
+                        <li>Lamichhane D, Collins C, Constantinescu F, Walitt B, Pettinger M, Parks C, et al. Coffee and tea consumption in relation to risk of rheumatoid arthritis in the women's health initiative observational cohort. J Clin Rheumatol. (2019) 25:127–32. doi: 10.1097/RHU.0000000000000788</li>
+                        <li>Pedersen M, Jacobsen S, Klarlund M, Frisch M. Socioeconomic status and risk of rheumatoid arthritis: a Danish case-control study. J Rheumatol. (2006) 33:1069–74.</li>
+                        <li>Bengtsson C, Nordmark B, Klareskog L, Lundberg I, Alfredsson L. Socioeconomic status and the risk of developing rheumatoid arthritis: results from the Swedish EIRA study. Ann Rheum Dis. (2005) 64:1588–94. doi: 10.1136/ard.2004.031666</li>
+                        <li>Bergström U, Jacobsson LTH, Nilsson JÅ, Wirfält E, Turesson C. Smoking, low formal level of education, alcohol consumption, and the risk of rheumatoid arthritis. Scand J Rheumatol. (2013) 42:123–30. doi: 10.3109/03009742.2012.723744</li>
+                        <li>Sverdrup B, Källberg H, Bengtsson C, Lundberg I, Padyukov L, Alfredsson L, et al. Association between occupational exposure to mineral oil and rheumatoid arthritis: results from the Swedish EIRA case-control study. Arthritis Res Ther. (2005) 7:R1296–303. doi: 10.1186/ar1824</li>
+                        <li>Zeng P, Klareskog L, Alfredsson L, Bengtsson C. Physical workload is associated with increased risk of rheumatoid arthritis: results from a Swedish population-based case–control study. RMD Open. (2017) 3:e000324. doi: 10.1136/rmdopen-2016-000324</li>
+                        <li>Meyer A, Sandler DP, Beane Freeman LE, Hofmann JN, Parks CG. Pesticide exposure and risk of rheumatoid arthritis among licensed male pesticide applicators in the agricultural health study. Environ Health Perspect. (2017) 125:077010. doi: 10.1289/EHP1013</li>
+                        <li>Parks CG, Walitt BT, Pettinger M, Chen JC, De Roos AJ, Hunt J, et al. Insecticide use and risk of rheumatoid arthritis and systemic lupus erythematosus in the women's health initiative observational study. Arthritis Care Res. (2011) 63:184–94. doi: 10.1002/acr.20335</li>
+                        <li>Zeng P, Bengtsson C, Klareskog L, Alfredsson L. Working in cold environment and risk of developing rheumatoid arthritis: results from the Swedish EIRA case–control study. RMD Open. (2017) 3:e000488. doi: 10.1136/rmdopen-2017-000488</li>
+                        <li>Di Giuseppe D, Bottai M, Askling J, Wolk A. Physical activity and risk of rheumatoid arthritis in women: a population-based prospective study. Arthritis Res Ther. (2015) 17:40. doi: 10.1186/s13075-015-0560-2</li>
+                        <li>Liu X, Tedeschi SK, Lu B, Zaccardelli A, Speyer CB, Costenbader KH, et al. Long-term physical activity and subsequent risk for rheumatoid arthritis among women: a prospective cohort study. Arthritis Rheumatol. (2019) 71:1460–71. doi: 10.1002/art.40899</li>
+                    </nav>
+                </section>
+        <hr>
+        <div class="footer">
+            <div class="footer-logo">
+                &lt;&lt;&lt; <a class="btn1" href="index.html">Back to previous page</a> &gt;&gt;&gt;
+            </div>
+            <div class="footer-list">
+                <ul class="footer-list">
+                    <li class="btn1"><a href="#Background">Background</a></li>
+                    <li class="btn1"><a href="#Host">Host Factors</a></li>
+                    <li class="btn1"><a href="#Envi">Environmental Factors</a><li></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#RF"><button onclick="topFunction()" id="topBtn" title="Go to top">Top</button></a>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            // Back to top button
+            var topButton = document.getElementById("topBtn");
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    topButton.style.display = "block";
+                } else {
+                    topButton.style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+        </script>
+    </body>
+</html>

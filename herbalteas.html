@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect of Herbal teas consumption on RA</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin: 25px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: fit-content;
+        }
+
+        .img1{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .fig  {
+            width: 50%;
+           
+           
+        }
+        .fig img {
+            height: 100%;
+            width: 100%;
+            min-width: auto;
+            border:2px solid black ;
+            border-radius: 0%;
+        }
+        img{
+            margin-right: 1rem;
+            border: 1px solid black;
+        }
+        .left {
+            float: left;
+            margin-right: 1rem;
+           
+            height:22vw;
+            max-width: 100%;
+        }
+        .left1 {
+            float: left;
+            margin-right: 1rem;
+            border: 1px solid black;
+            height:22vw;
+            max-width: 100%;
+        }
+        figcaption{
+            text-align: center;
+        }
+        ul{
+            margin-left: 350px;
+        }
+ 
+        p {
+            color: black;    
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            margin-bottom: 50px;
+        }
+        th, td {
+            border: 1px outset #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #162b3b;
+            color: #FFFFFF;
+        }
+    
+        h1 {
+            border-bottom: 5px solid whitesmoke;
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            border-radius: 20px;
+            background-color: #0C1821;
+           
+            width: auto;
+
+        }
+       
+        
+        a {
+            text-decoration: none;
+            color: #FFFFFF ;
+        }
+        a:visited {
+            color: whitesmoke;
+        }
+        a:hover {
+            color: coral;
+
+        }
+
+        a:active {
+            color: antiquewhite;
+
+        }
+
+        
+        footer {
+            background-color: #0C1821;
+            color: white;
+            text-align: left;
+            padding: 10px 0;
+        }
+        .dec{
+            list-style-type: decimal;
+        }
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color:  #061727;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #topBtn:hover {
+            background-color: #555;
+        }
+
+       /* Mobile styles */
+@media (max-width: 600px) {
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin: 10px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: fit-content;
+            
+        }
+
+        h2 {
+    font-size: 1.75rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+
+th, td {
+        
+        padding: 5px;
+        font-size: 0.875rem;
+    }
+
+    td {
+       
+        position: sticky;
+        padding-left: 0%;
+    }
+
+    td:before {
+        content: normal; 
+        position: static;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    ul{
+            margin-left: 0px;
+        }
+        
+}
+
+/* Tablet styles */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .container {
+        padding: 10px;
+    }
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            margin: 10px;
+            border: 3px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: fit-content;
+            
+        }
+
+        h2 {
+    font-size: 1.75rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+
+th, td {
+        
+        padding: 5px;
+        font-size: 0.875rem;
+    }
+
+    td {
+       
+        position: sticky;
+        padding-left: 1%;
+    }
+
+    td:before {
+        content: normal; 
+        position: static;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    ul li{
+            margin-left: 10px;
+        }
+        
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+
+    .container {
+        padding: 20px;
+    }
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            margin: 20px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: fit-content;
+        }
+
+        h2 {
+    font-size: 1.75rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+
+th, td {
+        
+        padding: 5px;
+        font-size: 0.875rem;
+    }
+
+    td {
+       
+        position: relative;
+        padding-left: 3%;
+    }
+
+    td:before {
+        content: normal; 
+        position: static;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    ul li{
+            margin-left: 10px;
+        }
+    
+}
+    </style>
+  </head>
+  <body>
+    
+    
+        <h1>An Ayurvedic approach towards Rhuematoid arthiritis treatment:</h1>
+           <p>
+            Ayurvedic view on treatment of RA:
+Ayur-‘Life’
+Veda-‘Science’
+In addition to a system of medicine that focuses on preventing and delaying aging and disease ratio that simply treating once established.
+It involves focusing on promoting health by taking a holistic view of mind,body and spirit with the help of natural remedies derived from medicinal plants and medicines.
+        </p>
+        <p>Rheumatoid Arthritis (RA) is an inflammatory disease that causes severe joint destruction and persistent inflammation. This review aims to evaluate the efficacy, safety, and mechanisms of action of various herbal interventions in managing RA, providing valuable insights for patients and healthcare practitioners. To investigate the anti-inflammatory and antioxidant properties of selected herbal interventions, including Turmeric, ginger, Boswellia serrata (frankincense), green tea, and Ashwagandha, to assess their potential as complementary treatments for RA.</p>
+        <img class="img1" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10787-024-01445-8/MediaObjects/10787_2024_1445_Fig1_HTML.png?as=webp" alt="RA" width="500" height="300">
+        <figcaption>Image Source: <a href="https://link.springer.com/article/10.1007/s10787-024-01445-8">Springer</a></figcaption>
+       <p1>
+        Reasons why people choose ayurvedic medicines prior to pharmaceutical medicines:</p1>
+       <p2>
+        RASAYANA AND ARTHRITIS:
+    </p2>
+
+        <p4>
+            As summed up in the ancient CS and Sushrita Samhita texts, the aims of rasayana are to increase the body's resistance to disease (vyadhi-kshamatva, which is akin to immunity), increase the life span and delay aging, and promote intellect and strength. The science of rasayana and its plants have been the focus of research in the modern context of immunomodulation and arthritis.Numerous Indian workers from Ayurveda and modern phytopharmacology have been engaged in testing ancient rasayana
+        </p4>
+       </p3>
+     <li class="dec">More holistic approach to medicinal use.</li>
+      <li class="dec">It involves that in-vitro data suggest potential mechanisms through which ayurvedic herbal medicines might have beneficial actions in RA.
+      </li>
+       <p2>With reference to the joint, vata, pitta, and kapha relate to the process of motion, metabolic, and secretory functions (synovial fluid), and lubrication and preservation (perhaps of structure and homeostasis), respectively. The vata dosha plays a critical role in causing arthritis.</p2>
+       The pathogenesis of Amavata and similar arthritic disorders has been further explained by the ama hypothesis.</body>
+        <p>A comprehensive analysis is performed on the anti-inflammatory mechanisms and antioxidant effects of selected herbs.Some of the herbs that Ayurvedic practitioners often use to treat RA include:</p> 
+        <figure class="left">
+            <img class="left1" src="https://shuddhi.com/wp-content/uploads/2020/06/rheumatoid-arthritis-treatment-Ayurveda.jpg" alt="ayurvedhic " loading="lazy" width="300" height="300">
+            <figcaption>Image Source: <a href="https://shuddhi.com/blog/rheumatoid-arthritis-solution-in-ayurveda/">Suddhi.com</a></figcaption>
+        </figure>
+        <ul>
+            <li><em>Boswellia serrata (Indian frankincense)</em></li>
+            <li>garlic</li>
+            <li>ginger</li>
+            <li><em>Ricinus communis (castor oil)</em></li>
+            <li>ashwagandha</li>
+        </ul>
+        
+        
+        <p>Some Ayurvedic medicine formulations also contain “bhasma,” which are specially prepared forms of metals, such as silver, copper, and iron.</p>
+        <p>Emphasis is placed on the modulation of key inflammatory pathways and their ability to counteract oxidative stress, which are crucial factors in RA progression. The review reveals promising evidence supporting the efficacy of turmeric and ginger in alleviating RA symptoms by modulating inflammatory pathways.</p>
+        <p>   Additionally, Boswellia serrata shows potential as an adjunct therapy for joint health and inflammation. The antioxidant-rich properties of green tea and Ashwagandha are highlighted, suggesting their role in counteracting oxidative stress associated with RA. In conclusion, while herbal remedies like turmeric, ginger, Boswellia serrata, green tea, and Ashwagandha offer potential complementary treatments for RA, their safety profiles and adverse effects warrant careful consideration.</p>
+
+        <h2>
+            Effect Of Ayurvedic treatment on Biomarkers of Rheumatoid Arthritis(RA) 
+        </h2>
+        <p>Amavata is a disease caused by vitiation of Vata Dosha associated with formation of Ama (bio-toxin). The Ama combines with Vata Dosha and occupies Sleshmasthana (Asthisandhi) which results in Amavata, producing symptoms like stiffness, swelling and pain in the joints. Amavata is compared with Rheumatoid Arthritis (RA) based on similarities in sign and symptoms. RA is a chronic progressive disease causing inflammation in the joints and resulting in painful deformity and immobility, especially in the fingers, wrists, feet and ankles.</p>
+            <p2>The prevalence of Rheumatoid arthritis is approximately 0.8 % of the population (range 0.3 to 2.1%) women are most commonly affected.
+                <p> In a case report a 20 years old female patient experiencing pain in multiple joints along with swelling and stiffness. Patient was investigated with markedly raised level of bio-markers like R.A. Factor, E.S.R., C-Reactive Protein (CRP) and Anti-cyclic citrullinated peptide (anti-CCP) antibody. The patient was administered various Shaman, Deepana and Ama-paachanyogas along with Balukaswedan. The symptoms of Amavata (RA) like Sandhi ruja (joint pain), Sandhishotha (joint swelling) Stabdhata (morning stiffness), and tests like R.A. Factor, ESR, CRP and Anti-CCP were observed over the treatment.</p>
+        <p>Marked improvement were observed in signs and symptoms of Amavata during the course of treatment. Patient was feeling much better than earlier and she felt that about >95% of her symptoms got decreased. No any complication was found during the treatment.</p>
+    
+    
+    <hr>
+    
+    <h1 >The Effect of herbal teas during Treatment of Rhuematoid arthiritis</h1>
+    <div class="main">
+        <h2>Pathophysiology</h2>
+            <li><Strong>T Cells:</Strong> Play a crucial role in RA pathogenesis through cytokine production.</li>
+            <li><Strong>CD147:</Strong> Induces matrix metalloproteinases (MMPs) leading to tissue destruction.</li>
+            <li><Strong>TNF-α and ILs:</Strong> Promote inflammation and joint damage.</li>
+            <li><Strong>B cells :</Strong> get localized as T cell–B cell aggregates or tertiary lymphoid follicles in synovium in RA</p></li>
+        
+        <img class="img1" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10787-024-01445-8/MediaObjects/10787_2024_1445_Figa_HTML.png?as=webp" alt="Diagram" width="800" height="400">
+        <figcaption>Image Source: <a href="https://link.springer.com/article/10.1007/s10787-024-01445-8">Springer</a></figcaption>
+        <h2>Limitations:</h2>
+             <p>Conventional treatments can have significant side effects and do not provide a permanent cure.
+        <strong>Herbal Medicine-Based Treatments</strong> offer promising alternatives with fewer side effects.</p>
+       <h2>Key Herbal Compounds:</h2>
+        <p><strong>Quercetin:</strong> Found in many plants, has anti-inflammatory properties.
+        Boswellic Acid: Derived from Boswellia serrata, reduces cartilage loss and inflammation.</p>
+       <p><strong>Sinomenine:</strong> From Sinomenium acutum, suppresses immune responses.</p>
+        <p><strong>Epigallocatechin-3-gallate (EGCG):</strong> Found in green tea, inhibits inflammatory mediators.
+        Withaferin A: From Withania somnifera, reduces inflammation and oxidative stress.</p>
+        
+        <h2>Clinical Studies</h2>
+        <p>Herbal Formulations: Studies show significant improvements in RA symptoms with herbal treatments, often with fewer side effects compared to conventional drugs.</p14>
+       <h3> Examples:</h3>
+            <li><strong>Tripterygium wilfordii:</strong> Demonstrated efficacy in reducing RA symptoms in clinical trials.</li>
+            <li><strong>Polyherbal Formulations:</strong> Combinations of various plant extracts have shown promising results in managing RA.</li>
+        <h2>Conclusion</h2>
+        <p>
+            Integrated Approach: Combining conventional and herbal treatments may offer a more comprehensive and sustainable path to managing RA.</p>
+        <p> Future Directions: Continued research is needed to refine diagnostic methods and develop more effective, targeted therapies.</p>
+            </p>
+        <h2>Effect of Chamomile tea consumption on RA:</h2>
+            Chamomile (Matricaria chamomilla L.) is one of 
+                    the most well-known herbal plants. The dried flower 
+                    part of plant is used traditionally for wide spectrum 
+                    of medicinal purposes including rheumatic pain and 
+                    inflammation. Chamomile consist several phenolic compounds like apigenin, 
+                    quercetin, patuletin, luteolin and their glucosides</p>
+                <p>Chamomile consists of high level of phenols such as 
+                        Coumarin and Flavonoids, which they have, free radical 
+                        scavenging effects. Chamomile as a rich source 
+                        for antioxidant components, modulated the oxidative stress 
+                        in diabetic patients</p>
+        <h3>Main anti-inflammatory mechanisms of Matricaria chamomilla:</h3>
+            <table>
+                <tr>
+                    <th>Compound</th>
+                    <th>Mechanism</th>
+                </tr>
+                <tr>
+                    <td>Apigenin</td>
+                    <td>Modulation of NF-κB, IL-6 level reduction, antioxidant activity, iNOS and COX-2 gene expression suppression, apoptosis induction, 5-LPO inhibition</td>
+                </tr>
+                <tr>
+                    <td>Luteolin</td>
+                    <td>Modulation of NF-κB, vasodilation inhibitor, antioxidant activity, iNOS and COX-2 gene expression suppression, apoptosis induction, 5-LPO inhibition</td>
+                </tr>
+                <tr>
+                    <td>En-yne dicycloether</td>
+                    <td>Vasodilation inhibitor</td>
+                </tr>
+                <tr>
+                    <td>Chamazulene</td>
+                    <td>Inhibition of LTB4 formation, antioxidant activity</td>
+                </tr>
+                <tr>
+                    <td>Quercetin</td>
+                    <td>Modulation of NF-κB, iNOS and COX-2 gene expression suppression, apoptosis induction, 5-LPO inhibition, IL-6 level reduction</td>
+                </tr>
+            </table>
+            <h1>References:</h1>
+            <nav>
+                <li>Ahmed KSZ, Ahmed SSZ, Thangakumar A, Krishnaveni R (2019)Therapeutic efect of Parmotrema tinctorum against completeFreund’s adjuvant-induced arthritis in rats and identifcation of novel isophthalic ester derivative. Biomed Pharmacother 112:108646
+                </li>
+                <li>Ahmed S (2010) Green tea polyphenol epigallocatechin 3-gallate in arthritis: progress and promise. Arthritis Res Ther 12(2):208
+                </li>
+                <li>Ahmed S, Anuntiyo J, Malemud CJ, Haqqi TM (2005) Biological basis for the use of botanicals in osteoarthritis and rheumatoid arthritis: a review. J Evid Based Complement Altern Med 2(3):301–308
+                </li>
+                <li>Akram M, Daniyal M, Sultana S, Owais A, Akhtar N, Zahid R, Said F, Bouyahya A, Ponomarev E, Shariat MA, Thiruvengadam M (2021) Traditional and modern management strategies for rheumatoid arthritis. Clin Chim Acta 512:142–155
+                </li>
+                <li>Alam J, Jantan I, Bukhari SNA (2017) Rheumatoid arthritis: Recent advances on its etiology, role of cytokines and pharmacotherapy. Biomed Pharmacother 92:615–633
+                </li>
+                <li>Alghuweri A, Maraf A, Alhiary M (2012) Use of serological markers for evaluation patients with rheumatoid arthritis. Int J Biol Med Res 3(1):1397–1398
+                </li>
+                <li>Ali AM, Muse R, Mohd NB (2007) Anti-oxidant and anti-infammatory activities of leaves of Barringtonia racemosa. J Med Plants Res 1(5):095–102
+                </li>
+                <li>Alten R, Gomez-Reino J, Durez P, Beaulieu A, Sebba A, Krammer G, Preiss R, Arulmani U, Widmer A, Gitton X, Kellner H (2011) Efcacy and safety of the human anti-IL-1beta monoclonal antibody canakinumab in rheumatoid arthritis: results of a 12-week, Phase II, dose-fnding study. BMC Musculoskelet Disord 12(1):153
+                </li>
+                <li>Anand David AV, Arulmoli R, Parasuraman S (2016) Overviews of biological importance of quercetin: a bioactive favonoid. Pharmacogn Rev 10(20):84–89
+                </li>
+                <li>Anilkumar M (2010) Ethnomedicinal plants as anti-infammatory and analgesic agents. J Ethnomed 267–293
+                </li>
+                <li>Askari G, Ghiasvand R, Feizi A, Ghanadian SM, Karimian J (2012) The efect of quercetin supplementation on selected markers of infammation and oxidative stress. J Res Med Sci 17(7):637
+                </li>
+                <li>Baker R, Narla R, Baker JF, Wysham KD (2022) Risk factors for osteoporosis and fractures in rheumatoid arthritis. Best Pract Res Clin Rheumatol 36(3):101773
+                </li>
+                <li>Bang JS, Choi HM, Sur BJ, Lim SJ, Kim JY, Yang HI, Yoo MC, Hahm DH, Kim KS (2009) Anti-infammatory and anti-arthritic efects of piperine in human interleukin 1β-stimulated fbroblast-like synoviocytes and in rat arthritis models. Arthritis Res Ther 11(2):R49
+                </li>
+                <li>Barnabe C (2020) Disparities in rheumatoid arthritis care and health service solutions to equity. Rheum Dis Clin 46(4):685–692
+                </li>
+            </nav>
+            
+            <footer>
+                <hr>
+            &lt;&lt;&lt; <a href="index.html">Back to previous page</a> &gt;&gt;&gt;
+            <hr>
+        </footer>
+    </div> 
+    <a href="#RF"><button onclick="topFunction()" id="topBtn" title="Go to top">Top</button></a>
+    <script>
+        var topButton = document.getElementById("topBtn");
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    topButton.style.display = "block";
+                } else {
+                    topButton.style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+    </script>
+
+  </body>
+</html>

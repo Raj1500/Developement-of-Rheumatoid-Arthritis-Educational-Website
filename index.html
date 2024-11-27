@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rheumatoid Arthritis: A complete Overview</title>
+    <link rel="icon" href="joint_9202213.png" type="image/x-icon">
+    <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin: 10px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: fit-content;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 1;
+        }
+  
+        body.fade-out {
+            opacity: 0;
+        }
+        nav ol li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        nav ol li a:hover {
+            text-decoration: underline;
+        }
+
+        .fig {
+            width: auto;
+        }
+
+        .fig img {
+            width: 50vw;
+            height: 30vw;
+            min-width: auto;
+            border:2px solid black ;
+            border-radius: 0%;
+        }
+        .figu img {
+            width: 50vw;
+            height: 40vw;
+            min-width: auto;
+            border:2px solid black ;
+            border-radius: 0%;
+        }
+        .figur img {
+            width: 30vw;
+            height: 40vw;
+            min-width: auto;
+            border:2px solid black ;
+            border-radius: 0%;
+        }
+        
+        .left1{
+            float: left;
+            margin-right: 1rem;
+        }
+        .right{
+            float: right;
+            margin-left: 1rem;
+        }
+        .right1{
+            position: relative;
+            float: right;
+            margin-left: 1rem;
+            border:2px solid black ;
+            border-radius: 0%;
+        }
+        .left{
+            position: relative;
+            float: left;
+            margin-right: 1rem;
+            border:2px solid black ;
+            border-radius: 0%;
+        }
+        .middle{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            max-width: 100%;
+            height: auto;
+        }
+        .cap2{
+            position: relative;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .RA img {
+            border:3px solid whitesmoke ;
+            border-radius: 50%;
+            box-shadow: 3px 3px 5px  #ACC8E5;
+        }
+        .h1 {
+            font-size: fit-content;
+            text-align: justify;
+            max-width: fit-content;
+            color: #FFFFFF;
+             text-shadow:2px 2px 5px rgb(219, 48, 48);
+        }
+
+ 
+        p {
+            color: black;    
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            margin-bottom: 50px;
+        }
+        th, td {
+            border: 1px outset #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #162b3b;
+            color: #FFFFFF;
+        }
+    
+        h2 {
+            border-bottom: 3px solid whitesmoke;
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            border-radius: 20px;
+            background-color: #0C1821;
+            width: auto;
+        }
+        .cyto{
+            text-align:center;
+        }
+
+        
+        nav,.gray{
+            border: 2px solid #0C1821;
+            background-color: #052241;
+            border-radius: 20px;
+            width: auto;
+            padding: 0.5em;
+            height: auto;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #FFFFFF ;
+        }
+        a:visited {
+            color: whitesmoke;
+        }
+        a:hover {
+            color: coral;
+
+        }
+
+        a:active {
+            color: antiquewhite;
+
+        }
+
+        .white {
+            color: #FFFFFF;
+            text-decoration: underline white;
+        }
+        .black {
+            color: black;
+        }
+
+        footer {
+            background-color: #0C1821;
+            color: white;
+            text-align: left;
+            padding: 10px 0;
+        }
+
+        .btn1{
+            box-shadow: 10px rgb(133, 165, 175);
+        }
+        .btn1:active{
+            box-shadow: none;
+            position: relative;
+            top:7px;
+            left:10px;
+        }
+
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color:  #061727;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #topBtn:hover {
+            background-color: #555;
+        }
+
+
+        .more-content {
+            display: none;
+        }
+
+        .read-more-link {
+            color: #007BFF;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .read-more-link:hover {
+            text-decoration: underline;
+        }
+        .tooltip {
+            border-bottom: 1px dotted #000;
+            position: relative;
+        }
+        .tooltip:hover::after {
+            content: attr(title);
+            position: absolute;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            bottom: 150%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            white-space: nowrap;
+        }
+        .qa {
+            margin-bottom: 0px;
+            padding: 10px;
+            background-color:  #6294bb;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            padding-left: 20px;
+            padding-top: -20px;
+        }
+        
+        .first{
+            top: 0;
+            border-bottom: 6px solid whitesmoke;
+            padding: 5px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 0px;
+            background-color: #0C1821;
+            border-radius: 10px;
+            margin-bottom: 0%;
+        }
+        .cont{
+            position: relative;
+            top:-40px;
+        }
+        .structure{
+            color:#000;
+            text-decoration: underline;
+        }
+        #viewer, #viewer1, #viewer2, #viewer3 {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            background-color: #ACC8E5; /* Set the background color here */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cap1{
+            position: relative;
+            left:18px;
+            text-align: center;
+        }
+        figcaption{
+            text-align: center;
+        }
+        .ref{
+            font-style: italic;
+        }
+
+       /* Mobile styles */
+@media (max-width: 600px) {
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin: 10px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+        .container1{
+            padding: 5px;
+        }
+
+        h2 {
+    font-size: 1.75rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+
+th, td {
+        
+        padding: 5px;
+        font-size: 0.875rem;
+    }
+
+    td {
+       
+        position: sticky;
+        padding-left: 0%;
+    }
+
+    td:before {
+        content: normal; 
+        position: static;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .right1{
+            float: right;
+            margin-left: 1rem;
+            width: 30vw;
+            height: 40vw;
+            min-width: auto;
+    }
+    .left{
+            float: left;
+            margin-right: 1rem;
+            width: 30vw;
+            height: 40vw;
+            min-width: auto;
+        }
+    .cont{
+            position: relative;
+            top:-10px;
+        }
+        
+}
+
+/* Tablet styles */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .container1 {
+        padding: 10px;
+    }
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            margin: 10px;
+            border: 3px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+
+        h2 {
+    font-size: 1.75rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+nav ul li {
+        display: inline-block ;
+        margin-right: 25px;
+        
+    }
+    .underlined-list li {
+        padding: 1px ; 
+    border-bottom: 1px ; 
+    text-decoration: underline white; 
+    }
+th, td {
+        
+        padding: 5px;
+        font-size: 0.875rem;
+    }
+
+    td {
+       
+        position: sticky;
+        padding-left: 1%;
+    }
+
+    td:before {
+        content: normal; 
+        position: static;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .right1{
+            float: right;
+            margin-left: 1rem;
+            width: 50vw;
+            height: 60vw;
+            min-width: auto;
+          
+        }
+        .left{
+            float: left;
+            margin-right: 1rem;
+            width: 50vw;
+            height: 60vw;
+            min-width: auto;
+        }
+        .cont{
+            position: relative;
+            top:-20px;
+        }
+        
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+
+    .container1 {
+        padding: 20px;
+    }
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            margin: 10px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+
+        h2 {
+    font-size: 1.75rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+nav ul li {
+        display: inline-block ;
+        margin-right: 25px;
+        
+    }
+    .underlined-list li {
+        padding: 1px ; 
+    border-bottom: 1px ; 
+    text-decoration: underline white; 
+    }
+th, td {
+        
+        padding: 8px;
+        font-size: 0.875rem;
+    }
+
+    td {
+       
+        position: sticky;
+        padding-left: 1%;
+    }
+
+    td:before {
+        content: normal; 
+        position: static;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+        
+    .h1 {
+            font-size: 180%;
+            text-align: center;
+            max-width: fit-content;
+            color: #FFFFFF;
+             text-shadow:2px 2px 5px rgb(219, 48, 48);
+        
+    }
+
+    .RA  {
+            
+            width: 15%;}
+            
+            .RA img{
+                width: 100%;
+                height: fit-content;
+            }
+            
+        .right1{
+            float: right;
+            margin-left: 1rem;
+        }
+        .left{
+            float: left;
+            margin-right: 1rem;
+           
+        }
+    
+}
+    </style>
+    
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="heading" id="heading">
+            <div class="container1">
+                <section id="RA">
+                    <div class="first">
+                    <figure class="RA">
+                        <img src="https://transform.octanecdn.com/width/700/https://dynamix-cdn.s3.amazonaws.com/resurgens2019com/resurgens2019com_455598121.jpeg" alt="Rheumatoid Arthristis" loading="lazy" height="100" width="100">
+                    </figure>
+                    <h1 class="nowrap" id="main-heading"> <span class="h1">RHEUMATOID ARTHRITIS</span></h1>
+                </section>
+            </div>
+        </div>
+        <div class="cont" id="cont">
+            <div class="container1">
+                <nav id="navbar">
+                    <ul class="underlined-list"> 
+                        <li class="btn1"><a href="#symptoms">Symptoms</a></li>
+                        <li class="btn1"><a href="#risk-factors">Risk Factors</a></li>
+                        <li class="btn1"><a href="#diagnosis">Diagnosis</a></li>
+                        <li class="btn1"><a href="#cytokines">Cytokines in the Pathogenesis</a></li>
+                        <li class="btn1"><a href="#antibodies">Antibodies in Rheumatoid Arthritis</a></li>
+                        <li class="btn1"><a href="#genes-proteins">Genes and Proteins Involved</a></li>
+                        <li class="btn1"><a href="#biomarkers">Biomarkers</a></li>
+                        <li class="btn1"><a href="#genetic-variants">Key Genetic Variants</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <main>
+                <div class="container1">
+                    <hr>
+                    <section>
+                        <h2>Overview</h2>
+                        <div class="qa" onclick="toggleAnswer('q1')"> What does "arthritis" mean in the context of rheumatoid arthritis?</div>
+                        <div class="answer" id="q1"> 
+                            "Arthritis" in rheumatoid arthritis refers to <span class="tooltip" title="itis">inflammation</span> of the <span class="tooltip" title="arth">joints</span>
+                        <span class="more-content">
+                            , and “rheumatoid” comes from <span class="tooltip" title="musculoskeletal illness">rheumatism</span>.
+                        </span>
+                        <a class="read-more-link" onclick="toggleReadMore1(this)">Read more</a>
+                        </div>
+                        <div class="qa" onclick="toggleAnswer('q2')"> What triggers rheumatoid arthritis to develop in individuals?</div>
+                        <div class="answer" id="q2"> Rheumatoid arthritis is typically triggered by a combination of genetic factors, such as HLA-DR1 and HLA-DR4 genes, and environmental factors like exposure to cigarette smoke or certain bacteria in the intestines.</div>
+            
+                        <div class="qa" onclick="toggleAnswer('q3')"> What is citrullination, and how does it relate to rheumatoid arthritis?</div>
+                        <div class="answer" id="q3"> Citrullination is a process where the amino acid arginine in proteins like type II collagen and vimentin is converted to citrulline. This modification can lead to confusion in the immune system, triggering autoimmune responses in rheumatoid arthritis.</div>
+
+                        <div class="qa" onclick="toggleAnswer('q4')"> How do T-helper cells contribute to inflammation in rheumatoid arthritis?</div>
+                        <div class="answer" id="q4"> T-helper cells in rheumatoid arthritis stimulate B-cells to produce autoantibodies against self-antigens. They also secrete cytokines like interferon-γ and interleukin-17, which recruit inflammatory cells like macrophages into the joint space, leading to further inflammation.</div>
+  
+                        <div class="qa" onclick="toggleAnswer('q5')"> What role do antibodies like rheumatoid factor (RF) and anti-cyclic citrullinated peptide antibody (CCP) play in rheumatoid arthritis?</div>
+                        <div class="answer" id="q5"> Rheumatoid factor targets altered IgG antibodies, forming immune complexes that contribute to joint inflammation. Anti-CCP antibodies target citrullinated proteins, further exacerbating the autoimmune response in the joints.</div>
+
+                        <div class="qa" onclick="toggleAnswer('q6')"> How does chronic inflammation in rheumatoid arthritis affect joints and surrounding tissues?</div>
+                        <div class="answer" id="q6"> Chronic inflammation leads to the formation of a thickened synovial membrane (pannus), which damages cartilage, erodes bone, and causes the proliferation of synovial cells and immune cells. This process can result in severe joint damage over time.</div>
+
+                        <div class="qa" onclick="toggleAnswer('q7')"> What are some extra-articular manifestations of rheumatoid arthritis?</div>
+                        <div class="answer" id="q7"> Rheumatoid arthritis can affect multiple organ systems beyond the joints. For example, inflammatory cytokines can travel through the bloodstream to the brain, acting as pyrogens and inducing fever.</div>
+
+                        <div class="qa" onclick="toggleAnswer('q8')"> Who is most commonly affected by rheumatoid arthritis?</div>
+                        <div class="answer" id="q8"> Rheumatoid arthritis primarily affects women aged 40 to 60 years old, typically involving multiple joints symmetrically.</div>
+
+                        <div class="qa" onclick="toggleAnswer('q9')"> What are rheumatoid factors, and how do they contribute to joint inflammation?</div>
+                        <div class="answer" id="q9"> Rheumatoid factors are autoantibodies that bind to normal IgG antibodies, forming immune complexes that activate the complement cascade. This process leads to chronic inflammation of the joints.</div>
+
+                        <div class="qa" onclick="toggleAnswer('q10')"> How does angiogenesis contribute to the progression of rheumatoid arthritis?</div>
+                        <div class="answer" id="q10"> Angiogenesis, the formation of new blood vessels around joints, facilitates the arrival of more inflammatory cells, exacerbating joint inflammation and damage in rheumatoid arthritis.</div>
+                    </section>
+                    <hr>
+                    <section id="symptoms">
+                        <div class="content">
+                            <h2>Symptoms</h2>
+                            <p>
+                                Signs and symptoms of rheumatoid arthritis may include:
+                                <ul> 
+                                    <li><strong>Tender, warm, swollen joints.</strong></li>
+                                    <li><strong>Joint stiffness that is usually worse in the mornings and after inactivity.</strong></li>
+                                    <li><strong>Fatigue, fever and loss of appetite.</strong></li>
+                                </ul>
+                                <!-- Hidden content -->
+                                <span class="more-content">
+                                    <p>Early rheumatoid arthritis tends to affect your smaller joints first — particularly the joints that attach your fingers to your hands and your toes to your feet. Commonly affected joints are the small joints like metacarpophalangeal and proximal interphalangeal joints of the hands, and the metatarsophalangeal joints of the feet.</p>
+                                    <figure class="right">
+                                        <img class="right1" src="https://creakyjoints.org//wp-content/uploads/2019/04/0419_RA-Symptoms.jpg" alt="symptoms" loading="lazy" width="500px" height="500px">
+                                        <figcaption class="cap1">Image Source: <a href="https://creakyjoints.org/living-with-arthritis/symptoms/gout-vs-rheumatoid-arthritis/">Creaky Joints</a></figcaption>
+                                    </figure>
+                                    <p>As the disease progresses, symptoms often spread to the wrists, knees, ankles, elbows, hips and shoulders. In most cases, symptoms occur in the same joints on both sides of your body. About 40% of people who have rheumatoid arthritis also experience signs and symptoms that don't involve the joints. Areas that may be affected include:</p>
+                                    <ul>
+                                        <li>Skin</li>
+                                        <li>Eyes</li>
+                                        <li>Lungs</li>
+                                        <li>Heart</li>
+                                        <li>Kidneys</li>
+                                        <li>Salivary glands</li>
+                                        <li>Nerve tissue</li>
+                                        <li>Bone marrow</li>
+                                        <li>Blood vessels</li>
+                                    </ul>
+                                    <p>Rheumatoid arthritis signs and symptoms may vary in severity and may even come and go. Periods of increased disease activity, called flares, alternate with periods of relative remission — when the swelling
+                                        and pain fade or disappear. Over time, rheumatoid arthritis can cause joints to deform and shift out of place.<a href="#ref2">[2]</a></p>
+                                </span>  
+                            </p>
+                            <a class="read-more-link" onclick="toggleReadMore(this)">Read more</a>
+                        </div>
+                    </section>
+                    <hr>
+                    <section id="risk-factors">
+                        <h2>Risk Factors</h2>
+                        <p>Factors that may increase your risk of rheumatoid arthritis include:</p>
+                        <ul>
+                            <li><strong>Your sex:</strong> Women are more likely than men to develop rheumatoid arthritis.</li>
+                            <li><strong>Age:</strong> Rheumatoid arthritis can occur at any age, but it most commonly begins in middle age.</li>
+                            <li><strong>Family history:</strong> If a member of your family has rheumatoid arthritis, you may have an increased risk of the disease.</li>
+                            <li><strong>Smoking:</strong> Cigarette smoking increases your risk of developing rheumatoid arthritis, particularly if you have a genetic predisposition for developing the disease. Smoking also appears to be associated with greater disease severity.</li>
+                            <li><strong>Excess weight:</strong> People who are overweight appear to be at a somewhat higher risk of developing rheumatoid arthritis.<a href="#ref3">[3]</a></li>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section id="diagnosis">
+                        <h2>Diagnosis</h2>
+                        <figure>
+                            <img class="right1" src="https://jpabs.org/800/600/http/i.pinimg.com/originals/f9/f3/fe/f9f3feef0d20e704d9edfff0d849e6fe.png" alt="Diagnosis" loading="lazy" height="470px" width="500px">
+                        </figure>
+                        <p>
+                            Diagnosis of rheumatoid arthritis usually involves confirmatory blood tests, like looking for the presence of rheumatoid factor and anti-citrullinated peptide antibody. Additionally, imaging studies, such as X-ray, usually reveal decreased bone density around affected joints, soft tissue swelling, narrowing of the joint space, and bony erosions.
+                        </p>
+                        <p>
+                            The long-term management of rheumatoid arthritis is use of disease-modifying antirheumatic medications like methotrexate, hydroxychloroquine, sulfasalazine, and which can help to suppress the inflammation. In addition, there are a variety of medications called biologic response modifiers or biologics.
+                        </p>
+                        <p>
+                            Some biologics, such as: <br>
+                            <strong>Abatacept →</strong> work by suppressing the activity of T cells, <br>
+                            <strong>Rituximab →</strong>suppress B cells,<br>
+                            <strong>Adalimumab, Etanercept, and Infliximab →</strong>that block various chemokines like tumor necrosis factor, <br> 
+                            <strong>Anakinra →</strong>blocks interleukin 1, and <br>
+                            <strong>Tocilizumab →</strong>blocks interleukin 6. <br>
+                        </p>
+                    </section>
+                    <hr>
+                    <section id="cytokines">
+                        <h2 class="cyto">Cytokines in the pathogenesis of rheumatoid arthritis</h2>
+                        <figure class="left1">
+                            <img class="left" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnri2094/MediaObjects/41577_2007_Article_BFnri2094_Fig1_HTML.jpg" alt="cytokines" loading="lazy">
+                            <figcaption>Image Source: <a href="https://www.nature.com/articles/nri2094">Nature Reviews</a></figcaption>
+                        </figure>
+                        <p>
+                            Cytokines regulate inflammation, autoimmunity and articular destruction in the joints of patients with rheumatoid arthritis. In particular, tumour-necrosis factor (TNF) has proved to be of particular utility as a therapeutic target.
+                        </p>
+                        <p>
+                            T-cell activation particularly towards a T helper 1 (TH1)-cell and/or a TH17-cell phenotype is associated with the presence in the synovial tissue of interleukin-15 (IL-15), IL-1, IL-6, transforming growth factor-β (TGFβ), IL-12 and IL-23. In turn, T cells drive inflammation via IL-17 release and by cognate interactions with adjacent macrophages.
+                        </p>
+                        <p>
+                            B cells have a critical role in synovitis, acting in part via antigen presentation and cytokine release. B-cell differentiation and expansion, in turn, is supported in the synovial tissue by IL-6, IL-10, B-cell activating factor (BAFF) and a proliferation-inducing ligand (APRIL).
+                        </p>
+                        <p>
+                            Macrophage-derived cytokines including TNF, IL-1, IL-6, IL-15 and IL-18 drive many of the pro-inflammatory pathways in synovial tissue.
+                        </p>
+                        <p>
+                            Cytokines are responsible for osteoclast maturation and activation. There appears to be a hierarchical role for receptor activator of nuclear factor-κB ligand (RANKL) in this process together with TNF, IL-17 and IL-1.
+                        </p>
+                        <p>
+                            Early intervention, for example with TNF-blocking agents, appears to offer higher clinical response rates and improved chances of achieving clinical remission. Clinical studies are ongoing targeting IL-6, IL-15, IL-18, IL-17, granulocyte/macrophage colony-stimulating factor (GM-CSF) and others, with the objective of further improving clinical outcomes.
+                        </p>
+                    </section>
+                </div>
+                <div class="container1">
+                    <hr>
+                    <section id="antibodies">            
+                        <h2>Antibodies in Rheumatoid Arthritis</h2>
+                        <table>
+                            <tr>
+                                <th>Antibody</th>
+                                <th>Description</th>
+                                <th>Significance</th>
+                            </tr>
+                            <tr>
+                                <td>1. Rheumatoid Factor (RF)</td>
+                                <td>Rheumatoid factor is an autoantibody that targets the Fc region of IgG antibodies.</td>
+                                <td>While RF is found in about 70-80% of people with RA, it is not specific to RA and can be present in other autoimmune diseases, infections, and in a small percentage of healthy individuals.</td>
+                            </tr>
+                            <tr>
+                                <td>2. Anti-Citrullinated Protein Antibodies (ACPAs)</td>
+                                <td>ACPA target proteins that have undergone a post-translational modification called citrullination, where the amino acid arginine is converted into citrulline.</td>
+                                <td>These antibodies are highly specific for RA, present in about 60-70% of patients. They can be detected in the blood years before clinical symptoms appear and are associated with a more aggressive disease course.</td>
+                            </tr>
+                            <tr>
+                                <td>3. Anti-Carbamylated Protein Antibodies (Anti-CarP)</td>
+                                <td>These antibodies recognize carbamylated proteins, a modification similar to citrullination.</td>
+                                <td>Anti-CarP antibodies are less specific than ACPAs but are associated with severe disease and joint damage.</td>
+                            </tr>
+                            <tr>
+                                <td>4. Other Autoantibodies</td>
+                                <td>Anti-Ro/SSA and Anti-La/SSB: More commonly associated with Sjögren’s syndrome but can be present in RA patients, particularly those with secondary Sjögren’s.<br>
+                                       Anti-RA33: Targets heterogeneous nuclear ribonucleoprotein (hnRNP) and is present in some RA patients.</td>
+                                <td>N/A</td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+                <div class="container1">
+                    <hr>
+                    <header>
+                        <h2 class="hello">Genes and Proteins Involved in Rheumatoid Arthritis (RA)</h2>
+                    </header>
+                    <section id="genes-proteins">
+                        <h3>Key Genetic Factors</h3>
+                        <h4>HLA Genes</h4>
+                        <ul>
+                            <li><strong>HLA-DRB1*01, HLA-DRB1*04:</strong> Known shared epitope (SE) alleles associated with RA susceptibility.</li>   
+                            <li><strong>HLA-DRB1*13, HLA-DRB1*15:</strong> Additional HLA alleles linked to RA susceptibility.</li>
+                            <figure class="middle1">
+                                <img class="middle" src="https://www.researchgate.net/publication/341158643/figure/fig4/AS:887821162278922@1588684468995/HLA-DRB1-gene-is-encoded-by-six-exons-Exon-1-encodes-the-leader-peptide-Exons-2-and-3.jpg" alt="allele" loading="lazy" width="479" height="316">
+                                <figcaption class="cap2">Image Source: <a href="https://www.researchgate.net/figure/HLA-DRB1-gene-is-encoded-by-six-exons-Exon-1-encodes-the-leader-peptide-Exons-2-and-3_fig4_341158643">ResearchGate</a></figcaption>
+                            </figure>
+                            </ul>
+                            <h4>Non-HLA Genes</h4>
+                            <ul>
+                                <li><a href="https://www.rcsb.org/structure/2P6X"><strong class="structure"><span class="tooltip" title="Click to go to PDB page">PTPN22:</span></strong></a> Encodes protein tyrosine phosphatase, non-receptor type 22, strongly associated with RA.</li>
+                                <div id="viewer" ></div>
+                                <li><a href="https://www.rcsb.org/structure/6NZ8"><strong class="structure"><span class="tooltip" title="Click to go to PDB page">IL23R:</span></strong></a> Interleukin-23 receptor gene involved in immune response.</li>
+                                <div id="viewer1" ></div>
+                                <li><strong>TRAF1:</strong> Tumor necrosis factor receptor-associated factor 1, associated with RA.</li>
+                                <li><a href="https://www.rcsb.org/structure/1I8L"><strong class="structure"><span class="tooltip" title="Click to go to PDB page">CTLA4:</span></strong></a> Cytotoxic T-lymphocyte-associated protein 4, plays a role in immune regulation.</li>
+                                <div id="viewer2" ></div>
+                                <li><strong>IRF5:</strong> Interferon regulatory factor 5, involved in immune response.</li>
+                                <li><strong>STAT4:</strong> Signal transducer and activator of transcription 4, implicated in cytokine signaling.</li>
+                                <li><strong>CCR6:</strong> Chemokine receptor, involved in inflammatory response.</li>
+                                <li><a href="https://www.rcsb.org/structure/1WDA"><strong class="structure"><span class="tooltip" title="Click to go to PDB page">PADI4:</span></strong></a> Peptidylarginine deiminase 4, involved in protein citrullination, a key event in RA pathogenesis.</li>
+                                <div id="viewer3" ></div>
+                            </ul>
+                    </section>
+                    <section>
+                        <h3>Proteins Involved</h3>
+                        <ul>
+                            <li><strong>HLA-DR (Major Histocompatibility Complex):</strong> Critical for antigen presentation and immune response.</li>
+                            <li><strong>Protein Tyrosine Phosphatase, Non-receptor Type 22 (PTPN22):</strong> Plays a role in immune response modulation.</li>
+                            <li><strong>Interleukin-23 Receptor (IL23R):</strong> Important for immune system signaling.</li>
+                            <li><strong>Tumor Necrosis Factor Receptor-Associated Factor 1 (TRAF1):</strong> Involved in signaling pathways related to inflammation.</li>
+                            <li><strong>Cytotoxic T-Lymphocyte-Associated Protein 4 (CTLA4):</strong> Regulates immune responses.</li>
+                            <li><strong>Interferon Regulatory Factor 5 (IRF5):</strong> Involved in the regulation of interferons in immune responses.</li>
+                            <li><strong>Signal Transducer and Activator of Transcription 4 (STAT4):</strong> Key in cytokine signaling pathways.</li>
+                            <li><strong>Chemokine Receptor 6 (CCR6):</strong> Involved in the recruitment of immune cells to inflammation sites.</li>
+                            <li><strong>Peptidylarginine Deiminase 4 (PADI4):</strong> Enzyme responsible for the citrullination of proteins, contributing to autoimmunity in RA.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Other Genes and Proteins</h3>
+                        <ul>
+                            <li><strong>FCGR3A:</strong> Gene encoding Fc gamma receptor IIIa, involved in antibody-dependent immune responses.</li>
+                            <li><strong>IL6ST:</strong> Gene encoding glycoprotein 130 (gp130), part of the receptor complex for interleukin-6 and other cytokines.</li>
+                            <li><strong>IL2RA and IL2RB:</strong> Genes encoding interleukin-2 receptor alpha (CD25) and beta (CD122) chains.</li>                                    <li><strong>CCL21:</strong> Gene encoding chemokine (C-C motif) ligand 21, involved in immune cell trafficking and homing.</li>
+                            <li><strong>CD40:</strong> Gene encoding CD40, a receptor on antigen-presenting cells crucial for their activation and interactions with T cells.</li>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section id="biomarkers">
+                        <h2>Biomarkers</h2>
+                        <h3>Genetic Variants and Polymorphisms</h3>
+                        <ul>
+                            <li><strong>Genetic Markers:</strong> Certain genetic markers, such as the HLA-DRB1 shared epitope, are associated with an increased risk of developing RA and may influence disease severity and treatment response.</li>
+                            <li><strong>TNF G308A and A238G:</strong> Polymorphisms in the TNF gene associated with increased efficacy of anti-TNF therapies.</li>
+                            <li><strong>FCGR3A Val158Phe:</strong> Associated with the efficacy of rituximab treatment (IgG).</li>
+                        </ul>
+                        <h3>Autoantibodies</h3>
+                        <ul>
+                            <li><strong>Anti-cyclic citrullinated protein antibodies (ACPA):</strong> Strongly associated with RA and are a key diagnostic biomarker.</li>
+                            <li><strong>Rheumatoid Factor (RF):</strong> An antibody that can be indicative of RA but is less specific than ACPA.</li>
+                        </ul>
+                        <h3>Cytokines and Receptors</h3>
+                        <ul>
+                            <li><strong>Interleukin-6 (IL-6):</strong> A cytokine involved in inflammation and a target for tocilizumab, a therapeutic antibody used in RA treatment.</li>
+                            <li><strong>Tumor Necrosis Factor (TNF):</strong> A key cytokine in RA pathogenesis, targeted by various biologic therapies.</li>
+                            <li><strong>Interleukin-1 (IL-1)</strong></li>
+                            <li><strong>Interleukin-17 (IL-17)</strong></li>
+                        </ul>
+                        <h3>Other Biomarkers</h3>
+                        <ul>
+                            <li><strong>C-reactive Protein (CRP) and Erythrocyte Sedimentation Rate (ESR):</strong> Nonspecific markers of inflammation often elevated in RA, used to assess disease activity and response to treatment.</li>
+                            <li><strong>Matrix Metalloproteinases (MMPs):</strong> Enzymes involved in tissue remodeling and degradation of extracellular matrix components. Elevated levels of certain MMPs, such as MMP-3, are associated with joint destruction in RA.</li>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section id="genetic-variants">
+                        <h2 class="hello1">Genetic Variants and Polymorphisms Relevant to Rheumatoid Arthritis (RA)</h2>
+                        <table>
+                            <tr>
+                                <th>Gene</th>
+                                <th>Description</th>
+                                <th>Polymorphisms</th>
+                                <th>Impact on RA</th>
+                            </tr>
+                            <tr>
+                                <td>HLA-DRB1</td>
+                                <td>Part of MHC class II molecules; immune system recognition</td>
+                                <td>Specific alleles, particularly SE motif</td>
+                                <td>Strong association with RA susceptibility; influences autoimmune response</td>
+                            </tr>
+                            <tr>
+                                <td>PTPN22</td>
+                                <td>Negatively regulates T-cell receptor signaling</td>
+                                <td>R620W variant (SNP)</td>
+                                <td>Increased risk of RA; affects immune response regulation</td>
+                            </tr>
+                            <tr>
+                                <td>STAT4</td>
+                                <td>Transcription factor in T-helper cell differentiation</td>
+                                <td>Various variants</td>
+                                <td>Associated with increased RA risk; promotes inflammatory responses</td>
+                            </tr>
+                            <tr>
+                                <td>CTLA4</td>
+                                <td>Immune checkpoint inhibitor</td>
+                                <td>Various polymorphisms</td>
+                                <td>Linked to RA; impacts T-cell activation</td>
+                            </tr>
+                            <tr>
+                                <td>PADI4</td>
+                                <td>Enzyme in citrullination of proteins</td>
+                                <td>Various variants</td>
+                                <td>Linked to increased RA risk; affects citrullinated protein production</td>
+                            </tr>
+                            <tr>
+                                <td>TNF</td>
+                                <td>Tumor necrosis factor-alpha cytokine</td>
+                                <td>G308A and A238G variants in promoter region</td>
+                                <td>Influence TNF-alpha levels; affects inflammation and anti-TNF therapy response</td>
+                            </tr>
+                            <tr>
+                                <td>IL6</td>
+                                <td>Interleukin-6 cytokine</td>
+                                <td>Various variants</td>
+                                <td>Affects IL-6 expression; influences inflammation severity in RA</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="ref" id="references">
+                        <h2>References</h2>
+                        <ol>
+                            <!-- Overview -->
+                            <li id="ref1">Osmosis from Elsevier<i>Rheumatoid Arthritis Overview</i>. Retrieved from <a href="https://youtu.be/EB5zxdAQGzU?si=CohNfmoGjKLwsu_8">Osmosis.org</a></li>
+                            <li id="ref2">Mayo Clinic. <i>Rheumatoid Arthritis: Symptoms and Causes</i>. Retrieved from <a href="https://www.mayoclinic.org/diseases-conditions/rheumatoid-arthritis/symptoms-causes/syc-20353648">mayoclinic.org</a></li>
+                            
+                            <!-- Symptoms -->
+                            <li id="ref3">Mayo Clinic. <i>Rheumatoid Arthritis: Risk Factors</i>. Retrieved from <a href="https://www.mayoclinic.org/diseases-conditions/rheumatoid-arthritis/symptoms-causes/syc-20353648">mayoclinic.org</a></li>
+                            <li id="ref4">Arthritis Foundation. (2024). <i>RA Symptoms and Diagnosis</i>. Retrieved from <a href="https://www.uptodate.com/contents/diagnosis-and-differential-diagnosis-of-rheumatoid-arthritis/print">uptodate.com</a></li>
+                            
+                            <!-- Risk Factors -->
+                            <li id="ref5">American College of Rheumatology. (2024).  <a href="https://rheumatology.org">rheumatology.org</a></li>
+                            <li id="ref6">Centers for Disease Control and Prevention (CDC). (2023). <a href="https://cdc.gov">cdc.gov</a></li>
+                        </ol>
+                    </section>
+                    
+            </main>
+            <div class="container1">
+                <footer>
+                    <hr>
+                    <nav >
+                        <ol >
+                            <H3 class="white">Related topics:</H3>
+                            <li class="btn1"><a href="riskfactors.html" class="nav-link" data-heading="Risk Factors for Rheumatoid Arthritis: A State-of-the-Art Review">Risk Factors for Rheumatoid Arthritis: A State-of-the-Art Review</a></li>
+                            <li class="btn1"><a href="antibodies.html" class="nav-link" data-heading="Antibody Assays and Associations in Rheumatoid Arthritis">Antibody Assays and Associations in Rheumatoid Arthritis</a></li>
+                            <li class="btn1"><a href="biomarkers.html" class="nav-link" data-heading="Biomarkers: Detailed context">Biomarkers: Detailed context</a></li>
+                            <li class="btn1"><a href="treatment.html" class="nav-link" data-heading="Rheumatoid Arthritis: A Brief Overview of the Treatment">Rheumatoid Arthritis: A Brief Overview of the Treatment</a></li>
+                            <li class="btn1"><a href="herbalteas.html" class="nav-link" data-heading="An Ayurvedic approach towards RA treatment and Effect of Herbal Teas on RA">An Ayurvedic approach towards RA treatment and Effect of Herbal Teas on RA</a></li>
+                        </ol>
+                    </nav>
+                    <hr>
+                </footer>
+                <a href="#RA"><button onclick="topFunction()" id="topBtn" title="Go to top">Top</button></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+          // Back to top button
+        var topButton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+            }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        
+        function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+            answer.style.display = "block";
+        } else {
+            answer.style.display = "none";
+        }
+        }
+
+        function toggleReadMore(link) {
+            const contentDiv = link.closest('.content');
+            const moreContent = contentDiv.querySelectorAll('.more-content');
+            console.log('moreContent:', moreContent);
+            const allHidden = Array.from(moreContent).every(content => content.style.display === "none" || content.style.display === "");
+            console.log('allHidden:', allHidden);
+
+            moreContent.forEach(content => {
+                content.style.display = allHidden ? "block" : "none";
+            });
+
+            link.textContent = allHidden ? "Read less" : "Read more";
+        }
+
+        function toggleReadMore1(link) {
+            var moreContent = link.previousElementSibling;
+            if (moreContent.style.display === "none" || moreContent.style.display === "") {
+                moreContent.style.display = "inline";
+                link.innerText = "Read less";
+            } else {
+                moreContent.style.display = "none";
+                link.innerText = "Read more";
+            }
+        }
+        let viewer = $3Dmol.createViewer("viewer", {
+            defaultcolors: $3Dmol.rasmolElementColors
+        });
+        
+        let viewer1 = $3Dmol.createViewer("viewer1", {
+            defaultcolors: $3Dmol.rasmolElementColors
+        });
+
+        let viewer2 = $3Dmol.createViewer("viewer2", {
+            defaultcolors: $3Dmol.rasmolElementColors
+        });
+
+        let viewer3 = $3Dmol.createViewer("viewer3", {
+            defaultcolors: $3Dmol.rasmolElementColors
+        });
+
+        viewer.setBackgroundColor("#ACC8E5");
+        viewer1.setBackgroundColor("#ACC8E5");
+        viewer2.setBackgroundColor("#ACC8E5");
+        viewer3.setBackgroundColor("#ACC8E5");
+
+        function loadPDB(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    viewer.addModel(data, "pdb");
+                    viewer.setStyle({}, {stick: {}});
+                    viewer.zoomTo();
+                    viewer.render();
+                })
+                .catch(error => console.error('Error fetching the PDB file:', error));
+        }
+
+        loadPDB("2p6x.pdb");
+
+        function loadPDB1(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    viewer1.addModel(data, "pdb");
+                    viewer1.setStyle({}, {stick: {}});
+                    viewer1.zoomTo();
+                    viewer1.render();
+                })
+                .catch(error => console.error('Error fetching the PDB file:', error));
+        }
+
+        loadPDB1("6nz8.pdb");
+
+        function loadPDB2(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    viewer2.addModel(data, "pdb");
+                    viewer2.setStyle({}, {stick: {}});
+                    viewer2.zoomTo();
+                    viewer2.render();
+                })
+                .catch(error => console.error('Error fetching the PDB file:', error));
+        }
+
+        loadPDB2("1i8l.pdb");
+
+        function loadPDB3(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    viewer3.addModel(data, "pdb");
+                    viewer3.setStyle({}, {stick: {}});
+                    viewer3.zoomTo();
+                    viewer3.render();
+                })
+                .catch(error => console.error('Error fetching the PDB file:', error));
+        }
+
+        loadPDB3("1wda.pdb");
+    </script>
+      
+</body>
+
+</html>

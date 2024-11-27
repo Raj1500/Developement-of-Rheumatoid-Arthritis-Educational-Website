@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Antibody Assays and Associations in Rheumatoid Arthritis"</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin: 20px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: fit-content;
+        }
+        .fig {
+            width: auto;
+        }
+
+        .fig img {
+            width: 50vw;
+            height: 30vw;
+            min-width: auto;
+            border:2px solid black ;
+            border-radius: 0%;
+        }
+        .middle{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        
+       
+        p {
+            color: black;    
+        }
+        nav{
+            border: 2px solid #0C1821;
+            background-color: #052241;
+            border-radius: 20px;
+            width: auto;
+            padding: 0.5em;
+            height: auto;
+            position: relative;
+            top:-27px;
+        }
+        nav ul{
+            color: #FFFFFF;
+            
+        }
+        table {
+            width: 100%;
+            border-collapse: separate;
+            margin-bottom: 50px;
+            display: inline-table;
+            justify-content: space-around;
+        }
+        th, td {
+            border: 1px outset #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #162b3b;
+            color: #FFFFFF;
+        }
+        h1{
+            font-size: fit-content;
+            color: #FFFFFF;
+            text-shadow:2px 2px 5px rgb(219, 48, 48);
+            text-align:center;
+            background-color: #0C1821;
+            border-radius: 10px;
+            border-bottom:5px solid #ffffff;
+        }
+        h2 {
+            border-bottom: 3px solid whitesmoke;
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            border-radius: 20px;
+            background-color: #0C1821;
+            width: auto;
+
+        }
+        
+        a {
+            text-decoration: none;
+            color: coral ;
+        }
+        a:visited {
+            color:wheat;
+        }
+        a:hover {
+            color: white;
+
+        }
+
+        a:active {
+            color: antiquewhite;
+
+        }
+
+        footer {
+            background-color: #0C1821;
+            color: white;
+            text-align: left;
+            padding: 10px 0;
+        }
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color:  #061727;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #topBtn:hover {
+            background-color: #555;
+        }
+        .btn1{
+            box-shadow: 10px rgb(133, 165, 175);
+        }
+        .btn1:active{
+            box-shadow: none;
+            position: relative;
+            top:7px;
+            left:10px;
+        }
+
+       /* Mobile styles */
+@media (max-width: 600px) {
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin: 10px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+        .container{
+            padding: 5px;
+        }
+
+       h1, h2 {
+    font-size: 1.7rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+
+th, td {
+        
+        padding: 5px;
+        font-size: 0.875rem;
+    }
+
+    td {
+       
+        position: relative;
+        padding-left: 0%;
+    }
+
+    td:before {
+        content: normal; 
+        position: relative;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    nav{
+        position:relative;
+        top:-18px;
+        }
+        
+}
+
+/* Tablet styles */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .container {
+        padding: 10px;
+    }
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            margin: 20px;
+            border: 3px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+
+        h2 {
+    font-size: 1.75rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+th, td {
+        
+        padding: 5px;
+        font-size: 0.875rem;
+    }
+
+    td {
+       
+        position: sticky;
+        padding-left: 1%;
+    }
+
+    td:before {
+        content: normal; 
+        position: static;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    nav{
+        position:relative;
+        top:-24px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+
+    .container {
+        padding: 20px;
+    }
+    body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            margin: 50px;
+            border: 4px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+
+        h2 {
+    font-size: 1.75rem; 
+}
+h3 {
+    font-size: 1.5rem; }
+h4 {
+    font-size: 1.25rem; 
+}
+th, td {
+        
+        padding: 8px;
+        font-size: 0.875rem;
+    }
+
+    td {
+       
+        position: sticky;
+        padding-left: 1%;
+    }
+
+    td:before {
+        content: normal; 
+        position: relative;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    nav ul {
+        color: whitesmoke;    }
+    
+}
+    </style>
+</head>
+<body>
+    <h1 id="head">Antibody Assays and Associations in Rheumatoid Arthritis</h1>
+    <nav>
+        <ul>
+            <li class="btn1"><a href="#ccp">Predictive Value of Antibodies to Citrullinated Proteins/Peptides in Early Rheumatoid Arthritis</a></li>
+            <li class="btn1"><a href="#acp">Anti-Carbamylated Protein Antibodies as a Reproducible Independent Type of Rheumatoid Arthritis Autoantibodies</a></li>
+            <li class="btn1"><a href="#ssa">Anti-Ro/SSA antibodies in rheumatoid arthritis: Clinical and immunologic associations</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <h2 id="ccp">Predictive Value of Antibodies to Citrullinated Proteins/Peptides in Early Rheumatoid Arthritis</h2>
+
+    
+    <p>The predictive value of antibodies to citrullinated proteins/peptides for joint outcomes in early rheumatoid arthritis patients:</p>
+
+    <p>191 patients with RA onset within the past year were followed for five years. Baseline serum samples from 145 patients were obtained before any DMARD treatment. Antibody assays included APF and AKA by indirect immunofluorescence, and anti-CCP antibodies by ELISA. Radiographic evaluation using modified Sharp scores was performed at baseline, three years, and five years.</p>
+
+    <p>Antibodies to citrullinated proteins/peptides, identified early in RA using APF IIF or anti-CCP ELISA, are strong predictors of radiographic joint damage. Anti-CCP antibodies showed significant predictive value for total Sharp score increase after five years (OR 2.5; 95% CI 1.2-5.0).</p>
+
+    <p>Early identification of anti-CCP and APF antibodies can aid in predicting long-term joint damage in patients with early RA.</p>
+
+    <h3>Performance of Antibody Tests in Predicting Radiographic Progression</h3>
+    <table>
+        <caption>5-Year Sharp Score Odds Ratios and Performance Metrics</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Antibody</th>
+                <th colspan="2">Total Sharp Score</th>
+                <th colspan="2">Erosions</th>
+                <th colspan="2">Joint Space Narrowing</th>
+            </tr>
+            <tr>
+                <th>OR (95% CI)</th>
+                <th>Sensitivity (%)</th>
+                <th>OR (95% CI)</th>
+                <th>Sensitivity (%)</th>
+                <th>OR (95% CI)</th>
+                <th>Sensitivity (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Anti-CCP</td>
+                <td>2.5 (1.2-5.0)</td>
+                <td>67</td>
+                <td>3.4 (1.6-7.2)</td>
+                <td>74</td>
+                <td>1.8 (0.8-3.6)</td>
+                <td>62</td>
+            </tr>
+            <tr>
+                <td>APF</td>
+                <td>2.4 (1.2-4.9)</td>
+                <td>57</td>
+                <td>1.3 (0.6-2.7)</td>
+                <td>52</td>
+                <td>2.4 (1.2-4.7)</td>
+                <td>58</td>
+            </tr>
+            <tr>
+                <td>AKA</td>
+                <td>1.3 (0.6-2.6)</td>
+                <td>38</td>
+                <td>1.2 (0.5-2.5)</td>
+                <td>32</td>
+                <td>1.4 (0.7-2.8)</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>RF</td>
+                <td>0.7 (0.3-1.5)</td>
+                <td>69</td>
+                <td>1.2 (0.5-2.8)</td>
+                <td>69</td>
+                <td>0.5 (0.2-1.1)</td>
+                <td>65</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Performance of Antibody Tests Stratified by RF Status</h3>
+    <table>
+        <caption>5-Year Sharp Score Odds Ratios and Performance Metrics Stratified by RF Status</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">5-Year Sharp Score</th>
+                <th rowspan="2">Antibody Status</th>
+                <th colspan="4">RF+ Status</th>
+                <th colspan="4">RF- Status</th>
+            </tr>
+            <tr>
+                <th>OR (95% CI)</th>
+                <th>Sensitivity (%)</th>
+                <th>OR (95% CI)</th>
+                <th>Sensitivity (%)</th>
+                <th>OR (95% CI)</th>
+                <th>Sensitivity (%)</th>
+                <th>OR (95% CI)</th>
+                <th>Sensitivity (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Total</td>
+                <td>Anti-CCP</td>
+                <td>2.3 (1.0-5.5)</td>
+                <td>67</td>
+                <td>2.1 (0.5-8.3)</td>
+                <td>65</td>
+                <td>2.1 (0.5-8.3)</td>
+                <td>65</td>
+                <td>2.1 (0.5-8.3)</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>APF</td>
+                <td>3.0 (1.3-7.2)</td>
+                <td>60</td>
+                <td>1.4 (0.4-5.4)</td>
+                <td>53</td>
+                <td>1.4 (0.4-5.4)</td>
+                <td>53</td>
+                <td>1.4 (0.4-5.4)</td>
+                <td>53</td>
+            </tr>
+            <tr>
+                <td>AKA</td>
+                <td>1.2 (0.5-2.7)</td>
+                <td>35</td>
+                <td>1.3 (0.3-5.4)</td>
+                <td>40</td>
+                <td>1.3 (0.3-5.4)</td>
+                <td>40</td>
+                <td>1.3 (0.3-5.4)</td>
+                <td>40</td>
+            </tr>
+            <!-- More rows as needed -->
+        </tbody>
+    </table>
+    <hr>
+    
+    <h2 id="acp">Anti-Carbamylated Protein Antibodies as a Reproducible Independent Type of Rheumatoid Arthritis Autoantibodies</h2>
+
+    <ul>
+        <li>Significance of Anti-CarP Antibodies: The study aims to replicate findings regarding anti-CarP antibodies, a newly described type of RA-specific autoantibodies, using an independent ELISA.</li>
+        <li>Findings: The presence and titers of anti-CarP correlated with ACPA, but not with known genetic and exposure risk factors of ACPA. Anti-CarP antibodies were independently associated with a higher prevalence of bone erosions.</li>
+        <li>Implications: These results suggest that determining anti-CarP antibodies could help explain RA pathogenesis and identify clinically relevant patient subgroups.</li>
+        <li>Sample Collection: Involved 520 RA patients and 278 healthy controls, all Spanish Caucasians.</li>
+        <li>Antibody Detection: ELISA was used to detect anti-CarP antibodies, with notable in vitro carbamylation of fetal calf serum (FCS).</li>
+    </ul>
+
+    <table>
+        <caption>  Characteristics of the patients with RA included in the study.</caption>
+        <tr>
+            <th>Feature</th>
+            <th>n (%)</th>
+        </tr>
+        <tr>
+            <td>Gender (women)</td>
+            <td>399 (76.7)</td>
+        </tr>
+        <tr>
+            <td>Age of disease onset, median (IQR) years</td>
+            <td>48.6 (35.8–57.2)</td>
+        </tr>
+        <tr>
+            <td>Duration of follow-up, median (IQR) years</td>
+            <td>12.1 (5.3–20.7)</td>
+        </tr>
+        <tr>
+            <td>Ever smokers</td>
+            <td>97 (20.3)</td>
+        </tr>
+        <tr>
+            <td>Erosions</td>
+            <td> 325 (65.7)</td>
+        </tr>
+        <tr>
+            <td>anti-CCP positive</td>
+            <td> 334 (64.2)</td>
+        </tr>
+        <tr>
+            <td>RF positive</td>
+            <td> 301 (60.2)</td>
+        </tr>
+        <tr>
+            <td>Shared epitope, carrier</td>
+            <td>299 (57.5)</td>
+        </tr>
+        <tr>
+            <td>PTPN22, carrier</td>
+            <td> 137 (26.5)</td>
+        </tr>
+    </table>
+
+
+    <ul>
+            <li>Prevalence: 29.4% of RA patients were positive for anti-CarP antibodies, which is lower than the fraction positive for anti-CCP.</li>
+            <li>Correlation: Anti-CarP antibodies correlated with anti-CCP titers but were less concordant than RF and anti-CCP. A subset of patients were anti-CarP+ and anti-CCP-.</li>
+            <li>Genetic Associations: No significant association was found between anti-CarP antibodies and HLA-DRB1 or PTPN22 risk alleles, or smoking. </li>
+            <li>Bone Erosions: Anti-CarP antibodies were independently associated with bone erosions, even after adjusting for anti-CCP status. </li>
+    </ul>    
+<figure>
+    <img class="middle" src="https://www.researchgate.net/publication/306293190/figure/fig1/AS:396934503256065@1471647968143/Stratified-analysis-of-RA-risk-factors-according-to-the-anti-CarP-and-anti-CCP.png" alt="Prevalence of RA bone erosions in anti-CCP and anti-CarP defined subgroups. Error bars
+    represent 95% CI. P value from logistic regression analysis adjusted for gender, age of diagnosis and time of
+    follow-up." width="220px" height="420px" >
+    <figcaption>
+    <strong>Prevalence of RA bone erosions in anti-CCP and anti-CarP defined subgroups.</strong> Error bars
+        represent 95% CI. P value from logistic regression analysis adjusted for gender, age of diagnosis and time of
+        follow-up.
+    </figcaption>
+</figure>
+    <h3>Discussion</h3>
+    <ul>
+            <li>Reproducibility: Confirms the distinct characteristics of anti-CarP antibodies across different European populations. </li>
+             <li>Pathogenesis and Clinical Utility: Anti-CarP antibodies provide new insights into RA pathogenesis and could aid in patient classification and treatment response prediction.</li>
+             <li>Future Research: Need for further studies to identify specific risk factors and the mechanisms underlying the pathogenic role of anti-CarP antibodies.</li>
+    </ul>
+    <figure>
+        <img class="middle" src="https://www.researchgate.net/publication/306293190/figure/fig3/AS:396941071536131@1471649535003/Prevalence-of-RA-bone-erosions-in-anti-CCP-and-anti-CarP-defined-subgroups-Error-bars.png" alt="Prevalence of RA bone erosions in anti-CCP and anti-CarP defined subgroups. Error bars represent 95% CI. P value from logistic regression analysis adjusted for gender, age of diagnosis and time of follow-up." width="220" height="220" loading="lazy">
+        <figcaption>
+            <strong>Prevalence of RA bone erosions in anti-CCP and anti-CarP defined subgroups.</strong> Error bars represent 95% CI. P value from
+logistic regression analysis adjusted for gender, age of diagnosis and time of follow-up.
+        </figcaption>
+    </figure>
+  
+    <p>
+         Anti-CarP antibodies are validated as independent RA autoantibodies with a distinct profile from ACPA, particularly in their association with bone erosions.
+         Their reproducibility across different settings supports their potential clinical utility in understanding and managing RA.
+    </p>
+    <hr>
+    <h2 id="ssa">Anti-Ro/SSA antibodies in rheumatoid arthritis: Clinical and immunologic
+        associations</h2>
+        <p>Anti-Ro/SSA antibodies were found in rheumatoid arthritis (RA) with frequency ranging from 3 to 15%
+           Anti-Ro positive RA patients were found with more extra-articular features (sicca, skin vasculitis, leukopenia), wide immunological activation (hypergammaglobulinemia, high titer RF and ANA, activation of complement factors) and different immunogenetic features</p>
+        <h4>1. Articular and extra-articular features</h4>
+        <ul>
+            <li>Articular features of RA were represented by the pattern of joint involvement at onset (oligo or polyarthritis; symmetric or asymmetric distribution; small and/or large joints) and the trend to develop bone erosions evaluated by Sharp’s method.</li>
+            <li>Polyarthritis was usually reported, with symmetrical distribution and prolonged morning stiffness in more patients. Small and large joints were involved, while only small joints were involved in most of patients, without any difference between anti-Ro/SSA positive and anti-Ro/SSA negative patients.</li>
+            <li>The extra-articular features were divided into vasculitic (rheumatoid nodules, scleritis, interstitial lung disease, skin vasculitis, peripheral neuropathy) and non-vasculitic type (amyloidosis, Felty’s syndrome).</li>
+            <li>Xerophtalmia, xerostomia, peripheral neuropathies and rheumatoid nodules were the most frequent extra-articular features in the RA patients.</li>
+        </ul>
+        <h4>
+            2. Clinical features in patients affected by RA. The significant clinical features in anti-Ro/SSA positive patients were represented by sicca symptoms, oral ulcers, scleritis and amyloidosis.
+        </h4>
+        <table>
+            <tr>
+                <th></th>
+                <th>Total 210(%)</th>
+                <th>Ro+ 27(%)</th>
+                <th>Ro- 183(%)</th>
+                <th>p=</th>
+            </tr>
+            <tr>
+                <td>Symmetric arthritis</td>
+                <td>189 (90)</td>
+                <td>25 (92)</td>
+                <td>164 (89)</td>
+                <td>ns</td>
+            </tr>
+            <tr>
+                <td>Erosive arthritis</td>
+                <td>162 (77)</td>
+                <td>21 (78)</td>
+                <td>142 (77)</td>
+                <td>ns</td>
+            </tr> <tr>
+                <td>Xerophtalmia</td>
+                <td>64 (30.5)</td>
+                <td>20 (74)</td>
+                <td>44 (24)</td>
+                <td>0.0000001</td>
+            </tr> <tr>
+                <td>Xerostomia</td>
+                <td>58 (27.6)</td>
+                <td>15 (55)</td>
+                <td>43 (23.5)</td>
+                <td>0.0012</td>
+            </tr> <tr>
+                <td>Peripheral neuritis</td>
+                <td>40 (19)</td>
+                <td>5 (18.5)</td>
+                <td>35 (19)</td>
+                <td>ns</td>
+            </tr> <tr>
+                <td>Rheumatoid nodules</td>
+                <td>37 (17.6)</td>
+                <td>1 (3.7)</td>
+                <td>36 (19.7)</td>
+                <td>ns</td>
+            </tr> <tr>
+                <td>Photosensitivity</td>
+                <td>28 (13.3)</td>
+                <td>6 (22)</td>
+                <td>22 (12)</td>
+                <td>ns</td>
+            </tr> <tr>
+                <td>Skin vasculitis</td>
+                <td>16 (7.6)</td>
+                <td>3 (11)</td>
+                <td>13 (7)</td>
+                <td>ns</td>
+            </tr> <tr>
+                <td>Serositis</td>
+                <td>6 (2.8)</td>
+                <td>0</td>
+                <td>6 (3.3)</td>
+                <td>ns</td>
+            </tr> <tr>
+                <td>Malar rash</td>
+                <td>5 (2.3)</td>
+                <td>2 (7.4)</td>
+                <td>3 (1.6)</td>
+                <td>ns</td>
+            </tr> <tr>
+                <td>Oral ulcers</td>
+                <td>4 (1.9)</td>
+                <td>3 (11)</td>
+                <td>1 (0.5)</td>
+                <td>0.0067</td>
+            </tr> <tr>
+                <td>Scleritis</td>
+                <td>4 (1.9)</td>
+                <td>3 (11)</td>
+                <td>1 (0.5)</td>
+                <td>0.0067</td>
+            </tr> <tr>
+                <td>Amyloidosis</td>
+                <td>3 (1.4)</td>
+                <td>2 (7.4)</td>
+                <td>1 (0.5)</td>
+                <td>0.042</td>
+            </tr>
+</table>
+    <h4>
+        3. Clinical data on patients affected by SS and RA; they showed erosive symmetric arthritis, mostly characterized by positivity of RF, APF and anti-CCP, as well as the other anti-Ro/SSA negative RA patients.
+    </h4>
+    <table>
+        <tr>
+            <th></th>
+            <th>n=11</th>
+            <th>(%)</th>
+        </tr>
+        <tr>
+            <td>Symmetric polyarthritis</td>
+            <td>10</td>
+            <td>91</td>
+        </tr>
+        <tr>
+            <td>Erosive arthritis</td>
+            <td>8</td>
+            <td>72.7</td>
+        </tr>
+        <tr>
+            <td>Xerophtalmia</td>
+            <td>11</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Xerostomia</td>
+            <td>11</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Positive dacriologic tests</td>
+            <td>9</td>
+            <td>81.8</td>
+        </tr>
+        <tr>
+            <td>Positive salivary gland biopsy</td>
+            <td>4/6</td>
+            <td>66.7</td>
+        </tr>
+        <tr>
+            <td>Photosensitivity</td>
+            <td>2</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Peripheral neuritis</td>
+            <td>3</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>Oral ulcers</td>
+            <td>2</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Rheumatoid Factor</td>
+            <td>9</td>
+            <td>81.8</td>
+        </tr>
+        <tr>
+            <td>APF (anti-perinuclear factor- indirect immunofluorescence on epithelial cells from human buccal mucosa</td>
+            <td>7</td>
+            <td>63.6</td>
+        </tr>
+        <tr>
+            <td>Anti-CCP</td>
+            <td>6/8</td>
+            <td>75</td>
+        </tr>
+    </table>
+
+    <h4> 4. Immunological findings in patients affected by RA. Polyclonal hypergammaglobulinemia, anti-dsDNA and anti-mitochondrial antibodies (AMA) were reported more frequently in anti-Ro/SSA positive patients, with statistically significant difference compared to anti-Ro/SSA negative patients.</h4>
+    <table>
+        <tr>
+            <th></th>
+            <th>Total 210(%)</th>
+            <th>Ro+ 27(%)</th>
+            <th>Ro- 183(%)</th>
+            <th>p</th>
+        </tr>
+        <tr>
+            <td> Hypergammaglobulinemia</td>
+            <td>42/197 (21.3)</td>
+            <td>14/26 (53.8)</td>
+            <td>28/181 (15.4)</td>
+            <td>0.000001</td>
+        </tr>
+        <tr>
+            <td>RF (rheumatoid factor)</td>
+            <td>160 (76.2)</td>
+            <td>23 (85)</td>
+            <td>137 (75)</td>
+            <td>ns</td>
+        </tr>
+        <tr>
+            <td>APF (anti-perinuclear facvtor)</td>
+            <td>149/207 (72)</td>
+            <td>20/27 (74)</td>
+            <td>129/180 (71.7)</td>
+            <td>ns</td>
+        </tr>
+        <tr>
+            <td> Anti-CCP</td>
+            <td>118/172 (68.6)</td>
+            <td>16/21 (76.2)</td>
+            <td>102/151 (67.5)</td>
+            <td>ns</td>
+        </tr>
+        <tr>
+            <td>ANA (antinuclear antibodies- indirect immunofluorescence on HEp-2 cells)</td>
+            <td>89/207 (43)</td>
+            <td>24 (88.9)</td>
+            <td>65/180 (36)</td>
+            <td>0.0000001</td>
+        </tr>
+        <tr>
+            <td>Anti-dsDNA antibodies</td>
+            <td>6/162 (3.7)</td>
+            <td>3/26 (11.5)</td>
+            <td>3/136 (2.2)</td>
+            <td>0.0031</td>
+        </tr>
+        <tr>
+            <td>Anti-CL (anticardiolipin antibodies- enzyme immunoassay)</td>
+            <td>5/123 (4)</td>
+            <td>1/18 (5.5)</td>
+            <td>4/95 (4)</td>
+            <td>ns</td>
+        </tr>
+        <tr>
+            <td>Anti-β2-GPI (anti-β2glicoprotein I antibodies; were assessed by ELISA)</td>
+            <td>6/48 (12.5)</td>
+            <td>3/9 (33.3)</td>
+            <td>3/39 (7.6)</td>
+            <td>ns</td>
+        </tr>
+        <tr>
+            <td>AMA (anti-mitochondrial antibodies; detected by IIF)</td>
+            <td>2/59 (3.4)</td>
+            <td>2/12 (16)</td>
+            <td>0/47</td>
+            <td>0.05</td>
+        </tr>
+        <tr >
+            <td>ENA (anti-extractable nuclear antigen antibodies; detected by CIE) 
+                
+                   <li>Ro (anti-Ro/SSA)</li>
+                   <li>Ro+La (anti-La/SSB) </li>
+                   <li>Scl70 (anti-Scl70) </li>
+                   <li>U1-RNP (anti-RNP) </li>
+                   <li>(<abbr title="Antibodies to unidentified antigens on rabbit thymus extract">UDA</abbr> ) </li>
+                
+        </td>
+            <td>25 (12) <br>
+                20 <br>
+                2 <br>
+                1 <br>
+                1 <br>
+                1 <br>
+            </td>
+            <td>23/27 (85) <br>
+                20 <br>
+                2 <br>
+                1 <br>
+                0 <br>
+                0 <br>
+            </td>
+            <td>2/183 (1) <br>
+                0 <br>
+                0 <br>
+                0 <br>
+                1 <br>
+                1 <br>
+            </td>
+            <td>0.0000001 <br>
+                <br> <br> <br> <br> <br></td>
+            
+        </tr>
+        
+    </table>
+
+    <h4>5. DMARD treatments in RA patients. Hydroxycloroquine and infliximab were used more frequently by anti-Ro/SSA negative than anti-Ro/SSA positive patients. In contrast, D-penicillamine was used more frequently in anti-Ro/SSA positive group mostly at the onset of RA.</h4>
+    <table>
+        <tr>
+            <th></th>
+            <th>Total 210(%)</th>
+            <th>Ro+ 27(%)</th>
+            <th>Ro- 183(%)</th>
+            <th>p =/th>
+        </tr>
+        <tr>
+            <td>Hydroxycloroquine - used more frequently by anti-Ro/SSA negative than anti-Ro/SSA positive patients</td>
+            <td>204 (97)</td>
+            <td>23 (85)</td>
+            <td>181 (98.9)</td>
+            <td>0.0007</td>
+        </tr>
+        <tr>
+            <td>Methotrexate</td>
+            <td>189 (90)</td>
+            <td>23 (85)</td>
+            <td>166 (91)</td>
+            <td>ns</td>
+        </tr>
+        <tr>
+            <td>Gold salts</td>
+            <td>113 (53.8)</td>
+            <td>16 (59.2)</td>
+            <td>97 (53)</td>
+            <td>ns</td>
+        </tr>
+        <tr>
+            <td>Sulphasalazine</td>
+            <td>107 (51)</td>
+            <td>11 (41)</td>
+            <td>96 (52.4)</td>
+            <td>ns</td>
+        </tr>
+        <tr>
+            <td>Infliximab - was mainly given to patients without anti-Ro/SSA antibodies</td>
+            <td>68 (32.4)</td>
+            <td>3 (11)</td>
+            <td>65 (35.5)</td>
+            <td>0.02</td>
+        </tr>
+        <tr>
+            <td>Cyclosporin A</td>
+            <td>65 (31)</td>
+            <td>8 (29.6)</td>
+            <td>57 (31)</td>
+            <td>ns</td>
+        </tr>
+        <tr>
+            <td>D-penicillamine - was more common in anti-Ro/SSA positive patients, often at RA onset.</td>
+            <td>24 (11.4)</td>
+            <td>7 (25.6)</td>
+            <td>17 (9.3)</td>
+            <td>0.026</td>
+        </tr>
+        <tr>
+            <td>Etanercept</td>
+            <td>15 (7)</td>
+            <td>2 (7.4)</td>
+            <td>13 (7.1)</td>
+            <td>ns</td>
+        </tr>
+    </table>
+    <h4>Overlap disease between SLE (Sjögren’s syndrome and it is, by definition, non-erosive) and RA called rhupus.</h4>
+    <h2>References</h2>
+    <ul>
+        <li>
+            . PROVOST TT, ARNETT FC, REICHLIN M: C2
+            deficiency, lupus erythematosus, and anticytoplasmic Ro(SS-A) antibodies. Arthritis
+            Rheum 1983, 26: 1279-82.
+        </li>
+        <li>
+            MCCAULIFFE DP: Cutaneous diseases in
+            adults associated with anti-Ro/SS-A autoantibody production. Lupus 1997, 6: 158-66.
+        </li>
+        <li>
+            BUYON JP, WINCHESTER RJ, SLADE SG et
+            al.: Identification of mothers at risk for congenital heart block and other neonatal lupus
+            syndromes in their children. Arthritis Rheum
+            1993, 36: 1263-73.
+        </li>
+        <li>
+            SKOPOULI FN, ANDONOPOULOS AP, MOUTSOPOULOS HM: Clinical implication of the
+            presence of anti-Ro(SSA) antibodies in patients with rheumatoid arthritis. J Autoimmun
+            1988, 3: 381-8.
+        </li>
+        <li>
+            . TISHLER M, GOLBRUT B, SHOENFELD Y,
+            YARON M: Anti-Ro(SSA) antibodies in
+            patients with rheumatoid arthritis- a possible
+            marker for gold induced side effects. J
+            Rheumatol 1994, 21: 1040-2.
+        </li>
+        <li>
+            SHARP JT, LIDSKY MD, COLLINS LS,
+            MORELAND J: Methods of scoring the progression of radiologic changes in rheumatoid
+            arthritis. Arthritis Rheum 1971; 24: 706-29.
+        </li>
+        <li>
+            VENABLES PJW, SMITH PR, MAINI RN:
+            Purification and characterization of the Sjö-
+            gren’s syndrome A and B antigens. Clin Exp
+            Immunol 1983; 54: 731-8.
+        </li>
+        <li>
+            FRANCESCHINI F, CRETTI L, QUINZANINI
+            M, RIZZINI FL, CATTANEO R: Deforming
+            arthropathy of the hands in systemic lupus erythematosus is associated with antibodies to
+            SSA/Ro and to SSB/La. Lupus1994;3:419-22.
+        </li>
+        <li>
+            TZOUFAS AG, MOUTSOPOULOS HM: Clinical significance of autoantibodies to Ro/SSA
+            and La/SSB. In: Manual of Biological Markers of Disease, Kluwer Academic Publishers,
+            1996: C4.1, 1-14.
+        </li>
+        <li>
+            CUSH JJ: Unusual toxicities with TNF inhibition: heart failure and drug-induced lupus.
+            Clin Exp Rheumatol 2004; 22 (Suppl. 35):
+            S141-147.
+        </li>
+        <li>
+            ALLANORE Y, SELLAM J, BATTEUX F, JOB
+            DESLANDRE C, WEILL B, KAHAN A: Induction of autoantibodies in refractory rheumatoid arthritis treated by infliximab. Clin Exp
+            Rheumatol 2004; 22: 756-8.
+        </li>
+        <li>
+            DE RYCKE L, KRNITHOG E, VAN DAMME N
+            et al.: Antinuclear antibodies following
+            infliximab treatment in patients with rheumatoid arthritis or spondyloarthropathy. Arthritis Rheum 2003; 48: 1015-23.
+        </li>
+    </ul>
+    <footer>
+    <hr>
+    &lt;&lt;&lt; <a class="btn1" href="index.html">Back to previous page</a> &gt;&gt;&gt;
+    </footer>
+    <a href="#head"><button onclick="topFunction()" id="topBtn" title="Go to top">Top</button></a>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // Back to top button
+        var topButton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+    </script>
+    </body>
+</html>

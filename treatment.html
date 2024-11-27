@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rheumatoid Arthritis: A Brief Overview
+        of the Treatment</title>
+</head>
+<style>
+    body {
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        margin: 20px;
+        border: 2px;
+        line-height: 1.5;
+        text-align: justify;
+        background-color:#ACC8E5 ;
+        max-width: fit-content;
+        }
+    
+    h1{
+        font-size: fit-content;
+        color: #FFFFFF;
+        text-shadow:2px 2px 5px rgb(219, 48, 48);
+        text-align:center;
+        background-color: #0C1821;
+        border-radius: 10px;
+        border-bottom:5px solid #ffffff;
+    }
+    li ul li{
+            list-style: disc;
+    }
+    .Menu{
+        justify-content: space-between;
+        background-color: #052241;
+        border-radius: 20px;
+        padding-left: 30px;
+        position: relative;
+        top:-21px;
+    }
+    a {
+        text-decoration: none;
+        color: #FFFFFF ;
+    }
+    a:visited {
+        color: whitesmoke;
+    }
+    a:hover {
+        color: coral;
+    }
+    a:active {
+        color: antiquewhite;
+    }
+    h2 {
+        border-bottom: 3px solid whitesmoke;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        border-radius: 20px;
+        background-color: #0C1821;
+        width: auto;
+    }
+    .middle{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        max-width: 100%;
+        height: auto;
+    }
+    .parent {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width:45vw;
+    }
+
+    .image1, .image2 {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        border: 1px solid black;
+    }
+    .flex{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+        
+    .img7,.img8,.img9,.img10,.img11{
+        border: 1px solid black;
+        max-width: 100%;
+        
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .cap{
+        text-align: center;
+    }
+    footer {
+        background-color: #0C1821;
+        color: white;
+        text-align: left;
+        padding: 10px 0;
+    }
+    #topBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color:  #061727;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    #topBtn:hover {
+        background-color: #555;
+    }
+    .Side2{
+        display:none;
+    }
+    .btn1:hover .Side2{
+        display:block;
+    }
+    /*
+    .ind{
+        text-indent: 25px;
+        padding: 0px;
+        margin: 0px ;
+
+    }
+    .ind2{
+        text-indent: 50px;
+        padding: 0px;
+        margin: 0px ;
+    }
+    */
+    h3,h4{
+        margin: 0px ;
+        padding: 0px ;
+    }
+    figcaption{
+        text-align: center;
+    }
+    
+
+    @media (max-width: 670px) {
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin: 10px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+        .container{
+            padding: 5px;
+        }
+    
+        h2 {
+            font-size: 1.75rem; 
+        }
+        h3 {
+            font-size: 1.5rem; }
+        h4 {
+            font-size: 1.25rem; 
+        }
+        .flex{
+            flex-direction: column;
+            align-items:center;
+        }
+        .Menu{
+            top:-21px;
+        }
+    }
+    /* Tablet styles */
+    @media (min-width: 670px) and (max-width: 1024px) {
+        .container {
+            padding: 10px;
+        }
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            margin: 10px;
+            border: 3px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+        h2 {
+            font-size: 1.75rem; 
+        }
+        h3 {
+            font-size: 1.5rem; }
+        h4 {
+            font-size: 1.25rem; 
+        }     
+        .flex{
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content: center;
+        }
+        .Menu{
+            top:-24px;
+        }
+    }
+    /* Desktop styles */
+    @media (min-width: 1025px) and (max-width:1380px) {
+        .container {
+            padding: 20px;
+        }
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            margin: 20px;
+            border: 2px;
+            line-height: 1.5;
+            text-align: justify;
+            background-color:#ACC8E5 ;
+            max-width: justify;
+        }
+        h1{
+            font-size: 2.45rem;
+        }
+        h2 {
+            font-size: 1.75rem; 
+        }
+        h3 {
+            font-size: 1.5rem; }
+        h4 {
+            font-size: 1.25rem; 
+        } 
+        .flex{
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content: center;
+        }
+        .Menu{
+            top:-26px;
+        }
+    }
+
+
+
+</style>
+<body>
+    <h1 id="treat">Rheumatoid Arthritis: A Brief Overview
+        of the Treatment</h1>
+    <ul class="Menu">
+        <li class="btn1"><a href="#Abs">Abstract</a></li>
+        <li class="btn1">
+            <a href="#FLM">First-Line Management</a>
+            <ul class="Side2">
+                <li class="btn1"><a href="#NSA">NSAIDS</a></li>
+                <li class="btn1"><a href="#Corti">Corticosteroids</a></li>
+            </ul>
+        </li>
+        <li class="btn1">
+            <a href="#SLM">Second-Line Management</a>
+            <ul class="Side2">
+                <li class="btn1"><a href="#DMA">DMARDs</a></li>
+            </ul>
+        </li>
+        <li class="btn1">
+            <a href="#NM">Newer Medications</a>
+            <ul class="Side2">
+                <li class="btn1"><a href="#Lef">Leflunomide</a></li>
+                <li class="btn1"><a href="#TNF">TNF-inhibitors</a></li>
+                <li class="btn1"><a href="#Ana">Anakinra</a></li>
+                <li class="btn1"><a href="#Toc">Tocilizumab</a></li>
+            </ul>
+        </li>
+        <li class="btn1"><a href="#Sur">Surgeries</a></li>
+        <li class="btn1"><a href="#OT">Other Therapies</a></li>
+        <li class="btn1"><a href="#Con">Conclusion</a></li>
+        
+    </ul>
+    <hr>
+    <h2 id="Abs">Abstract</h2>
+    <p>Currently, there is no cure for this autoimmune disease, rather, symptoms are addressed on an individual
+        basis. The goals of treatment for RA are to reduce joint inflammation and pain, maximize joint function, and
+        pre vent joint destruction and deformity.
+    </p>
+    <hr>
+    <h2 id="FLM">First-Line Management</h2>
+    <h3 id="NSA">NSAIDS:</h3>
+    <p class="ind">
+            The overall goal of first-line treatment is to relieve pain and decrease inflammation. Medications, considered
+to be fast-acting, are nonsteroidal anti-inflammatory drugs (NSAIDs) including acetylsalicylate (Aspirin),
+naproxen (Naprosyn), ibuprofen (Advil and Motrin), and etodolac (Lodine). Aspirin is an effective antiinflammatory
+for RA but has side effects like tinnitus, hearing loss, and gastric intolerance. There are newer
+NSAIDs that are just as effective and require fewer doses per day. These NSAIDs also have fewer side effects
+like nausea, abdominal pain, ulcers, and gastrointestinal (GI) bleeding. <a href="#ref">[1]</a>
+        </p>
+    <figure>
+        <img class="middle" src="https://www.researchgate.net/publication/320653949/figure/fig6/AS:962688301666306@1606534185480/Treatment-of-CNO-CRMO-NSAIDs-eg-naproxen-are-usually-applied-as-first-line-therapy.gif" alt="First-Line Management: NSAIDS and Corticosteroids" loading="lazy" width="700px" height="400px">
+        <figcaption>Image Source: <a href="https://www.researchgate.net/figure/Treatment-of-CNO-CRMO-NSAIDs-eg-naproxen-are-usually-applied-as-first-line-therapy_fig6_320653949">Research Gate</a></figcaption>
+    </figure>
+    <h3 id="Corti">Corticosteroids:</h3>
+    <p class="ind">
+        Corticosteroids are stronger anti-inflammatories than NSAIDs for RA, but have more side effects. Used for
+short-term relief during RA flares at low doses. Side effects include bone thinning, weight gain, diabetes, and
+weakened immune system.<a href="#ref">[2]</a>
+    </p>
+    <hr>
+    <h2 id="SLM">
+        Second-Line Management
+    </h2>
+    <h3 id="DMA">Disease-Modifying Antirheumatic Drugs: </h3>
+    <p class="ind">
+        The overall goal of second-line treatment is to pro mote remission by slowing or stopping the progression of
+joint destruction and deformity. Disease-modifying antirheumatic drugs (DMARDs) are slow-acting
+medications (weeks to months) that can reduce RA symptoms and lymphoma risk.<a href="#ref">[3]</a> </p>
+    <h4 id="Meth" class="ind">Methotrexate:-</h4>
+    <p class="ind2">Methotrexate (MTX) is a
+common DMARD, effective with lower side effects than others. It requires regular blood tests due to potential
+side effects, i.e., liver problems, cirrhosis, and bone marrow deterioration.<a href="#ref">[4]</a>
+    </p>
+    <h4 id="Hydro" class="ind">Hydroxychloroquine:-</h4>
+    <p class="ind2">
+        Hydroxychloroquine (Plaquenil) is an antimalarial drug and used for long-term treatment of RA. This drug
+decreases the secretion of monocyte-derived proinflammatory cytokines. Side effects include GI tract, skin,
+and nervous system problems. Eye problems are a risk at high doses and require regular eye exams<a href="#ref">[5]</a>.
+    </p>
+    <h4 id="Sulf" class="ind">Sulfasalazine:-</h4>
+    <p class="ind2">
+        Sulfasalazine (Azulfidine) is a DMARD used with anti-inflammatory meds to treat RA. Exact mechanism of
+action unknown, but may reduce inflammatory chemicals. Side effects include GI, nervous system problems,
+and rash. Not for people with sulfa allergies. Gold salts (aurothioglucose, auranofin, etc.) were previously used
+for RA but are less common now due to more effective treatments and side effects on kidneys and bone
+marrow.<a href="#ref">[6]</a>
+    </p>
+    <figure class="parent">
+        <img class="image1" src="https://image.slideserve.com/1000447/disease-modifying-antirheumatic-drugs-dmard-l.jpg" alt="DMARD" loading="lazy" width="700" height="500">
+        <img class="image2" src="https://image.slideserve.com/1000447/sulfasalazin-e-l.jpg" alt="DMARD" loading="lazy" width="700" height="500">
+    </figure>
+    <figcaption>Images Source: <a href="https://slideplayer.com/slide/3477467/">Slide Player</a></figcaption>
+    <hr>
+    <h2 id="NM">
+        Newer Medications
+    </h2>
+    <h3 id="Lef">Leflunomide:</h3>
+    <p class="ind">
+        Leflunomide is a medication used to treat RA. It can be used alone or with MTX and helps slow the progression
+of the disease. However, it has serious side effects including hypertension, GI upset, liver damage, leukopenia,
+interstitial lung disease, neuropathy, rash, and bone marrow damage.<a href="#ref">[7,8]</a>
+    </p>
+    <figure>
+        <img class="middle" src="https://www.ijcriog.com/archive/2022/images/figure1_1644393634.jpg" alt="newer medication" loading="lazy" width="500px" height="300px">
+        <figcaption class="cap"><strong>Diagram highlighting the mechanism of action for leflunomide, its active metabolite, and its inhibiting effect on dihydroorotate dehydrogenase (DHODH)</strong></figcaption>
+        <figcaption>Image Source: <a href="https://www.ijcriog.com/archive/2022/pdf/100117Z08VK2022.pdf">Case Report</a></figcaption>
+    </figure>
+    <p>
+        Biologic medications are a powerful treatment for RA, working faster than other DMARDs to slow joint
+damage. However, they come with serious side effects like increased infection risk and neurological problems.
+Tumor necrosis factor (TNF) is a messenger protein that promotes inflammation in joints.<a href="#ref">[9,11]</a> </p>
+   <h3 id="TNF">TNF-inhibitors:</h3>
+   <p class="ind">
+Biologic medications targeting TNF, known as <strong>TNF inhibitors</strong>, include
+etanercept, infliximab, adalimumab, golimumab, and certolizumab pegol. These target specific inflammatory
+proteins and are used when other medications fail. Biologics are expensive and their use is still being
+determined. They are often combined with MTX. TNF inhibitors are contraindicated in patients with congestive
+heart failure of demyelinating diseases.<a href="#ref">[12-14]</a>
+    </p>
+    <figure>
+        <img class="middle" src="https://openi.nlm.nih.gov/imgs/512/176/2721362/PMC2721362_btt-2-229f1.png?keywords=tumor%20necrosis,arthritides,condition" alt="newer medication" loading="lazy" width="300px" height="300px">
+        <figcaption class="cap">
+            <p><strong>Mechanism of action of the TNF inhibitors:-</strong>
+            <br>The binding of soluble TNF to its membrane-bound receptor induces cellular activation and inflammation (A) Soluble TNF receptor fused to human Ig (etanercept) serves as a decoy receptor, binding to soluble TNF and preventing the TNF from binding to its membrane-bound receptor (B) The anti-TNF monoclonal antibodies bind to membrane-bound TNF, inducing apoptosis of cells involved in the inflammatory pathway (C)</br></p></figcaption>
+            <figcaption>Image Source: <a href="https://openi.nlm.nih.gov/detailedresult?img=PMC2721362_btt-2-229f1&query=&req=4">National library of medicine</a></figcaption>
+    </figure>
+    <h3 id="Ana">Anakinra:</h3>
+    <p class="ind">
+        Anakinra (Kineret) is an injectable medication for RA that targets inflammation but is used less often due to a
+lower response rate than other biologics. Rituximab (Rituxan) targets B cells involved in inflammation and is
+used for RA when TNF inhibitors fail. Abatacept (Orencia) blocks T cell activation and is used for RA when other
+DMARDs are not effective.<a href="#ref">[15,16]</a>
+    </p>
+    <figure>
+        <img class="middle" src="https://d3i71xaburhd42.cloudfront.net/51cfbc47d90e2b83e55233eb7289e245b676c3d5/12-Figure2-1.png" alt="newer medication" loading="lazy" width="300px" height="400">
+        <figcaption class="cap">
+            <p><strong> Mechanism of action of anakinra:-</strong>
+            <br>IL-1 binds to its receptor, inducing cellular activation and inflammation (A) Exogenous IL-1 receptor antagonist (IL-1Ra; Anakinra) competes with IL-1 for binding to its receptor but does not induce cellular activation and inflammation (B)</br></p>
+        </figcaption>
+        <figcaption>Image Source: <a href="https://openi.nlm.nih.gov/detailedresult?img=PMC2721362_btt-2-229f2&query=&req=4">National library of medicine</a></figcaption>
+    </figure>
+    <h3 id="Toc">Tocilizumab:</h3>
+    <p class="ind">
+        Tocilizumab (Actemra) is a biologic medication used for RA that targets a different inflammatory pathway than
+other biologics. It blocks interleukin-6 (IL-6), another chemical messenger involved in inflammation. This
+medication is given either through a monthly intravenous infusion or weekly subcutaneous injections. It is
+typically used for patients with RA who have not responded well to traditional DMARDs.<a href="#ref">[17]</a>
+    </p>
+    <figure>
+        <img class="middle" src="https://www.drugwatch.com/wp-content/uploads/How-Actemra-Works-Illustration-1920.png" alt="newer medication" loading="lazy" width="700px" height="400">
+        <figcaption>Image Source: <a href="https://www.drugwatch.com/actemra/">Drug Watch</a></figcaption>
+    </figure>
+    <hr>
+    <h2 id="Sur">
+        Surgeries
+    </h2>
+    <p>
+        The goal of surgical management is to relieve pain for the patient and restore the function of the joints. A
+<em>Tenosynovectomy</em> involves the excision of inflamed tendon sheaths or repairing a recent tendon rupture, most
+commonly in the hand<a href="#ref">[18]</a>. <em>Radiosynovectomy</em> is an alternative to surgical synovectomy; it involves intra-articular
+injection of small radioactive particles, is cost-effective, and can treat multiple joints simultaneously.<a href="#ref">[19]</a>
+<em>Arthroscopy</em> is a minimally invasive surgical technique used for repairing ruptured tendons, particularly in the
+rotator cuff of the shoulder. This procedure is preferred over traditional open synovectomy (removal of
+inflamed lining) for treating inflamed synovium in joints because it offers faster recovery and less scarring.<a href="#ref">[20]</a>
+    </p>
+    <p>
+        <em> Osteotomy</em> is a corrective surgical procedure that realigns weight-bearing bones, most commonly in the knees,
+to address valgus or varus deformities<a href="#ref">[20]</a>. <em>Arthrodesis</em> (joint fusion) is a technique permanently fixes bones
+together in joints like the ankle, wrist, thumb, or spine to improve stability. Small joint implant arthroplasty is a
+surgical intervention that replaces damaged small joints, most commonly in the hands (metacarpophalangeal
+joints) and feet, with implants to alleviate pain and restore function. Total joint arthroplasty (joint
+replacement) is the most extensive surgical option for RA. It involves removing a severely damaged joint
+(shoulder, elbow, wrist, hip, knee, or ankle) and replacing it with a prosthetic implant composed of metal,
+plastic, or ceramic materials.
+    </p>
+    <figure class="flex">
+        <figure>
+            <img class="img7" src="https://cdn.shopify.com/s/files/1/0011/7958/2517/files/open-surgery-on-trigger-finger-or-thumb.jpg?v=1525736337" alt="Surgery" loading="lazy" width="200" height="200" > 
+            <figcaption class="cap"><strong>Tenosynovectomy</strong></figcaption>
+            <figcaption class="cap">Image Source: <a href="https://www.braceability.com/blogs/articles/trigger-finger-surgery">Braceability.com</a></figcaption>
+            
+        </figure>
+        <figure>
+            <img class="img8" src="https://www.healthcareradius.in/cloud/2021/11/15/congenital-Radiosynovectomy.png" alt="Surgery" loading="lazy" width="200" height="200">
+            <figcaption class="cap"><strong>Radiosynovectomy</strong></figcaption>
+            <figcaption>Image Source: <a href="https://www.healthcareradius.in/uncategorized/29260-amrita-hospitals-introduces-first-ever-radio-synovectomy-procedure-for-hemophilia-patients">HealthCareRadius</a></figcaption>
+        </figure>
+        <figure>
+            <img class="img9" src="https://www.apollospectra.com/backend/web/uploads/36726768.jpg" alt="Surgery" loading="lazy" width="200" height="200">
+            <figcaption class="cap"><strong>Arthroscopy</strong></figcaption>
+            <figcaption>Image Source: <a href="https://www.apollospectra.com/pune/sadashiv-peth/treatment/shoulder-arthroscopy">ApolloSpectra</a></figcaption>
+        </figure>
+        <figure>
+            <img class="img10" src="https://www.howardluksmd.com/wp-content/uploads/2021/07/How-an-HTO-improves-knee-pain-due-to-arthritis.jpeg" alt="Surgery" loading="lazy" width="200" height="200">
+            <figcaption class="cap"><strong>Osteotomy</strong></figcaption>
+            <figcaption>Image Source: <a href="https://www.howardluksmd.com/high-tibial-osteotomy-for-knee-arthritis-in-active-people/">HowardJ.Luks</a></figcaption>        
+        </figure>
+        <figure>
+            <img class="img11" src="https://lirp.cdn-website.com/68954f5c/dms3rep/multi/opt/wristfusion_bro1-e6caf7c9-1920w.jpg" alt="" loading="eager" width="200" height="200">            
+            <figcaption class="cap"><strong>Arthrodesis</strong></figcaption>
+            <figcaption>Image Source: <a href="https://www.archwayortho.com/hand-procedures">Archwayorthopedics</a></figcaption>
+        </figure>
+    </figure>
+    <hr>
+    <h2 id="OT">Other Therapies</h2>
+    <p>
+        Unlike past beliefs, specific foods don't necessarily worsen RA symptoms. Certain home remedies can provide
+some relief, although not as effective as medications. Fish oil, omega-3 fatty acid supplements, and cumin may
+offer short-term symptom improvement. Calcium and vitamin D supplements can help prevent osteoporosis, a
+common complication of RA. Folic acid helps reduce side effects of methotrexate, a common RA medication.<a href="#ref">[21]</a>
+    </p>
+    <p>
+        Physical therapy and exercise are crucial for RA patients. Regular exercise helps maintain joint mobility and
+strengthen muscles around the joints. Low-impact exercises like swimming, yoga, and tai chi are
+recommended. Applying heat or cold packs before and after exercise can minimize pain. A better
+understanding of collagen's role in RA to develop improved treatment options.<a href="#ref">[22-27]</a>
+    </p>
+    <hr>
+    <h2 id="Con">Conclusion</h2>
+    <p>
+        Rheumatoid arthritis (RA) is a chronic inflammatory disease that damages joints and can significantly impact
+daily life. Early diagnosis and treatment are critical to prevent joint damage and disability. A treatment-totarget
+(T2T) approach is recommended<a href="#ref">[28]</a>, where treatment goals are defined and monitored for optimal
+outcomes. Consulting a specialist can ensure better management of the disease. Advancements in medicine
+have led to a better understanding of RA, enabling the development of more effective treatments. Newer
+therapies like gene array analysis hold promise for personalized treatment approaches, leading to faster
+response and reduced disease progression.
+    </p>
+    <section>
+    <h2>References</h2>
+    <nav id="ref">
+        <ol>
+        <li>Ong CK, Lirk P, Tan CH, Seymour RA. An 
+            evidence-based update on nonsteroidal antiinflammatory drugs. Clin Med Res. 2007 Mar;
+            5(1):19–34.</li>
+        <li>Combe B, Landewe R, Daien CI, Hua C, Aletaha D, Álvaro-Gracia JM, et al. 2016 update 
+            of the EULAR recommendations for the management of early arthritis. Ann Rheum Dis. 
+            2017 Jun;76(6):948–59.</li>
+        <li>
+            Smolen JS, Landewé R, Breedveld FC, Dougados M, Emery P, Gaujoux-Viala C, et al. EULAR recommendations for the management 
+            of rheumatoid arthritis with synthetic and 
+            biological disease-modifying antirheumatic 
+            drugs. Ann Rheum Dis. 2010 Jun;69(6):964–
+            75.
+        </li>
+        <li>
+            Tian H, Cronstein BN. Understanding the 
+            mechanisms of action of methotrexate: implications for the treatment of rheumatoid arthritis. Bull NYU Hosp Jt Dis. 2007;65(3):
+            168–73.
+        </li>
+        <li>
+            Silva JC, Mariz HA, Rocha LF Jr, Oliveira PS, 
+            Dantas AT, Duarte AL, et al. Hydroxychloroquine decreases Th17-related cytokines in 
+            systemic lupus erythematosus and rheumatoid arthritis patients. Clinics (São Paulo). 
+            2013 Jun;68(6):766–71.
+        </li>
+        <li>
+            Volin MV, Harlow LA, Woods JM, Campbell 
+            PL, Amin MA, Tokuhira M, et al. Treatment 
+            with sulfasalazine or sulfapyridine, but not 
+            5-aminosalicyclic acid, inhibits basic fibroblast growth factor-induced endothelial cell 
+            chemotaxis. Arthritis Rheum. 1999 Sep;42(9):
+            1927–35.
+        </li>
+        <li>
+            Fox RI, Herrmann ML, Frangou CG, Wahl 
+            GM, Morris RE, Kirschbaum BJ. How does 
+            leflunomide modulate the immune response 
+            in rheumatoid arthritis? BioDrugs. 1999 Oct;
+            12(4):301–15.
+        </li>
+        <li>
+            Gibofsky A. Combination therapy for rheumatoid arthritis in the era of biologicals. HSS 
+            J. 2006 Feb;2(1):30–41.
+        </li>
+        <li>
+            Rein P, Mueller RB. Treatment with Biologicals in Rheumatoid Arthritis: an Overview. 
+            Rheumatol Ther. 2017 Dec;4(2):247–61
+        </li>
+        <li>
+            den Broeder AA, van Herwaarden N, van den 
+            Bemt BJ. Therapeutic drug monitoring of biologicals in rheumatoid arthritis: a disconnect 
+            between beliefs and facts. Curr Opin Rheumatol. 2018 May;30(3):266–75.
+        </li>
+        <li>
+            Tovey MG, Lallemand C. Immunogenicity 
+            and other problems associated with the use of 
+            biopharmaceuticals. Ther Adv Drug Saf. 2011 
+            Jun;2(3):113–28.
+        </li>
+        <li>
+            Gay RD, Clarke AW, Elgundi Z, Domagala T, 
+            Simpson RJ, Le NB, et al. Anti-TNFα domain 
+            antibody construct CEP-37247: full antibody 
+            functionality at half the size. MAbs. 2010 
+            Nov-Dec;2(6):625–38.
+        </li>
+        <li>
+            Lis K, Kuzawińska O, Bałkowiec-Iskra E. Tumor necrosis factor inhibitors - state of 
+            knowledge. Arch Med Sci. 2014 Dec;10(6):
+            1175–85.
+        </li>
+        <li>
+            Perpétuo IP, Caetano-Lopes J, Rodrigues AM, 
+            Campanilho-Marques R, Ponte C, Canhão H, 
+            et al. Effect of Tumor Necrosis Factor Inhibitor Therapy on Osteoclasts Precursors in 
+            Rheumatoid Arthritis. BioMed Res Int. 2017;
+            2017:2690402.
+        </li>
+        <li>
+            Gómez-Gómez GJ, Masedo Á, Yela C, Martínez-Montiel MP, Casís B. Current stage in 
+            inflammatory bowel disease: what is next? 
+            World J Gastroenterol. 2015 Oct;21(40):
+            11282–303.
+        </li>
+        <li>
+            Chung KC, Pushman AG. Current concepts 
+            in the management of the rheumatoid hand. J 
+            Hand Surg Am. 2011 Apr;36(4):736–47.
+        </li>
+        <li>
+            Knut L. Radiosynovectomy in the therapeutic 
+            management of arthritis. World J Nucl Med. 
+            2015 Jan-Apr;14(1):10–5.
+        </li>
+        <li>
+            Puddu G, Cipolla M, Cerullo G, Franco V, Giannì E. Which osteotomy for a valgus knee? 
+            Int Orthop. 2010 Feb;34(2):239–47.
+        </li>
+        <li>
+            Brooks F, Hariharan K. The rheumatoid forefoot. Curr Rev Musculoskelet Med. 2013 Dec;
+            6(4):320–7.
+        </li>
+        <li>
+            Rheumatic surgery-overview/Surgical treatment-general opinions. Acta Orthop Scand. 
+            2000;71(Suppl 294):8–14.
+        </li>
+        <li>
+            Escott-Stump S. Nutrition and Diagnosis-Related Care. Philadelphia: Lippincott Williams 
+            & Wilkins; 2011.
+        </li>
+        <li>
+            Centers for Disease Control and Prevention. 
+            Physical Activity for Arthritis (accessed 2017 
+            April 25). Available from: https://www.cdc.
+            gov/arthritis/basics/physical-activity-overview.html.
+        </li>
+        <li>
+            Cooney JK, Law RJ, Matschke V, Lemmey AB, 
+            Moore JP, Ahmad Y, et al. Benefits of exercise 
+            in rheumatoid arthritis. J Aging Res. 2011 
+            Feb;2011:681640.
+        </li>
+        <li>
+            Zitnay JL, Li Y, Qin Z, San BH, Depalle B, Reese SP, et al. Molecular level detection and localization of mechanical damage in collagen 
+            enabled by collagen hybridizing peptides. Nat 
+            Commun. 2017 Mar;8:14913.
+        </li>
+        <li>
+            Burska AN, Roget K, Blits M, Soto Gomez L, 
+            van de Loo F, Hazelwood LD, et al. Gene expression analysis in RA: towards personalized 
+            medicine. Pharmacogenomics J. 2014 Apr;
+            14(2):93–106.
+        </li>
+        <li>
+            Nakamura S, Suzuki K, Iijima H, Hata Y, Lim 
+            CR, Ishizawa Y, et al. Identification of baseline gene expression signatures predicting 
+            therapeutic responses to three biologic agents 
+            in rheumatoid arthritis: a retrospective observational study. Arthritis Res Ther. 2016 Jul;
+            18(1):159.
+
+        </li>
+        <li>
+            González-Álvaro I, Ortiz AM, Seoane IV, 
+            García-Vicuña R, Martínez C, Gomariz RP. 
+            Biomarkers predicting a need for intensive 
+            treatment in patients with early arthritis. Curr 
+            Pharm Des. 2015;21(2):170–81.
+        </li>
+        <li>
+            Smolen JS, Breedveld FC, Burmester GR, 
+            Bykerk V, Dougados M, Emery P, et al. Treating rheumatoid arthritis to target: 2014 update of the recommendations of an international task force. Ann Rheum Dis. 2016 Jan;
+            75(1):3–15.
+        </li>
+        </ol>
+
+    </nav>
+    </section>
+    <footer>
+        <hr>
+        &lt;&lt;&lt; <a class="btn1" href="index.html">Back to previous page</a> &gt;&gt;&gt;
+        <hr>
+    </footer>
+    <a href="#treat"><button onclick="topFunction()" id="topBtn" title="Go to top">Top</button></a>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // Back to top button
+        var topButton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+</body>
+</html>
